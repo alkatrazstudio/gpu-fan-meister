@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2018 Alkatraz Studio -->
+<component type="desktop">
+    <id>net.alkatrazstudio.gpufanmeister.desktop</id>
+    <name>GPU Fan Meister</name>
+    <launchable type="desktop-id">net.alkatrazstudio.gpufanmeister.desktop</launchable>
+
+    <metadata_license>CC-BY-SA-4.0</metadata_license>
+    <project_license>GPL-3.0-or-later</project_license>
+
+    <summary>Control your video card fan speed using a curve, a script or a predefined rules</summary>
+    <summary xml:lang="ru">Управляйте скоростью вентиляторов вашей видеокарты через график, скрипт или специальные правила</summary>
+
+    <description>
+        <p>GPU Fan Meister allows you to control your video card fan speed using the following methods:</p>
+        <ul>
+            <li>Curve. Draw a graph that reflects a temperature/fan speed dependency.</li>
+            <li>Fan toggle. Use a set of predefined configurable rules to turn the fans on/off.</li>
+            <li>Script. Write a custom algorithm that will control the fans.</li>
+        </ul>
+        <p>GPU Fan Meister supports NVIDIA video cards with official drivers out of the box. Support for other video cards can be added via plugins.</p>
+
+        <p xml:lang="ru">GPU Fan Meister позволяет вам контролировать скорость вентиляторов вашей видеокарты следующими способами:</p>
+        <ul xml:lang="ru">
+            <li xml:lang="ru">Кривая. Нарисуйте график зависимости скорости вентиляторов от температуры.</li>
+            <li xml:lang="ru">Вкл./выкл. вентиляторов. Настройте специальные правила для включения/выключения вентиляторов.</li>
+            <li xml:lang="ru">Скрипт. Напишите свой алгоритм управления вентиляторами.</li>
+        </ul>
+        <p xml:lang="ru">GPU Fan Meister по умолчанию поддерживает видеокарты NVIDIA с официальными драйверами. Поддержка других видеокарт может быть добавлена с помощью плагинов.</p>
+    </description>
+
+    <developer_name>Alkatraz Studio</developer_name>
+    <update_contact>zxed@alkatrazstudio.net</update_contact>
+
+    <url type="homepage">https://gpufanmeister.alkatrazstudio.net</url>
+    <url type="bugtracker">https://github.com/alkatrazstudio/gpu-fan-meister/issues</url>
+    <url type="help">https://gpufanmeister.alkatrazstudio.net/doc</url>
+
+    <screenshots>
+        <screenshot type="default">
+            <caption>"Curve" mode</caption>
+            <image type="source" width="2300" height="1700">https://gpufanmeister.alkatrazstudio.net/img/screens/en/curve.png</image>
+            <caption xml:lang="ru">Режим "Кривая"</caption>
+            <image xml:lang="ru" type="source" width="2300" height="1700">https://gpufanmeister.alkatrazstudio.net/img/screens/ru/curve.png</image>
+        </screenshot>
+        <screenshot>
+            <caption>"Fan toggle" mode</caption>
+            <caption xml:lang="ru">Режим "Вкл./выкл. вентиляторов"</caption>
+            <image type="source" width="2300" height="1700">https://gpufanmeister.alkatrazstudio.net/img/screens/en/fanToggle.png</image>
+            <image xml:lang="ru" type="source" width="2300" height="1700">https://gpufanmeister.alkatrazstudio.net/img/screens/ru/fanToggle.png</image>
+        </screenshot>
+        <screenshot>
+            <caption>"Script" mode</caption>
+            <caption xml:lang="ru">Режим "Скрипт"</caption>
+            <image type="source" width="2300" height="1700">https://gpufanmeister.alkatrazstudio.net/img/screens/en/script.png</image>
+            <image xml:lang="ru" type="source" width="2300" height="1700">https://gpufanmeister.alkatrazstudio.net/img/screens/ru/script.png</image>
+        </screenshot>
+        <screenshot>
+            <caption>Options screen</caption>
+            <caption xml:lang="ru">Окно настроек</caption>
+            <image type="source" width="2300" height="1700">https://gpufanmeister.alkatrazstudio.net/img/screens/en/options.png</image>
+            <image xml:lang="ru" type="source" width="2300" height="1700">https://gpufanmeister.alkatrazstudio.net/img/screens/ru/options.png</image>
+        </screenshot>
+    </screenshots>
+
+    <provides>
+        <binary>gpu-fan-meister</binary>
+    </provides>
+</component>

@@ -1,0 +1,6 @@
+/*/
+!/src/
+
+/src/_build/
+/src/venv/
+*.mo

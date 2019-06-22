@@ -1,0 +1,13 @@
+img.logo {
+    margin-top: 0!important;
+    max-height: 64px!important;
+    background-image: url('../../../assets/icon.png');
+}
+
+.icon-home {
+    margin-bottom: 0!important;
+}
+
+table.docutils td {
+    white-space: inherit!important;
+}

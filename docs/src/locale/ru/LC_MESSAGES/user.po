@@ -1,0 +1,3696 @@
+# GPU Fan Meister - Russian translation.
+# Copyright (C) 2019, Alkatraz Studio
+# This file is distributed under the same license
+# as the GPU Fan Meister package.
+# Alexey Parfenov <zxed@alkatrazstudio.net>, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: GPU Fan Meister 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-08 21:15+0300\n"
+"PO-Revision-Date: 2019-04-08 21:16+0300\n"
+"Last-Translator: \n"
+"Language: ru_RU\n"
+"Language-Team: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+"X-Generator: Poedit 2.1.1\n"
+
+#: ../../../rst/user/cli.rst:2
+msgid "Command line parameters"
+msgstr "Параметры командной строки"
+
+#: ../../../rst/user/cli.rst:4
+msgid "|project| supports the following command line parameters:"
+msgstr "|project| поддерживает следующие параметры командной строки:"
+
+#: ../../../rst/user/cli.rst:8
+msgid ""
+"**--plugins** - allows you to specify a list of :doc:`plugins <plugins>`, which "
+"will be used to work with video cards. If the parameter is not set, the plugins "
+"that were last selected in the \":doc:`gui/enabledPlugins`\" window will be "
+"used. The list of these plugins can be displayed through the :ref:`--enabled-"
+"plugins <cli-enabled-plugins>` parameter. If the parameter is omitted, and no "
+"plugins have been selected before, the \":doc:`gui/enabledPlugins`\" window will "
+"appear."
+msgstr ""
+"**--plugins** - позволяет задать список :doc:`плагинов <plugins>`, которые будут "
+"использоваться для работы с видеокартами. Если параметр не задан, то будут "
+"использоваться плагины, которые были последний раз выбраны в окне \":doc:`gui/"
+"enabledPlugins`\". Вывести список этих плагинов можно через параметр :ref:`--"
+"enabled-plugins <cli-enabled-plugins>`. Если параметр опущен, и никакие плагины "
+"не были ранее выбраны, то покажется окно \":doc:`gui/enabledPlugins`\"."
+
+#: ../../../rst/user/cli.rst:12
+msgid ""
+"**--available-plugins** - display the list of available installed :doc:`plugins "
+"<plugins>` one per line. It does not check whether these plugins can actually be "
+"loaded. For each plugin, its folder will also be displayed."
+msgstr ""
+"**--available-plugins** - вывести список доступных установленных :doc:`плагинов "
+"<plugins>` по одному на строку. При этом не проверяется, могут ли эти плагины "
+"быть загружены на самом деле. Для каждого плагина будет также выведена его папка."
+
+#: ../../../rst/user/cli.rst:16
+msgid ""
+"**--enabled-plugins** - display the list of :doc:`plugins <plugins>`, last "
+"selected in the \":doc:`gui/enabledPlugins`\" window. In other words, these "
+"plugins will be loaded if you omit the :ref:`--plugins <cli-plugins>` parameter. "
+"For each plugin, its folder will also be displayed."
+msgstr ""
+"**--enabled-plugins** - вывести список :doc:`плагинов <plugins>`, последний раз "
+"выбранных в окне \":doc:`gui/enabledPlugins`\". Т.е., другими словами, эти "
+"плагины будут загружены, если опустить параметр :ref:`--plugins <cli-plugins>`. "
+"Для каждого плагина будет также выведена его папка."
+
+#: ../../../rst/user/cli.rst:20
+msgid ""
+"**--plugin-selector** - show the \":doc:`gui/enabledPlugins`\" window. After "
+"closing the window, the program will exit."
+msgstr ""
+"**--plugin-selector** - показать окно \":doc:`gui/enabledPlugins`\". После "
+"закрытия окна программа завершит работу."
+
+#: ../../../rst/user/cli.rst:24
+msgid ""
+"**--html-help** - start the browser and open the full application manual (you "
+"are reading now)."
+msgstr ""
+"**--html-help** - запустить браузер и открыть в нём полную документацию "
+"программы (ту, что вы читаете сейчас)."
+
+#: ../../../rst/user/cli.rst:28
+msgid "**--dirs** - get a list of all :doc:`search folders <resources>`."
+msgstr "**--dirs** - выдать список всех :doc:`папок для поиска <resources>`."
+
+#: ../../../rst/user/cli.rst:32
+msgid ""
+"**--load-qml** - download all GUI files and then exit the program. This option "
+"is for internal use only."
+msgstr ""
+"**--load-qml** - загрузить все файлы GUI, а потом выйти из программы. Этот "
+"параметр нужен исключительно для внутреннего использования."
+
+#: ../../../rst/user/cli.rst:37
+msgid "**-v** or **--version** - show the name and version of the application."
+msgstr "**-v** или **--version** - показать название программы и версию."
+
+#: ../../../rst/user/cli.rst:41
+msgid "**-h** or **--help** - show help on command line parameters."
+msgstr "**-h** или **--help** - показать справку по параметрам командной строки."
+
+#: ../../../rst/user/download.rst:2
+msgid "Download"
+msgstr "Загрузка"
+
+#: ../../../rst/user/download.rst:4
+msgid ""
+"|project| can be downloaded from the official website: `<https://gpufanmeister."
+"alkatrazstudio.net>`_. At the moment there is a build only for Linux. Also, the "
+"systems on Wayland are not supported."
+msgstr ""
+"|project| можно скачать с официального сайта программы: `<https://gpufanmeister."
+"alkatrazstudio.net>`_. На данный момент имеется сборка только для Linux. При "
+"этом, системы на Wayland не поддерживаются."
+
+#: ../../../rst/user/download.rst:6
+msgid ""
+"|project| is distributed in the `AppImage <https://appimage.org>`_ format as a "
+"single executable file, but this file is not fully self-contained. In "
+"particular, the `Python 3 interpreter <https://www.python.org>`_ and `D-Bus "
+"<https://www.freedesktop.org/wiki/Software/dbus/>`_ must be installed to run the "
+"program on Linux. These programs are usually already pre-installed on Desktop "
+"Linux. Also, each of the :doc:`plugins <plugins>` may have its own requirements "
+"to run. For example, the requirements for the **nvidia-nvml** plugin, which is "
+"included with |project|, are described on the :doc:`corresponding page <plugins/"
+"nvidia-nvml>`."
+msgstr ""
+"|project| распространяется в формате `AppImage <https://appimage.org>`_ как один "
+"исполняемый файл, однако этот файл не является полностью самодостаточным. В "
+"частности, для запуска программы в Linux должен присутствовать интерпретатор "
+"`Python 3 <https://www.python.org>`_, а также `D-Bus <https://www.freedesktop."
+"org/wiki/Software/dbus/>`_. Эти программы, как правило, уже предустановлены на "
+"Desktop Linux. Также, у каждого из :doc:`плагинов <plugins>` могут быть свои "
+"требования для запуска. Например, требования для плагина **nvidia-nvml**, "
+"который входит в состав |project|, описаны на :doc:`соответствующей странице "
+"<plugins/nvidia-nvml>`."
+
+#: ../../../rst/user/download.rst:8
+msgid ""
+"|project| is a free and open source project, so you can try to build it from "
+"source by following :doc:`build instructions </dev/build>`."
+msgstr ""
+"|project| является свободным проектом с открытым исходным кодом, поэтому его "
+"можно попытаться собрать его из исходников, следуя :doc:`инструкциям по сборке </"
+"dev/build>`."
+
+#: ../../../rst/user/download.rst:10
+msgid ""
+"You can view the list of changes of |project| here: `<https://github.com/"
+"alkatrazstudio/gpu-fan-meister/blob/master/CHANGELOG.rst>`_."
+msgstr ""
+"Вы можете просмотреть список изменений |project| здесь: `<https://github.com/"
+"alkatrazstudio/gpu-fan-meister/blob/master/CHANGELOG.rst>`_."
+
+#: ../../../rst/user/gui.rst:2
+msgid "Application interface"
+msgstr "Интерфейс программы"
+
+#: ../../../rst/user/gui.rst:4
+msgid "The graphical interface of |project| consists of the following parts:"
+msgstr "Графический интерфейс |project| состоит из следующих частей:"
+
+#: ../../../rst/user/gui.rst:6
+msgid ""
+":doc:`gui/trayIcon`. Each video card will have its own icon that contains a "
+"brief summary of its current state."
+msgstr ""
+":doc:`gui/trayIcon`. Для каждой видеокарты будет выделена отдельная иконка, "
+"содержащая краткую сводку текущего состояния."
+
+#: ../../../rst/user/gui.rst:8
+msgid ""
+":doc:`gui/mainWindow`. Selects and adjusts the desired :doc:`mode <modes>` for "
+"each video card. Can be opened by clicking on the tray icon of the corresponding "
+"video card."
+msgstr ""
+":doc:`gui/mainWindow`. Служит для выбора и настройки нужного :doc:`режима "
+"<modes>` для каждой видеокарты. Открывается кликом на иконку соответствующей "
+"видеокарты в трее."
+
+#: ../../../rst/user/gui.rst:10
+msgid ""
+":doc:`gui/devOptions`. Allows you to set different options for your graphics "
+"card. Available through the \"Device options...\" button in the main program "
+"window."
+msgstr ""
+":doc:`gui/devOptions`. Позволяет задать различные настройки для видеокарты. "
+"Доступно через кнопку \"Настройки устройства...\" в главном окне программы."
+
+#: ../../../rst/user/gui.rst:12
+msgid ""
+":doc:`gui/enabledPlugins`. Available through :ref:`main menu <gui-mainWindow-"
+"mainMenu>`: \"Application\" => \"Settings...\"."
+msgstr ""
+":doc:`gui/enabledPlugins`. Доступно через пункт :ref:`главного меню <gui-"
+"mainWindow-mainMenu>` \"Приложение\" => \"Настройки...\"."
+
+#: ../../../rst/user/gui.rst:14
+msgid ""
+"Application settings window. Available through :ref:`main menu <gui-mainWindow-"
+"mainMenu>`: \"Application\" => \"Select plugins...\"."
+msgstr ""
+"Окно с настройками приложения. Доступно через пункт :ref:`главного меню <gui-"
+"mainWindow-mainMenu>` \"Приложение\" => \"Выбрать плагины...\"."
+
+#: ../../../rst/user/gui.rst:16
+msgid ""
+"Help windows with information about the application and components used. "
+"Available through :ref:`main menu <gui-mainWindow-mainMenu>` \"Help\" item."
+msgstr ""
+"Справочные окна с информацией о приложении и используемых компонентах. Доступны "
+"через пункт :ref:`главного меню <gui-mainWindow-mainMenu>` \"Справка\"."
+
+#: ../../../rst/user/gui/devOptions.rst:2
+msgid "Device options"
+msgstr "Настройки устройства"
+
+#: ../../../rst/user/gui/devOptions.rst:4
+msgid ""
+"Clicking on the \"Device options...\" button in the lower left corner of the "
+"main application window will open a dialog where you can set the settings for "
+"the video card that is currently selected. The possible settings are listed "
+"below:"
+msgstr ""
+"Нажав на кнопку \"Настройки устройства...\" в левом нижнем углу главного окна "
+"программы, вам откроется диалоговое окно, где можно задать настройки для той "
+"видеокарты, которая выбрана в данный момент. Возможные настройки указаны ниже:"
+
+#: ../../../rst/user/gui/devOptions.rst:8
+msgid "Display name"
+msgstr "Отображаемое название"
+
+#: ../../../rst/user/gui/devOptions.rst:7
+msgid ""
+"Custom name for the video card. This name will be displayed everywhere in the "
+"interface, for example in the headings of windows, info messages, etc. If you "
+"leave this name blank, the interface will display the name of the video card, "
+"which was defined by :doc:`plugin </user/plugins>` that is responsible for "
+"interacting with this video card."
+msgstr ""
+"Своё название для видеокарты. Это название будет отображаться везде в "
+"интерфейсе, например в заголовках окон, информационных сообщения и т. п. Если "
+"оставить это название пустым, то в интерфейсе будет отображаться то название "
+"видеокарты, которое было установлено :doc:`плагином </user/plugins>`, отвечающим "
+"за работу с видеокартой."
+
+#: ../../../rst/user/gui/devOptions.rst:26
+msgid "Tray icon colors"
+msgstr "Цвета иконки в трее"
+
+#: ../../../rst/user/gui/devOptions.rst:11
+msgid ""
+"In this section you can set the colors that current temperature of the video "
+"card and the fan speed will be displayed in :doc:`tray <trayIcon>` . Here you "
+"can also set the background color of the tray icon. The color, which is to the "
+"right of the number, shows from which value this color will be applied. The "
+"color to the left of the number will be applied if the value of the "
+"corresponding indicator is less than this number."
+msgstr ""
+"В данном разделе можно задать цвета, которыми будут отображаться в :doc:`трее "
+"<trayIcon>` текущие температура видеокарты и скорость вращения вентиляторов. "
+"Здесь же можно задать и цвет фона иконки. Цвет, который находится справа от "
+"числа, показывает начиная с какого значения будет применяться этот цвет. Цвет "
+"слева от числа будет применяться, если значение соответствующего показателя "
+"меньше этого числа."
+
+#: ../../../rst/user/gui/devOptions.rst:16
+#: ../../../rst/user/modes/script/reference.rst:117
+#: ../../../rst/user/modes/script/reference.rst:131
+#: ../../../rst/user/modes/script/reference.rst:144
+#: ../../../rst/user/modes/script/reference.rst:203
+#: ../../../rst/user/modes/script/reference.rst:223
+#: ../../../rst/user/modes/script/reference.rst:283
+#: ../../../rst/user/modes/script/reference.rst:421
+#: ../../../rst/user/modes/script/reference.rst:495
+#: ../../../rst/user/modes/script/reference.rst:720
+#: ../../../rst/user/modes/script/reference.rst:754
+#: ../../../rst/user/modes/script/reference.rst:777
+#: ../../../rst/user/plugins/nvidia-nvml.rst:79
+msgid "*Example:*"
+msgstr "*Пример:*"
+
+#: ../../../rst/user/gui/devOptions.rst:18
+msgid "For example, if the \"Temperature\" line has the following settings:"
+msgstr "Допустим, в строке \"Температура\" настройки прописаны следующим образом:"
+
+#: ../../../rst/user/gui/devOptions.rst:20
+msgid "white - 60 - yellow - 75 - red"
+msgstr "белый - 60 - жёлтый - 75 - красный"
+
+#: ../../../rst/user/gui/devOptions.rst:22
+msgid ""
+"Then this will mean that at temperatures between 0 and 59 °C inclusive, the "
+"color of the number displaying the current tray temperature of the video card "
+"will be white. At temperatures between 60 and 74 °C inclusive, the color will be "
+"yellow. If the temperature is 75 °C or higher, the color will be red."
+msgstr ""
+"Это будет означать, что при температуре от 0 до 59 °C включительно цвет числа, "
+"отображающего текущую температуру видеокарты в трее, будет белым. При "
+"температуре от 60 до 74 °C включительно цвет будет жёлтым. Если температура "
+"будет 75 °C или больше, то цвет будет красным."
+
+#: ../../../rst/user/gui/devOptions.rst:25
+msgid "You can change the color by clicking on it. Transparency is supported."
+msgstr "Поменять цвет можно, кликнув на него. Поддерживается прозрачность."
+
+#: ../../../rst/user/gui/devOptions.rst:30
+msgid "Update the tray icon every N seconds"
+msgstr "Обновлять иконку в трее каждые N секунд"
+
+#: ../../../rst/user/gui/devOptions.rst:29
+msgid ""
+"The :doc:`tray icon <trayIcon>` will be updated no more than once in N seconds."
+msgstr ""
+"Иконка в :doc:`трее <trayIcon>` будет обновляться не чаще, чем раз в N секунд."
+
+#: ../../../rst/user/gui/devOptions.rst:32
+msgid ""
+"In addition, the \"Show/Hide plugin info\" button will display or hide "
+"information about the :doc:`plugin </user/plugins>` that is currently working "
+"with the selected video card."
+msgstr ""
+"Помимо этого, кнопка \"Показать/спрятать сведения о плагине\" отобразит или "
+"скроет информацию о :doc:`плагине </user/plugins>`, который в данный момент "
+"работает с выбранной видеокартой."
+
+#: ../../../rst/user/gui/enabledPlugins.rst:2
+msgid "Enabled plugins"
+msgstr "Выбор плагинов"
+
+#: ../../../rst/user/gui/enabledPlugins.rst:4
+msgid ""
+"In this window you can choose :doc:`plugins </user/plugins>` that will be "
+"automatically loaded the next time you start the application."
+msgstr ""
+"В данном окне можно выбрать :doc:`плагины </user/plugins>`, которые будут "
+"автоматом загружены при следующем запуске программы."
+
+#: ../../../rst/user/gui/enabledPlugins.rst:6
+msgid ""
+"The window shows all installed plugins, regardless of whether they can actually "
+"be loaded into |project| or not. If a plugin cannot be loaded when you start the "
+"program, you will receive a system message with details."
+msgstr ""
+"В окне показаны все установленные плагины, вне зависимости от того, могут ли они "
+"быть на самом деле подключены к |project| или нет. Если какой-то плагин не "
+"сможет быть загружен при запуске программы, то вам выдастся системное сообщение "
+"с подробностями."
+
+#: ../../../rst/user/gui/enabledPlugins.rst:8
+msgid ""
+"You need to select at least one plugin to run the program. Some plugins can be "
+"mutually exclusive and cannot be loaded in parallel. For example, two different "
+"plugins for video cards of the same developer may conflict with each other."
+msgstr ""
+"Для работы программы нужно выбрать хотя бы один плагин. Некоторые плагины могут "
+"быть взаимоисключающими и не могут быть загружены параллельно. Например, два "
+"разных плагина для видеокарт одного разработчика могут конфликтовать друг с "
+"другом."
+
+#: ../../../rst/user/gui/enabledPlugins.rst:11
+msgid "You can open this window by doing one of the following:"
+msgstr "Данное окно можно открыть следующими способами:"
+
+#: ../../../rst/user/gui/enabledPlugins.rst:13
+msgid ""
+"Via :ref:`main menu <gui-mainWindow-mainMenu>`: **Application** => **Select "
+"plugins...**."
+msgstr ""
+"Через :ref:`главное меню <gui-mainWindow-mainMenu>`: **Приложение** => **Выбрать "
+"плагины...**."
+
+#: ../../../rst/user/gui/enabledPlugins.rst:15
+msgid ""
+"Running the application via a :doc:`command line </user/cli>` with the :ref:`--"
+"plugin-selector <cli-plugin-selector>` parameter."
+msgstr ""
+"Через :doc:`командную строку </user/cli>` с помощью параметра :ref:`--plugin-"
+"selector <cli-plugin-selector>`."
+
+#: ../../../rst/user/gui/enabledPlugins.rst:18
+msgid "The window will open automatically in the following cases:"
+msgstr "Окно будет открыто автоматом в следующих случаях:"
+
+#: ../../../rst/user/gui/enabledPlugins.rst:20
+msgid ""
+"At the application startup, but only if no plugins were specified via the :ref:"
+"`--plugins <cli-plugins>` command line parameter."
+msgstr ""
+"При первом запуске программы, если не было заранее указано никаких плагинов для "
+"загрузки с помощью параметра командной строки :ref:`--plugins <cli-plugins>`."
+
+#: ../../../rst/user/gui/enabledPlugins.rst:22
+msgid ""
+"If the last remaining loaded plugin crashes while the application is running."
+msgstr ""
+"Если во время работы программы произошёл сбой в работе последнего оставшегося "
+"загруженного плагина."
+
+#: ../../../rst/user/gui/mainWindow.rst:2
+msgid "Main window"
+msgstr "Главное окно"
+
+#: ../../../rst/user/gui/mainWindow.rst:4
+msgid ""
+"In the main window of |project| you can select and configure the desired :doc:"
+"`mode <../modes>` for each video card. The window can be divided into the "
+"following parts (top-down):"
+msgstr ""
+"В главном окне |project| можно выбрать и настроить нужный :doc:`режим <../"
+"modes>` для каждой видеокарты. Окно можно разделить на следующие части (сверху "
+"вниз):"
+
+#: ../../../rst/user/gui/mainWindow.rst:8
+msgid "**The main menu**. Contains the following items:"
+msgstr "**Главное меню**. Содержит следующие пункты:"
+
+#: ../../../rst/user/gui/mainWindow.rst:10
+msgid "**Application**"
+msgstr "**Приложение**"
+
+#: ../../../rst/user/gui/mainWindow.rst:12
+msgid "**Settings...** - open the window with general application settings."
+msgstr "**Настройки...** - открыть окно c общими настройками приложения."
+
+#: ../../../rst/user/gui/mainWindow.rst:14
+msgid "**Select plugins...** - open the window \":doc:`enabledPlugins`\"."
+msgstr "**Выбрать плагины...** - открыть окно \":doc:`enabledPlugins`\"."
+
+#: ../../../rst/user/gui/mainWindow.rst:16
+msgid "**Exit** - exit the application."
+msgstr "**Выход** - выход из программы."
+
+#: ../../../rst/user/gui/mainWindow.rst:18
+msgid "**About**"
+msgstr "**Справка**"
+
+#: ../../../rst/user/gui/mainWindow.rst:20
+msgid ""
+"**About Qt...** - information about the version of the Qt library used to make |"
+"project| (`<https://qt.io>`_)."
+msgstr ""
+"**О Qt...** - информация об используемой версии библиотеки Qt, с помощью которой "
+"написана программа |project| (`<https://qt.io>`_)."
+
+#: ../../../rst/user/gui/mainWindow.rst:22
+msgid ""
+"**About plugins...** - information about currently loaded plugins. There will be "
+"no plugins in this list that were deactivated due to some error."
+msgstr ""
+"**О плагинах...** - информация о текущих загруженных плагинах. В этом списке не "
+"будет плагинов, в которых произошла какая-либо ошибка, повлекшая к их отключению."
+
+#: ../../../rst/user/gui/mainWindow.rst:24
+msgid "**About** |project|\\ **...** - a short summary of |project|."
+msgstr "**О** |project|\\ **...** - краткая сводка о |project|."
+
+#: ../../../rst/user/gui/mainWindow.rst:26
+msgid ""
+"**Tabs with video card names**. Used to select a video card for which you want "
+"to select and configure its :doc:`mode <../modes>`."
+msgstr ""
+"**Вкладки с названиями видеокарт**. Служат для выбора видеокарты, для которой "
+"необходимо выбрать и настроить :doc:`режим работы <../modes>`."
+
+#: ../../../rst/user/gui/mainWindow.rst:28
+msgid ""
+"**Mode switches**. Allow you to select the current video card :doc:`mode <../"
+"modes>`. The mode changes immediately, without pressing the \"Save\" button."
+msgstr ""
+"**Переключатели режимов**. Позволяют выбрать текущий :doc:`режим работы <../"
+"modes>` видеокарты. Режим меняется сразу, без нажатия на кнопку \"Сохранить\"."
+
+#: ../../../rst/user/gui/mainWindow.rst:30
+msgid ""
+"**Mode settings**. The major part of the main application window is occupied by "
+"settings of the selected mode. All changes are applied immediately, without "
+"pressing the \"Save\" button (:doc:`\"script mode\" <../modes/script>` restarts "
+"the script only on request). To cancel unsaved changes, you need to press the "
+"\"Cancel\" button."
+msgstr ""
+"**Настройки режима**. Основную часть главного окна программы занимают настройки "
+"выбранного режима. Все изменения применяются сразу, без нажатия на кнопку "
+"\"Сохранить\" (:doc:`режим \"скрипт\" <../modes/script>` перезапускает скрипт "
+"только по запросу). Чтобы отменить несохранённые изменения, следует нажать на "
+"кнопку \"Отмена\"."
+
+#: ../../../rst/user/gui/mainWindow.rst:32
+msgid "**Buttons**:"
+msgstr "**Кнопки**:"
+
+#: ../../../rst/user/gui/mainWindow.rst:34
+msgid "**Device options...** - open the window \":doc:`devOptions`\"."
+msgstr "**Настройки устройства...** - открыть окно \":doc:`devOptions`\"."
+
+#: ../../../rst/user/gui/mainWindow.rst:36
+msgid "**Cancel** - Cancels all unsaved mode settings changes."
+msgstr "**Отмена** - отмена всех несохранённых изменений в настройках режимов."
+
+#: ../../../rst/user/gui/mainWindow.rst:38
+msgid ""
+"**Save** - saves all settings displayed in the main window for all video cards."
+msgstr ""
+"**Сохранить** - сохранение всех настроек, отображаемых в главном окне, для всех "
+"видеокарт."
+
+#: ../../../rst/user/gui/trayIcon.rst:2
+msgid "Tray icon"
+msgstr "Иконка в трее"
+
+#: ../../../rst/user/gui/trayIcon.rst:4
+msgid ""
+"A separate tray icon will be displayed for each video card. The icon contains "
+"information about the temperature and fan speed:"
+msgstr ""
+"Для каждой видеокарты будет показана отдельная иконка в трее. Иконка содержит "
+"информацию о температуре и видеокарты и скорости вращения вентиляторов:"
+
+#: ../../../rst/user/gui/trayIcon.rst:6
+msgid ""
+"**Temperature** in degrees Celsius is indicated by a number in the center of the "
+"icon. The color of the number corresponds to the rules specified in the \":doc:"
+"`devOptions`\" window."
+msgstr ""
+"**Температура** в градусах Цельсия обозначается числом в центре иконки. Цвет "
+"числа отвечает правилам, заданным в окне \":doc:`devOptions`\"."
+
+#: ../../../rst/user/gui/trayIcon.rst:8
+msgid ""
+"**Fan speed** is indicated by a frame around the number. The color of the frame "
+"corresponds to the rules specified in the \":doc:`devOptions`\" window."
+msgstr ""
+"**Скорость вентиляторов** обозначается рамкой вокруг числа. Цвет рамки отвечает "
+"правилам, заданным в окне \":doc:`devOptions`\"."
+
+#: ../../../rst/user/gui/trayIcon.rst:10
+msgid ""
+"If you put the cursor over an icon, you can see a pop-up window with a more "
+"detailed information summary about the selected video card."
+msgstr ""
+"При наведении курсора на иконку можно увидеть всплывающее окно с более подробной "
+"сводкой по информации о выбранной видеокарте."
+
+#: ../../../rst/user/gui/trayIcon.rst:12
+msgid ""
+"Right-clicking on the icon will show the context menu, which can be used to do "
+"the following:"
+msgstr ""
+"Правый клик по иконке покажет контекстное меню, с помощью которого можно сделать "
+"следующее:"
+
+#: ../../../rst/user/gui/trayIcon.rst:14
+msgid "Open the :doc:`main window <mainWindow>` of |project|"
+msgstr "Открыть :doc:`главное окно <mainWindow>` |project|"
+
+#: ../../../rst/user/gui/trayIcon.rst:16
+msgid "Open the :doc:`tray icon color settings <devOptions>`"
+msgstr "Открыть окно :doc:`настроек цветов иконки <devOptions>`"
+
+#: ../../../rst/user/gui/trayIcon.rst:18
+msgid "Open the full user manual in your browser."
+msgstr "Открыть полную документацию по программе в браузере."
+
+#: ../../../rst/user/gui/trayIcon.rst:20
+msgid "Exit the application."
+msgstr "Выйти из программы."
+
+#: ../../../rst/user/gui/trayIcon.rst:22
+msgid ""
+"Left click on the icon will show the :doc:`main window <mainWindow>` of the "
+"application."
+msgstr "Левый клик по иконке покажет :doc:`главное окно <mainWindow>` программы."
+
+#: ../../../rst/user/modes.rst:2
+msgid "Modes"
+msgstr "Режимы"
+
+#: ../../../rst/user/modes.rst:4
+msgid "The application has four modes to control video card fans."
+msgstr "В программе есть четыре режима управления вентиляторами на видеокарте."
+
+#: ../../../rst/user/modes.rst:15
+msgid ":doc:`modes/curve` - graph of fan speed versus temperature."
+msgstr ""
+":doc:`modes/curve` - график зависимости скоростей вентиляторов от температуры."
+
+#: ../../../rst/user/modes.rst:16
+msgid ""
+":doc:`modes/fanToggle` - turning fans on and off using configurable set of rules."
+msgstr ""
+":doc:`modes/fanToggle` - включение и отключение вентиляторов по заданным "
+"правилам."
+
+#: ../../../rst/user/modes.rst:17
+msgid ":doc:`modes/script` - controlling fan speed by an arbitrary algorithm."
+msgstr ""
+":doc:`modes/script` - расчёт скорости вентиляторов по самописному алгоритму."
+
+#: ../../../rst/user/modes.rst:18
+msgid ":doc:`modes/gpu` - video card controls the fans."
+msgstr ":doc:`modes/gpu` - передача управления видеокарте."
+
+#: ../../../rst/user/modes.rst:20
+msgid ""
+"The functionality of \":doc:`modes/curve`\" and \":doc:`modes/fanToggle`\" modes "
+"can also be extended with scripts. See the description of :ref:`\"Override\" "
+"switch <mode-script-override>`."
+msgstr ""
+"Функционал режимов \":doc:`modes/curve`\" и \":doc:`modes/fanToggle`\" также "
+"можно расширять с помощью скриптов. См. описание :ref:`переключателя "
+"\"Переопределение\" <mode-script-override>`."
+
+#: ../../../rst/user/modes/curve.rst:2
+msgid "Curve"
+msgstr "Кривая"
+
+#: ../../../rst/user/modes/curve.rst:4
+msgid ""
+"The \"Curve\" mode allows you to graphically define the relationship between the "
+"video card temperature and the required fan speed."
+msgstr ""
+"Режим \"Кривая\" позволяет графически задать зависимость между температурой "
+"видеокарты и необходимой скоростью вращения вентиляторов."
+
+#: ../../../rst/user/modes/curve.rst:9
+msgid "The following actions can be performed on the interactive chart:"
+msgstr "На интерактивном графике можно совершать следующие действия:"
+
+#: ../../../rst/user/modes/curve.rst:7
+msgid ""
+"Add a new point to the curve by double-clicking on the free space in the chart."
+msgstr ""
+"Добавить новую точку на кривую с помощью двойного щелчка на свободном месте "
+"графика."
+
+#: ../../../rst/user/modes/curve.rst:8
+msgid "Delete a point by double-clicking on it."
+msgstr "Удалить точку с помощью двойного щелчка на ней."
+
+#: ../../../rst/user/modes/curve.rst:9
+msgid "Move the point with the mouse."
+msgstr "Переместить точку с помощью мыши."
+
+#: ../../../rst/user/modes/curve.rst:11
+msgid "The chart points are shown only when you point the mouse at them."
+msgstr "Точки графика показываются только при наведении на них мышью."
+
+#: ../../../rst/user/modes/curve.rst:13
+msgid "The border points of the chart can be moved vertically."
+msgstr "Крайние точки графика можно перемещать по вертикали."
+
+#: ../../../rst/user/modes/curve.rst:15
+msgid "The red dot shows the current temperature and fan speed."
+msgstr "Красная точка показывает текущую температуру и скорость вентиляторов."
+
+#: ../../../rst/user/modes/curve.rst:17 ../../../rst/user/modes/script.rst:10
+msgid ""
+"The actual fan speed may not match exactly what is shown on the graph. This "
+"depends on the video card. For example, if the video card does not support low "
+"fan speeds, the actual fan speed may be 30% when set to 5%."
+msgstr ""
+"Реальная скорость вентиляторов может не совпадать точно с тем, что задано на "
+"графике. Это зависит от видеокарты. Например, если видеокарта не поддерживает "
+"слишком низкие скорости вентиляторов, то при установке скорости вентиляторов в "
+"5%, реальная скорость может быть равна 30%."
+
+#: ../../../rst/user/modes/curve.rst:23
+msgid "Hysteresis"
+msgstr "Гистерезис"
+
+#: ../../../rst/user/modes/curve.rst:25
+msgid ""
+"Settings in the \"Hysteresis\"[#hysteresis]_ section specify the lag of "
+"temperature, which is used to calculate the fan speed, from the actual current "
+"temperature of the video card. This avoids the \"contact bounce"
+"\"[#contact_bounce]_ effect. Let's assume that for 60°C the fan speed is set to "
+"0%, and for 61°C it is set to 15%. If the temperature of the graphics card "
+"fluctuates between 60°C and 61°C, the fans will be constantly switching on and "
+"off. Hysteresis allows you to not change the speed of the fans immediately, but "
+"only if the temperature has not returned to the previous value for some time."
+msgstr ""
+"Настройки в разделе \"Гистерезис\"[#hysteresis]_ задают отставание температуры, "
+"которая берётся для расчёта скорости вентиляторов, от реальной текущей "
+"температуры видеокарты. Это позволяет избежать эффекта \"дребезга контактов"
+"\"[#contact_bounce]_. Предположим, для температуры 60°C задана скорость "
+"вентиляторов 0%, а для 61°C - 15%. Если температура видеокарты будет колебаться "
+"между 60°C и 61°C, то вентиляторы будут постоянно включаться и выключаться. "
+"Гистерезис позволяет менять скорость вентиляторов не сразу, а только если "
+"температура не вернулась к предыдущему значению в течение некоторого времени."
+
+#: ../../../rst/user/modes/curve.rst:27
+msgid ""
+"For convenience, let's label the current video card temperature as |T0|, and the "
+"temperature used to calculate the required fan speed according to the graph as |"
+"T1|. For example, using the data from the previous example, if |T0| = 61°C and |"
+"T1| = 60°C, the fan speed will be 0% as it is calculated based on |T1|. "
+"Initially, these temperatures are equal. If |T0| changes, |T1| stars moving "
+"towards |T0|, but only after a specified time or if the difference between |T0| "
+"and |T1| is greater than the specified value."
+msgstr ""
+"Для удобства обозначим текущую температуру видеокарты как |T0|, а температуру, "
+"которая используется для расчёта требуемой скорости вентиляторов по графику, как "
+"|T1|. Например, используя данные из предыдущего примера, если |T0| = 61°C, а |"
+"T1| = 60°C, то скорость вентиляторов будет равна 0%, т.к. она рассчитывается на "
+"основе |T1|. Изначально эти температуры равны. Если |T0| изменится, то |T1| "
+"начинает стремиться к |T0|, но только спустя заданное время или если разница "
+"между |T0| и |T1| больше определённого значения."
+
+#: ../../../rst/user/modes/curve.rst:29
+msgid "|project| allows to set the following hysteresis parameters:"
+msgstr "В |project| можно задавать следующие параметры гистерезиса:"
+
+#: ../../../rst/user/modes/curve.rst:33
+msgid ""
+"**Max inc. temp. diff.** - when the temperature |T0| increases, |T1| may lag "
+"behind |T0| by a specified number of degrees Celsius maximum."
+msgstr ""
+"**Макс. увел. темп.** - при росте температуры |T0|, |T1| может отставать от |T0| "
+"максимум на указанное число градусов Цельсия."
+
+#: ../../../rst/user/modes/curve.rst:37
+msgid ""
+"**Inc. delay** - if |T0| > |T1|, then |T1| starts moving towards |T0| only after "
+"the specified number of seconds."
+msgstr ""
+"**Задержка увел.** - если |T0| > |T1|, то |T1| начинает приближаться к |T0| "
+"только после указанного кол-ва секунд."
+
+#: ../../../rst/user/modes/curve.rst:41
+msgid ""
+"**Max inc. temp. diff.** - when the temperature |T0| decreases, |T1| may lag "
+"behind |T0| by a specified number of degrees Celsius maximum."
+msgstr ""
+"**Макс. увел. темп.** - при росте температуры |T0|, |T1| может отставать от |T0| "
+"максимум на указанное число градусов Цельсия."
+
+#: ../../../rst/user/modes/curve.rst:45
+msgid ""
+"**Dec. delay** - if |T0| < |T1|, then |T1| starts moving towards |T0| only after "
+"the specified number of seconds."
+msgstr ""
+"**Задержка уменьш.** - если |T0| < |T1|, то |T1| начинает приближаться к |T0| "
+"только после указанного кол-ва секунд."
+
+#: ../../../rst/user/modes/curve.rst:49 ../../../rst/user/modes/script.rst:165
+#: ../../../rst/user/resources.rst:84
+msgid "Notes"
+msgstr "Примечания"
+
+#: ../../../rst/user/modes/curve.rst:50
+msgid ""
+"The \"Hysteresis\" article in Wikipedia: `<https://en.wikipedia.org/wiki/"
+"Hysteresis>`_."
+msgstr ""
+"Статья \"Гистерезис\" в Википедии: `<https://ru.wikipedia.org/wiki/Гистерезис>`_."
+
+#: ../../../rst/user/modes/curve.rst:51
+msgid ""
+"The \"Contact bounce\" article in Wikipedia: `<https://en.wikipedia.org/wiki/"
+"Switch#Contact_bounce>`_."
+msgstr ""
+"Статья \"Дребезг контактов\" в Википедии: `<https://ru.wikipedia.org/wiki/"
+"Дребезг_контактов>`_."
+
+#: ../../../rst/user/modes/fanToggle.rst:2
+msgid "Fan toggle"
+msgstr "Вкл./выкл. вентиляторов"
+
+#: ../../../rst/user/modes/fanToggle.rst:4
+msgid ""
+"The \"Fan toggle\" mode allows you to turn the video card fans on and off "
+"according to configurable rules. The speed of the switched on fans is controlled "
+"by the video card itself."
+msgstr ""
+"Режим \"Вкл./выкл. вентиляторов\" позволяет включать и выключать вентиляторы на "
+"видеокарте по определённым правилам. При этом, скоростью включённых вентиляторов "
+"управляет сама видеокарта."
+
+#: ../../../rst/user/modes/fanToggle.rst:6
+msgid ""
+"The video card can set the fan speed to zero, but the fans will still be "
+"considered to be turned on. In other words, \"turned on fan\" here means a fan "
+"whose speed is controlled by the video card, and \"turned off fan\" is a fan "
+"that does not rotate and the video card does not control it."
+msgstr ""
+"Видеокарта может установить скорость включённых вентиляторов в ноль, но "
+"вентиляторы будут всё равно считаться включёнными. Другими словами, под термином "
+"\"включённый вентилятор\" здесь подразумевается вентилятор, скоростью которого "
+"может управлять видеокарта, а \"отключённый вентилятор\" - это вентилятор, "
+"который не крутится, и, при этом, видеокарта не может им управлять."
+
+#: ../../../rst/user/modes/fanToggle.rst:8
+msgid ""
+"The two rules by which the fans will be switched off are combined by logical OR. "
+"That is, if both of these rules are checked, the fans will be disabled when any "
+"of these conditions are met."
+msgstr ""
+"Два правила, по которым вентиляторы будут отключаться, объединяются логическим "
+"ИЛИ. Т.е. если отмечены оба этих правила, то вентиляторы будут отключаться, "
+"когда наступит любое из этих условий."
+
+#: ../../../rst/user/modes/fanToggle.rst:10
+msgid "The rules work with an accuracy of one second."
+msgstr "Правила могут срабатывать с погрешностью в одну секунду."
+
+#: ../../../rst/user/modes/gpu.rst:2
+msgid "GPU controlled"
+msgstr "Под управлением GPU"
+
+#: ../../../rst/user/modes/gpu.rst:4
+msgid ""
+"The \"GPU controlled\" mode fully transfers the fan speed control to the video "
+"card. In this mode the video card itself decides what fan speed to set."
+msgstr ""
+"Режим \"Под управлением GPU\" полностью передаёт управление скоростями "
+"вентиляторов видеокарте. В данном режиме видеокарта сама решает, какую скорость "
+"вентиляторов устанавливать."
+
+#: ../../../rst/user/modes/script.rst:2
+msgid "Script"
+msgstr "Скрипт"
+
+#: ../../../rst/user/modes/script.rst:4
+msgid ""
+"The \"Script\" mode allows you to set an arbitrary algorithm for calculating the "
+"required speed of the video card fans. Every second information about the "
+"current state of the video card, including its temperature, will be transmitted "
+"to the script\\ [#script]_ . Based on this information, the script can make one "
+"of the following decisions:"
+msgstr ""
+"Режим \"Скрипт\" позволяет задать произвольный алгоритм для расчёта требуемой "
+"скорости вентиляторов видеокарты. Каждую секунду в скрипт\\ [#script]_ будет "
+"передаваться информация о текущем состоянии видеокарты, в т.ч. её температура. "
+"На основе этой информации скрипт может принять одно из следующих решений:"
+
+#: ../../../rst/user/modes/script.rst:6
+msgid "Set the required fan speed."
+msgstr "Задать требуемую скорость вентиляторов."
+
+#: ../../../rst/user/modes/script.rst:7
+msgid "Let the video card determine the desired fan speed."
+msgstr "Дать видеокарте определить нужную скорость вентиляторов."
+
+#: ../../../rst/user/modes/script.rst:13
+msgid "The algorithm is written in ECMAScript 6\\ [#javascript]_ language."
+msgstr "Алгоритм описывается с помощью языка ECMAScript 6\\ [#javascript]_."
+
+#: ../../../rst/user/modes/script.rst:17
+msgid ""
+"The source code must contain the main function that will be called every second. "
+"This function must be the last function to be called by the script operator. "
+"This can be done in two ways:"
+msgstr ""
+"В тексте программы должна быть главная функция, которая будет вызываться каждую "
+"секунду. Ссылка на эту функцию должна идти последним выполняемым оператором "
+"скрипта. Это можно сделать двумя способами:"
+
+#: ../../../rst/user/modes/script.rst:19
+msgid ""
+"Implement the main function as an arrow function\\ [#arrow-function]_ and put it "
+"at the end of the script."
+msgstr ""
+"Реализовать главную функцию как стрелочную функцию\\ [#arrow-function]_ и "
+"поставить её в конец скрипта."
+
+#: ../../../rst/user/modes/script.rst:21
+msgid ""
+"<code before the main function>\n"
+"\n"
+"()=>{\n"
+"    <the main function code>\n"
+"}\n"
+"// end of the script"
+msgstr ""
+"<код до главной функции>\n"
+"\n"
+"()=>{\n"
+"    <код главной функции>\n"
+"}\n"
+"// конец скрипта"
+
+#: ../../../rst/user/modes/script.rst:30
+msgid "Place the function identifier as the last script operator."
+msgstr "Прописать идентификатор функции последним оператором скрипта."
+
+#: ../../../rst/user/modes/script.rst:32
+msgid ""
+"function f1() {\n"
+"    <code of the first function>\n"
+"}\n"
+"\n"
+"function f2() {\n"
+"    <code of the second function>\n"
+"}\n"
+"\n"
+"// choosing the main function depending on the plugin category\n"
+"$.dev.plugin.category == 'nvidia' ? f1 : f2\n"
+"// end of the script"
+msgstr ""
+"function f1(){\n"
+"    <код первой функции>\n"
+"}\n"
+"\n"
+"function f2(){\n"
+"    <код второй функции>\n"
+"}\n"
+"\n"
+"// выбор главной функции в зависимости от категории плагина\n"
+"$.dev.plugin.category == 'nvidia' ? f1 : f2\n"
+"// конец скрипта"
+
+#: ../../../rst/user/modes/script.rst:47
+msgid ""
+"The main function will only be executed if the script is :ref:`running <mode-"
+"script-status-running>`. Below is an example of the script that sets the fan "
+"speed if the temperature has risen above 60°C, and if the temperature is below "
+"60°C, the script gives the fan control to the video card."
+msgstr ""
+"Главная функция будет выполняться, только если скрипт :ref:`запущен <mode-script-"
+"status-running>`. Ниже приведён пример скрипта, который устанавливает скорость "
+"вентиляторов, если температура поднялась выше 60°C, а если температура ниже "
+"60°C, то скрипт отдаёт управление вентиляторами видеокарте."
+
+#: ../../../rst/user/modes/script.rst:49
+msgid ""
+"// When the script is launched for the first time,\n"
+"// the code that is located outside of the main function\n"
+"// will be executed.\n"
+"// Here you can initialize the variables\n"
+"// and define additional functions.\n"
+"\n"
+"var tempThreshold = 60\n"
+"\n"
+"function getTimestamp()\n"
+"{\n"
+"    return Math.round(Date.now() / 1000)\n"
+"}\n"
+"\n"
+"\n"
+"// Next comes the main function that will be called every second.\n"
+"()=>{\n"
+"    var secsPassed = getTimestamp() - tsStart\n"
+"    if(secsPassed && secsPassed % 10 == 0)\n"
+"        console.log('The script is running for '+secsPassed+' seconds')\n"
+"\n"
+"    // $.dev.curTemp - current video card temperature\n"
+"    if($.dev.curTemp > tempThreshold)\n"
+"        return $.dev.curTemp / 2 // set the fan speed\n"
+"    else\n"
+"        return $.dev.FAN_SPEED_GPU // let the video card determine the fan "
+"speed\n"
+"}"
+msgstr ""
+"// При первом запуске скрипта, будет выполнен код,\n"
+"// который находится вне главной функции.\n"
+"// Здесь можно произвести инициализацию переменных\n"
+"// и определить дополнительные функции.\n"
+"\n"
+"var tempThreshold = 60\n"
+"\n"
+"function getTimestamp()\n"
+"{\n"
+"    return Math.round(Date.now() / 1000)\n"
+"}\n"
+"\n"
+"\n"
+"// Далее идёт главная функция, которая будет вызываться каждую секунду.\n"
+"()=>{\n"
+"    var secsPassed = getTimestamp() - tsStart\n"
+"    if(secsPassed && secsPassed % 10 == 0)\n"
+"        console.log('Скрипт работает в течение '+secsPassed+' секунд')\n"
+"\n"
+"    // $.dev.curTemp - текущая температура видеокарты\n"
+"    if($.dev.curTemp > tempThreshold)\n"
+"        return $.dev.curTemp / 2 // установить скорость вентиляторов\n"
+"    else\n"
+"        return $.dev.FAN_SPEED_GPU // дать видеокарте определить скорость\n"
+"}"
+
+#: ../../../rst/user/modes/script.rst:78
+msgid ""
+"It is recommended to read the following information before writing the script:"
+msgstr ""
+"Перед написанием скрипта рекомендуется ознакомится со следующей информацией:"
+
+#: ../../../rst/user/modes/script.rst:86
+msgid ":doc:`script/reference`."
+msgstr ":doc:`script/reference`."
+
+#: ../../../rst/user/modes/script.rst:87
+msgid ""
+"The list of available built-in ECMAScript objects: `<https://doc.qt.io/qt-5.12/"
+"ecmascript.html>`_."
+msgstr ""
+"Встроенные объекты ECMAScript, доступные для использования: `<https://doc.qt.io/"
+"qt-5.12/ecmascript.html>`_."
+
+#: ../../../rst/user/modes/script.rst:91
+msgid "Interface description of the \"Script\" mode window"
+msgstr "Описание интерфейса окна режима \"Скрипт\""
+
+#: ../../../rst/user/modes/script.rst:105
+msgid "Code editor"
+msgstr "Редактор кода"
+
+#: ../../../rst/user/modes/script.rst:96
+msgid ""
+"Code editor with minimal functionality and syntax highlighting. In addition to "
+"text editing, it allows you to perform the following actions:"
+msgstr ""
+"Редактор кода с минимальным функционалом и подсветкой синтаксиса. Помимо "
+"редактирования текста позволяет выполнять следующие действия:"
+
+#: ../../../rst/user/modes/script.rst:98
+msgid "\"CTRL + mouse wheel\" adjusts the size of the text."
+msgstr "\"CTRL + колёсико мыши\" регулирует размер текста."
+
+#: ../../../rst/user/modes/script.rst:99
+msgid "The Tab key can move selected text block to the right."
+msgstr ""
+"Клавиша Tab может передвигать блоки текста вправо, если предварительно выделить "
+"нужный блок."
+
+#: ../../../rst/user/modes/script.rst:100
+msgid "Shift+Tab can move selected text block to the left."
+msgstr ""
+"Shift+Tab может передвигать блоки текста влево, если предварительно выделить "
+"нужный блок."
+
+#: ../../../rst/user/modes/script.rst:102
+msgid ""
+"It is important to remember that the source code displayed in the editor may not "
+"match the source code of the currently running script. Changing the source code "
+"in the editor will not affect the already running script. To start the script "
+"with the new source code, you should press the \"Apply and restart\" button."
+msgstr ""
+"Важно помнить, что текст, отображаемый в редакторе, может не соответствовать "
+"тексту текущего выполняемого скрипта. Изменение текста в редакторе не будет "
+"влиять на уже запущенный скрипт. Чтобы запустить скрипт с новым текстом, "
+"необходимо нажать кнопку \"Применить и перезапустить\"."
+
+#: ../../../rst/user/modes/script.rst:127
+msgid "Script status"
+msgstr "Состояние скрипта"
+
+#: ../../../rst/user/modes/script.rst:108
+msgid "May contain several comma-separated values. Possible values:"
+msgstr ""
+"Может содержать несколько значений, отделённых запятой. Возможные значения:"
+
+#: ../../../rst/user/modes/script.rst:112
+msgid ""
+"**started** - the script is running and the source code displayed in the editor "
+"corresponds to the source code of the running script."
+msgstr ""
+"**запущен** - скрипт запущен, и текст, который отображается в редакторе, "
+"соответствует тексту запущенного скрипта."
+
+#: ../../../rst/user/modes/script.rst:114
+msgid ""
+"**running old script** - the script is running, but the source code that is "
+"displayed in the editor has been changed since the start of the script and no "
+"longer matches the source code of the running script."
+msgstr ""
+"**запущен старый скрипт** - скрипт запущен, но текст, который отображается в "
+"редакторе, был изменён с момента запуска скрипта и больше не соответствует "
+"тексту запущенного скрипта."
+
+#: ../../../rst/user/modes/script.rst:118
+msgid ""
+"**paused** - the script was initialized, but is temporarily suspended. This may "
+"happen if the script is in the :ref:`\"Override\" mode <mode-script-override>`."
+msgstr ""
+"**на паузе** - скрипт был инициализирован, но временно не выполняется. Как "
+"правило, это связано с тем, что скрипт находится в режиме :ref:`\"Переопределение"
+"\" <mode-script-override>`."
+
+#: ../../../rst/user/modes/script.rst:120
+msgid ""
+"**old script paused** - same as the previous status, but the source code that is "
+"displayed in the editor, has been changed since the start of the script and no "
+"longer corresponds to the source code of the initialized script."
+msgstr ""
+"**на паузе старый скрипт** - то же самое, что предыдущий пункт, но текст, "
+"который отображается в редакторе, был изменён с момента запуска скрипта и больше "
+"не соответствует тексту инициализированного скрипта."
+
+#: ../../../rst/user/modes/script.rst:124
+msgid "**stopped** - the script is not active and will not be executed."
+msgstr "**остановлен** - скрипт не активен и не будет выполняться."
+
+#: ../../../rst/user/modes/script.rst:126
+msgid ""
+"**not saved** - the current source code displayed in the editor has not been "
+"saved to disk and will be lost when the program restarts."
+msgstr ""
+"**не сохранён** - текущий текст, который отображается в редакторе, не был "
+"сохранён на диск и будет утерян при перезапуске программы."
+
+#: ../../../rst/user/modes/script.rst:146
+msgid "Override"
+msgstr "Переопределение"
+
+#: ../../../rst/user/modes/script.rst:132
+msgid ""
+"If this switch is enabled, the script will only work when other modes are "
+"enabled (except \":doc:`gpu`\" mode). Every second the internal algorithm of the "
+"selected mode will be executed, and then the script will be executed to further "
+"modify the resulting fan speed that has been set in that mode."
+msgstr ""
+"Если включён данный переключатель, то скрипт будет работать, только когда "
+"включены другие режимы (кроме режима \":doc:`gpu`\"). При этом каждую секунду "
+"будет выполняться внутренний алгоритм выбранного режима, а затем будет "
+"выполняться скрипт, чтобы иметь возможность модифицировать желаемую скорость "
+"вентиляторов, которую установил режим."
+
+#: ../../../rst/user/modes/script.rst:134
+msgid ""
+"For example, if you check the \"Override\" box, run the script and enable the \":"
+"doc:`curve`\" mode, the following will happen every second:"
+msgstr ""
+"Например, если установить галку \"Переопределение\", запустить скрипт и включить "
+"режим \":doc:`curve`\", то каждую секунду будет происходить следующее:"
+
+#: ../../../rst/user/modes/script.rst:136
+msgid "The required fan speed is calculated from the curve points and hysteresis"
+msgstr ""
+"На основе точек кривой и гистерезиса рассчитывается требуемая скорость "
+"вентиляторов"
+
+#: ../../../rst/user/modes/script.rst:138
+msgid ""
+"This speed is stored in the :ref:`$.dev.targetFanSpeed <script-ref-dev-"
+"targetFanSpeed>` variable."
+msgstr ""
+"Эта скорость сохраняется в переменной :ref:`$.dev.targetFanSpeed <script-ref-dev-"
+"targetFanSpeed>`."
+
+#: ../../../rst/user/modes/script.rst:140
+msgid ""
+"The main function of the script is called. It can return either another desired "
+"fan speed or **$.dev.targetFanSpeed** (or :ref:`$.dev.FAN_SPEED_NO_CHANGE "
+"<script-ref-dev-fanSpeedNoChange>`) to leave the calculated speed as is."
+msgstr ""
+"Вызывается главная функция скрипта. Она может вернуть либо другое желаемое "
+"значение скорости вентиляторов, либо **$.dev.targetFanSpeed** (или :ref:`$.dev."
+"FAN_SPEED_NO_CHANGE <script-ref-dev-fanSpeedNoChange>`), если требуется "
+"установить ту скорость, которую выбрал текущий режим программы."
+
+#: ../../../rst/user/modes/script.rst:142
+msgid ""
+"The main function return value will become the final target fan speed. The "
+"script can also return **$.dev.FAN_SPEED_GPU** to let the video card choose the "
+"fan speed."
+msgstr ""
+"То, что вернула главная функция скрипта, принимается за конечное значение "
+"скорости вентиляторов, которое требуется установить для видеокарты. Естественно, "
+"скрипт может также вернуть **$.dev.FAN_SPEED_GPU**, чтобы видеокарта сама "
+"решила, какая скорость нужна."
+
+#: ../../../rst/user/modes/script.rst:145
+msgid ""
+"If \"Override\" is enabled, the script cannot work when \"Script\" mode is "
+"enabled. Therefore, in this case, it will be :ref:`paused <mode-script-status-"
+"paused>`. If \"Override\" is not enabled, the script will work only when the "
+"\"Script\" mode is selected, otherwise it will be paused. The script will also "
+"be paused if the \":doc:`gpu`\" mode is selected. The script will be paused only "
+"if it has been started."
+msgstr ""
+"При включённом \"Переопределении\" скрипт не может работать, когда включён режим "
+"\"Скрипт\". Поэтому в данном случае, он будет :ref:`поставлен на паузу  <mode-"
+"script-status-paused>`. Если \"Переопределение\" не включено, то скрипт будет "
+"работать только при выбранном режиме \"Скрипт\", а иначе - будет поставлен на "
+"паузу. Скрипт также будет поставлен на паузу, если будет выбран режим \":doc:"
+"`gpu`\". Естественно, скрипт будет поставлен на паузу, только если он был "
+"предварительно запущен."
+
+#: ../../../rst/user/modes/script.rst:158
+msgid "Apply and restart"
+msgstr "Применить и перезапустить"
+
+#: ../../../rst/user/modes/script.rst:149
+msgid ""
+"Restarts the script with the new source code taken from the editor. After that "
+"the script will be executed every second (taking into account the :ref:`"
+"\"Override\" mode<mode-script-override>`). The sequence will be as follows:"
+msgstr ""
+"Перезапускает скрипт с новым текстом, взятым из редактора. После этого скрипт "
+"будет выполняться каждую секунду (с учётом режима :ref:`\"Переопределение\" "
+"<mode-script-override>`). При этом последовательность будет следующей:"
+
+#: ../../../rst/user/modes/script.rst:151
+msgid ""
+"If the script was :ref:`running <mode-script-status-running>` or was :ref:"
+"`paused <mode-script-status-paused>` it will be :ref:`stopped <mode-script-"
+"status-paused>`."
+msgstr ""
+"Если скрипт был :ref:`запущен <mode-script-status-running>` или :ref:`стоял на "
+"паузе <mode-script-status-paused>`, то он будет :ref:`остановлен <mode-script-"
+"status-paused>`."
+
+#: ../../../rst/user/modes/script.rst:153
+msgid ""
+"The source code in the code editor will be used as the source code for the new "
+"script."
+msgstr ""
+"Текст, который прописан в редакторе кода, будет использоваться в качестве текста "
+"нового скрипта."
+
+#: ../../../rst/user/modes/script.rst:155
+msgid ""
+"The script is initialized (running). The script must specify the :ref:`main "
+"function <mode-script-mainFunction>`."
+msgstr ""
+"Скрипт инициализируется (выполняется). При этом, скрипт должен задать :ref:"
+"`главную функцию <mode-script-mainFunction>`."
+
+#: ../../../rst/user/modes/script.rst:157
+msgid ""
+"If the :ref:`\"Override\" <mode-script-override>` switch is set, the script will "
+"be :ref:`paused <mode-script-status-paused>`, otherwise it will be in the :ref:`"
+"\"running\" <mode-script-status-running>` state."
+msgstr ""
+"Если установлен переключатель :ref:`\"Переопределение\" <mode-script-override>`, "
+"то скрипт будет :ref:`поставлен на паузу <mode-script-status-paused>`, а иначе - "
+"переведён в состояние :ref:`\"запущен\" <mode-script-status-running>`."
+
+#: ../../../rst/user/modes/script.rst:162
+msgid "Stop"
+msgstr "Остановить"
+
+#: ../../../rst/user/modes/script.rst:161
+msgid "Stops the script."
+msgstr "Останавливает скрипт."
+
+#: ../../../rst/user/modes/script.rst:166
+msgid ""
+"\"Script\" (\"Scripting language\") article in Wikipedia: `<https://en.wikipedia."
+"org/wiki/Scripting_language>`_."
+msgstr ""
+"Статья \"Скрипт\" (\"Сценарный язык\") в Википедии: `<https://ru.wikipedia.org/"
+"wiki/Скрипт>`_."
+
+#: ../../../rst/user/modes/script.rst:167
+msgid ""
+"\"ECMAScript\" article in Wikipedia: `<https://en.wikipedia.org/wiki/"
+"ECMAScript>`_."
+msgstr ""
+"Статья \"ECMAScript\" в Википедии: `<https://ru.wikipedia.org/wiki/ECMAScript>`_."
+
+#: ../../../rst/user/modes/script.rst:168
+msgid ""
+"\"Arrow functions\" article in MDN: `<https://developer.mozilla.org/en-US/docs/"
+"Web/JavaScript/Reference/Functions/Arrow_functions>`_."
+msgstr ""
+"Статья \"Стрелочные функции\" в MDN: `<https://developer.mozilla.org/ru/docs/Web/"
+"JavaScript/Reference/Functions/Arrow_functions>`_."
+
+#: ../../../rst/user/modes/script/reference.rst:2
+msgid "Script objects reference"
+msgstr "Справка по скриптовым объектам"
+
+#: ../../../rst/user/modes/script/reference.rst:4
+msgid ""
+"The script has access to almost all of the settings of the application, the "
+"current GPU, and individual modes that are available from the GUI. Also, there "
+"is access to some system functions. All these functions and parameters are "
+"accessible through global object ``$``. Below, in the documentation, if not "
+"specified otherwise, it is considered that object fields are read-only."
+msgstr ""
+"Скрипту доступны практически все настройки программы, текущего GPU и отдельных "
+"режимов работы, которые доступны из GUI. Также, имеется доступ к некоторым "
+"системным функциям. Все эти функции и параметры доступны через глобальный объект "
+"``$``. Ниже, в документации, если не указано обратное, то считается, что поле "
+"объекта доступно только для чтения."
+
+#: ../../../rst/user/modes/script/reference.rst:6
+msgid ""
+"In addition, there is access to most standard ECMAScript functions and objects. "
+"The list of supported ECMAScript objects can be found here: `<https://doc.qt.io/"
+"qt-5.12/ecmascript.html>`_."
+msgstr ""
+"Помимо этого, имеется доступ и к большинству стандартных функций и объектов "
+"ECMAScript. Список поддерживаемых объектов ECMAScript можно найти здесь: "
+"`<https://doc.qt.io/qt-5.12/ecmascript.html>`_."
+
+#: ../../../rst/user/modes/script/reference.rst:12
+msgid "The following objects can be accessed via script:"
+msgstr "Через скрипт можно получить доступ к следующим объектам:"
+
+#: ../../../rst/user/modes/script/reference.rst:15
+msgid "Constants"
+msgstr "Константы"
+
+#: ../../../rst/user/modes/script/reference.rst:21
+msgid "$.dev.FAN_SPEED_GPU"
+msgstr "$.dev.FAN_SPEED_GPU"
+
+#: ../../../rst/user/modes/script/reference.rst:20
+#: ../../../rst/user/modes/script/reference.rst:27
+#: ../../../rst/user/modes/script/reference.rst:73
+#: ../../../rst/user/modes/script/reference.rst:78
+#: ../../../rst/user/modes/script/reference.rst:90
+#: ../../../rst/user/modes/script/reference.rst:135
+#: ../../../rst/user/modes/script/reference.rst:148
+#: ../../../rst/user/modes/script/reference.rst:155
+#: ../../../rst/user/modes/script/reference.rst:162
+msgid "Number"
+msgstr "Number"
+
+#: ../../../rst/user/modes/script/reference.rst:20
+msgid ""
+"The script should return this constant from the main function if you need to "
+"pass the fan control to the video card during this step of the script."
+msgstr ""
+"Скрипт должен вернуть эту константу из основной функции, если на данном шаге "
+"выполнения скрипта необходимо передать управление вентиляторами видеокарте."
+
+#: ../../../rst/user/modes/script/reference.rst:28
+msgid "$.dev.FAN_SPEED_NO_CHANGE"
+msgstr "$.dev.FAN_SPEED_NO_CHANGE"
+
+#: ../../../rst/user/modes/script/reference.rst:26
+msgid ""
+"The script should return this constant from the main function if at this step of "
+"the script the program should not influence the speed of the fans in any way. "
+"Thus, speed of fans can change nevertheless if the fans are currently controlled "
+"by video card (for example, on the previous step the script main function has "
+"returned :ref:`$.dev.FAN_SPEED_GPU <script-ref-dev-fanSpeedGpu>`)."
+msgstr ""
+"Скрипт должен вернуть эту константу из основной функции, если на данном шаге "
+"выполнения скрипта программе не следует никак влиять на скорость вентиляторов. "
+"При этом, скорость вентиляторов всё же может измениться, если ей на данный "
+"момент управляет видеокарта (например, на прошлом шаге главная функция скрипта "
+"вернула :ref:`$.dev.FAN_SPEED_GPU <script-ref-dev-fanSpeedGpu>`)."
+
+#: ../../../rst/user/modes/script/reference.rst:30
+msgid "**$.dev.MODE_CURVE : String**"
+msgstr "**$.dev.MODE_CURVE : String**"
+
+#: ../../../rst/user/modes/script/reference.rst:31
+msgid "**$.dev.MODE_FAN_TOGGLE : String**"
+msgstr "**$.dev.MODE_FAN_TOGGLE : String**"
+
+#: ../../../rst/user/modes/script/reference.rst:32
+msgid "**$.dev.MODE_SCRIPT : String**"
+msgstr "**$.dev.MODE_SCRIPT : String**"
+
+#: ../../../rst/user/modes/script/reference.rst:35
+msgid "**$.dev.MODE_GPU : String**"
+msgstr "**$.dev.MODE_GPU : String**"
+
+#: ../../../rst/user/modes/script/reference.rst:34
+msgid ""
+"The constants describing application :doc:`modes <../../modes>`. For more "
+"details, see :ref:`description of $.dev.mode <script-ref-dev-mode>`."
+msgstr ""
+"Константы, обозначающие :doc:`режимы <../../modes>` работы программы. Подробнее "
+"см. в :ref:`описании $.dev.mode <script-ref-dev-mode>`."
+
+#: ../../../rst/user/modes/script/reference.rst:37
+msgid "**$.dev.SCRIPT_STATUS_STOPPED: String**"
+msgstr "**$.dev.SCRIPT_STATUS_STOPPED: String**"
+
+#: ../../../rst/user/modes/script/reference.rst:38
+msgid "**$.sys.SCRIPT_STATUS_PAUSED: String**"
+msgstr "**$.sys.SCRIPT_STATUS_PAUSED: String**"
+
+#: ../../../rst/user/modes/script/reference.rst:39
+msgid "**$.sys.SCRIPT_STATUS_RUNNING: String**"
+msgstr "**$.sys.SCRIPT_STATUS_RUNNING: String**"
+
+#: ../../../rst/user/modes/script/reference.rst:41
+msgid ""
+"Constants that indicate the status of the script. For more information, see :ref:"
+"`description of $.dev.scriptStatus <script-ref-dev-scriptStatus>`."
+msgstr ""
+"Константы, обозначающие состояние скрипта. Подробнее см. в :ref:`описании $.dev."
+"scriptStatus <script-ref-dev-scriptStatus>`."
+
+#: ../../../rst/user/modes/script/reference.rst:44
+msgid "**$.sys.FAILED_AT_START: String**"
+msgstr "**$.sys.FAILED_AT_START: String**"
+
+#: ../../../rst/user/modes/script/reference.rst:45
+msgid "**$.sys.FAILED_AT_WRITE: String**"
+msgstr "**$.sys.FAILED_AT_WRITE: String**"
+
+#: ../../../rst/user/modes/script/reference.rst:48
+msgid "**$.sys.FAILED_AT_FINISH: String**"
+msgstr "**$.sys.FAILED_AT_FINISH: String**"
+
+#: ../../../rst/user/modes/script/reference.rst:47
+msgid ""
+"Constants indicating the stage at which the execution of an external program "
+"launched from the script was interrupted. For more details, see :ref:`the "
+"corresponding section <script-ref-sys-exec-failedAt>` of the **$.sys.exec** "
+"function description."
+msgstr ""
+"Константы, обозначающие этап, на котором выполнение запущенной из скрипта "
+"внешней программы прервалось. Подробнее см. в :ref:`соответствующем разделе "
+"<script-ref-sys-exec-failedAt>` описания функции **$.sys.exec**."
+
+#: ../../../rst/user/modes/script/reference.rst:51
+msgid "Current GPU details"
+msgstr "Данные о текущем GPU"
+
+#: ../../../rst/user/modes/script/reference.rst:57
+msgid "$.dev.id"
+msgstr "$.dev.id"
+
+#: ../../../rst/user/modes/script/reference.rst:56
+#: ../../../rst/user/modes/script/reference.rst:62
+#: ../../../rst/user/modes/script/reference.rst:69
+msgid "String"
+msgstr "String"
+
+#: ../../../rst/user/modes/script/reference.rst:54
+msgid "Unique GPU identifier."
+msgstr "Уникальный идентификатор GPU."
+
+#: ../../../rst/user/modes/script/reference.rst:56
+msgid "*Example:* :code:`\"GPU-c3b01b58-4dbf-1e8f-8f72-a8360f030d4c\"`"
+msgstr "*Пример:* :code:`\"GPU-c3b01b58-4dbf-1e8f-8f72-a8360f030d4c\"`"
+
+#: ../../../rst/user/modes/script/reference.rst:63
+msgid "$.dev.realName"
+msgstr "$.dev.realName"
+
+#: ../../../rst/user/modes/script/reference.rst:60
+msgid "The name of the GPU specified by its manufacturer."
+msgstr "Название GPU, заданное его производителем."
+
+#: ../../../rst/user/modes/script/reference.rst:62
+msgid "*Example:* :code:`\"GeForce GTX 1060 6GB\"`"
+msgstr "*Пример:* :code:`\"GeForce GTX 1060 6GB\"`"
+
+#: ../../../rst/user/modes/script/reference.rst:70
+msgid "$.dev.name"
+msgstr "$.dev.name"
+
+#: ../../../rst/user/modes/script/reference.rst:66
+msgid ""
+"The name of the GPU that appears in the graphical interface of the application. "
+"If the user has specified the custom name (**$.dev.customName** is not an empty "
+"string), then this name will be **$.dev.name**, otherwise it will be the value "
+"of **$.dev.realName**."
+msgstr ""
+"Название GPU, которое отображается в графическом интерфейсе программы. Если "
+"пользователь задал своё название (**$.dev.customName** не пустая строка), то это "
+"название будет в **$.dev.name**, иначе там будет значение из **$.dev.realName**."
+
+#: ../../../rst/user/modes/script/reference.rst:69
+#: ../../../rst/user/modes/script/reference.rst:239
+msgid "*Example:* :code:`\"My Fast GPU :)\"`"
+msgstr "*Пример:* :code:`\"My Fast GPU :)\"`"
+
+#: ../../../rst/user/modes/script/reference.rst:74
+msgid "$.dev.temp"
+msgstr "$.dev.temp"
+
+#: ../../../rst/user/modes/script/reference.rst:73
+msgid "Current GPU temperature in degrees Celsius."
+msgstr "Текущая температура GPU в градусах Цельсия."
+
+#: ../../../rst/user/modes/script/reference.rst:79
+msgid "$.dev.fanSpeed"
+msgstr "$.dev.fanSpeed"
+
+#: ../../../rst/user/modes/script/reference.rst:77
+msgid ""
+"The current fan speed in the range from 0 to 100. It may differ from the speed "
+"returned by the :ref:`main function <mode-script-mainFunction>`, depending on "
+"the speed actually supported by the video card."
+msgstr ""
+"Текущая скорость вентиляторов в диапазоне от 0 до 100. Может отличаться от той "
+"скорости, которую вернула :ref:`главная функция <mode-script-mainFunction>`, в "
+"зависимости от того, какие скорости реально поддерживаются видеокартой."
+
+#: ../../../rst/user/modes/script/reference.rst:84
+msgid "$.dev.fanManualMode"
+msgstr "$.dev.fanManualMode"
+
+#: ../../../rst/user/modes/script/reference.rst:83
+msgid "Boolean"
+msgstr "Boolean"
+
+#: ../../../rst/user/modes/script/reference.rst:82
+msgid ""
+"If **true**, the fans are controlled by the application. If **false** - the fans "
+"are controlled by the GPU."
+msgstr ""
+"Если **true**, то вентиляторами управляет программа. Если **false** - "
+"вентиляторами управляет GPU."
+
+#: ../../../rst/user/modes/script/reference.rst:91
+msgid "$.dev.targetFanSpeed"
+msgstr "$.dev.targetFanSpeed"
+
+#: ../../../rst/user/modes/script/reference.rst:89
+msgid ""
+"The fan speed the current mode wants to set. Unlike $.dev.fanSpeed, it can take :"
+"ref:`$.dev.FAN_SPEED_GPU <script-ref-dev-fanSpeedGpu>` and :ref:`$.dev."
+"FAN_SPEED_NO_CHANGE <script-ref-dev-fanSpeedNoChange>` values."
+msgstr ""
+"Скорость вентиляторов, которую хочет установить текущий режим. В отличие от $."
+"dev.fanSpeed, может принимать значения :ref:`$.dev.FAN_SPEED_GPU <script-ref-dev-"
+"fanSpeedGpu>` и :ref:`$.dev.FAN_SPEED_NO_CHANGE <script-ref-dev-"
+"fanSpeedNoChange>`."
+
+#: ../../../rst/user/modes/script/reference.rst:123
+msgid "$.dev.mode : String |rw|"
+msgstr "$.dev.mode : String |rw|"
+
+#: ../../../rst/user/modes/script/reference.rst:122
+#: ../../../rst/user/modes/script/reference.rst:239
+msgid "String rw"
+msgstr "String rw"
+
+#: ../../../rst/user/modes/script/reference.rst:96
+msgid "Current :doc:`mode <../../modes>` for the current video card."
+msgstr "Текущий :doc:`режим <../../modes>` программы для данной видеокарты."
+
+#: ../../../rst/user/modes/script/reference.rst:98
+#: ../../../rst/user/modes/script/reference.rst:688
+msgid "Possible values"
+msgstr "Возможные значения"
+
+#: ../../../rst/user/modes/script/reference.rst:101
+#: ../../../rst/user/modes/script/reference.rst:408
+#: ../../../rst/user/modes/script/reference.rst:691
+msgid "Value"
+msgstr "Значение"
+
+#: ../../../rst/user/modes/script/reference.rst:102
+#: ../../../rst/user/modes/script/reference.rst:409
+#: ../../../rst/user/modes/script/reference.rst:692
+msgid "Corresponding constant"
+msgstr "Соответствующая константа"
+
+#: ../../../rst/user/modes/script/reference.rst:103
+#: ../../../rst/user/modes/script/reference.rst:410
+msgid "Mode"
+msgstr "Режим"
+
+#: ../../../rst/user/modes/script/reference.rst:104
+#: ../../../rst/user/modes/script/reference.rst:411
+msgid "``\"curve\"``"
+msgstr "``\"curve\"``"
+
+#: ../../../rst/user/modes/script/reference.rst:105
+msgid "``$.dev.MODE_CURVE``"
+msgstr "``$.dev.MODE_CURVE``"
+
+#: ../../../rst/user/modes/script/reference.rst:106
+msgid ":doc:`Curve <../curve>`"
+msgstr ":doc:`Кривая <../curve>`"
+
+#: ../../../rst/user/modes/script/reference.rst:107
+#: ../../../rst/user/modes/script/reference.rst:414
+msgid "``\"fanToggle\"``"
+msgstr "``\"fanToggle\"``"
+
+#: ../../../rst/user/modes/script/reference.rst:108
+msgid "``$.dev.MODE_FAN_TOGGLE``"
+msgstr "``$.dev.MODE_FAN_TOGGLE``"
+
+#: ../../../rst/user/modes/script/reference.rst:109
+msgid ":doc:`Fan toggle <../fanToggle>`"
+msgstr ":doc:`Вкл./выкл. вентиляторов <../fanToggle>`"
+
+#: ../../../rst/user/modes/script/reference.rst:110
+#: ../../../rst/user/modes/script/reference.rst:417
+msgid "``\"script\"``"
+msgstr "``\"script\"``"
+
+#: ../../../rst/user/modes/script/reference.rst:111
+msgid "``$.dev.MODE_SCRIPT``"
+msgstr "``$.dev.MODE_SCRIPT``"
+
+#: ../../../rst/user/modes/script/reference.rst:112
+msgid ":doc:`Script <../script>`"
+msgstr ":doc:`Скрипт <../script>`"
+
+#: ../../../rst/user/modes/script/reference.rst:113
+msgid "``\"gpu\"``"
+msgstr "``\"gpu\"``"
+
+#: ../../../rst/user/modes/script/reference.rst:114
+msgid "``$.dev.MODE_GPU``"
+msgstr "``$.dev.MODE_GPU``"
+
+#: ../../../rst/user/modes/script/reference.rst:115
+msgid ":doc:`GPU controlled <../gpu>`"
+msgstr ":doc:`Под управлением GPU <../gpu>`"
+
+#: ../../../rst/user/modes/script/reference.rst:119
+msgid ""
+"if($.dev.mode == $.dev.MODE_CURVE)\n"
+"    console.log('We are in the \"Curve\" mode now')"
+msgstr ""
+"if($.dev.mode == $.dev.MODE_CURVE)\n"
+"    console.log('Сейчас мы в режиме \"Кривая\"')"
+
+#: ../../../rst/user/modes/script/reference.rst:136
+msgid "$.dev.gpuRate"
+msgstr "$.dev.gpuRate"
+
+#: ../../../rst/user/modes/script/reference.rst:128
+msgid ""
+"Percentage of time in the last sampling period (usually 1 second) during which "
+"at least one GPU core has been used. If :ref:`$.dev.plugin.canGetGpuRate <script-"
+"ref-dev-plugin-canGetGpuRate>` = **false**, this value is always zero."
+msgstr ""
+"Процент времени за последний период семплирования (как правило 1 секунда), в "
+"течение которого было задействовано хотя бы одно ядро GPU процессора. Если :ref:`"
+"$.dev.plugin.canGetGpuRate <script-ref-dev-plugin-canGetGpuRate>` = **false**, "
+"то это значение всегда равно нулю."
+
+#: ../../../rst/user/modes/script/reference.rst:133
+msgid "console.log(`Processor ${$.dev.name} load is ${$.dev.gpuRate}%`)"
+msgstr "console.log(`Процессор ${$.dev.name} загружен на ${$.dev.gpuRate}%`)"
+
+#: ../../../rst/user/modes/script/reference.rst:149
+msgid "$.dev.memoryRate"
+msgstr "$.dev.memoryRate"
+
+#: ../../../rst/user/modes/script/reference.rst:141
+msgid ""
+"Percentage of time in the last sampling period (typically 1 second) during which "
+"GPU memory was read or written. If :ref:`$.dev.plugin.canGetMemoryRate <script-"
+"ref-dev-plugin-canGetMemoryRate>` = **false**, this value is always zero."
+msgstr ""
+"Процент времени за последний период семплирования (как правило 1 секунда), в "
+"течение которого осуществлялись чтение или запись памяти GPU. Если :ref:`$.dev."
+"plugin.canGetMemoryRate <script-ref-dev-plugin-canGetMemoryRate>` = **false**, "
+"то это значение всегда равно нулю."
+
+#: ../../../rst/user/modes/script/reference.rst:146
+msgid "console.log(`Memory ${$.dev.name} load is ${$.dev.memoryRate}%`)"
+msgstr "console.log(`Память ${$.dev.name} загружена на ${$.dev.memoryRate}%`)"
+
+#: ../../../rst/user/modes/script/reference.rst:156
+msgid "$.dev.totalMemory"
+msgstr "$.dev.totalMemory"
+
+#: ../../../rst/user/modes/script/reference.rst:154
+msgid ""
+"Total amount of memory in bytes. If :ref:`$.dev.plugin.canGetTotalMemory <script-"
+"ref-dev-plugin-canGetTotalMemory>` = **false**, this value is always zero."
+msgstr ""
+"Общее кол-во памяти в байтах. Если :ref:`$.dev.plugin.canGetTotalMemory <script-"
+"ref-dev-plugin-canGetTotalMemory>` = **false**, то это значение всегда равно "
+"нулю."
+
+#: ../../../rst/user/modes/script/reference.rst:163
+msgid "$.dev.freeMemory"
+msgstr "$.dev.freeMemory"
+
+#: ../../../rst/user/modes/script/reference.rst:161
+msgid ""
+"Total amount of free memory in bytes. If :ref:`$.dev.plugin.canGetFreeMemory "
+"<script-ref-dev-plugin-canGetFreeMemory>` = **false**, this value is always zero."
+msgstr ""
+"Общее кол-во свободной памяти в байтах. Если :ref:`$.dev.plugin.canGetFreeMemory "
+"<script-ref-dev-plugin-canGetFreeMemory>` = **false**, то это значение всегда "
+"равно нулю."
+
+#: ../../../rst/user/modes/script/reference.rst:166
+msgid "Functions for working with GPU"
+msgstr "Функции для работы с GPU"
+
+#: ../../../rst/user/modes/script/reference.rst:170
+msgid "$.dev.loadGeneralSettings()"
+msgstr "$.dev.loadGeneralSettings()"
+
+#: ../../../rst/user/modes/script/reference.rst:169
+msgid "Download previously saved general video card settings."
+msgstr "Загрузить ранее сохранённые общие настройки видеокарты."
+
+#: ../../../rst/user/modes/script/reference.rst:174
+msgid "$.dev.saveGeneralSettings()"
+msgstr "$.dev.saveGeneralSettings()"
+
+#: ../../../rst/user/modes/script/reference.rst:173
+msgid "Save the general application settings to a file."
+msgstr "Сохранить в файл общие настройки приложения."
+
+#: ../../../rst/user/modes/script/reference.rst:180
+msgid "$.dev.loadModeSettings()"
+msgstr "$.dev.loadModeSettings()"
+
+#: ../../../rst/user/modes/script/reference.rst:177
+msgid ""
+"Restore application mode settings. These settings are located in the tabs of the "
+"main program window. Execution of this function is equivalent to pressing the "
+"\"Cancel\" button in this window, but only without closing the window later."
+msgstr ""
+"Загрузить настройки режимов приложения. Эти настройки находятся на вкладках "
+"основного окна программы. Выполнение данной функции равносильно нажатию кнопки "
+"\"Отмена\" в этом окне, но только без последующего закрытия окна."
+
+#: ../../../rst/user/modes/script/reference.rst:186
+msgid "$.dev.saveModeSettings()"
+msgstr "$.dev.saveModeSettings()"
+
+#: ../../../rst/user/modes/script/reference.rst:183
+msgid ""
+"Save the application mode settings. These settings are located in the tabs of "
+"the main program window. Execution of this function is equal to pressing the "
+"\"Save\" button in this window, but only without closing the window later."
+msgstr ""
+"Сохранить настройки режимов приложения. Эти настройки находятся на вкладках "
+"основного окна программы. Выполнение данной функции равносильно нажатию кнопки "
+"\"Сохранить\" в этом окне, но только без последующего закрытия окна."
+
+#: ../../../rst/user/modes/script/reference.rst:191
+msgid "$.dev.restartScript()"
+msgstr "$.dev.restartScript()"
+
+#: ../../../rst/user/modes/script/reference.rst:189
+msgid ""
+"Launches new script with a source code from **$.dev.scriptText**. The current "
+"script will be run to the end and then stopped."
+msgstr ""
+"Запускает новый скрипт на основе текста из **$.dev.scriptText**. При этом "
+"текущий скрипт будет выполнен до конца, а затем остановлен."
+
+#: ../../../rst/user/modes/script/reference.rst:195
+msgid "$.dev.stopScript()"
+msgstr "$.dev.stopScript()"
+
+#: ../../../rst/user/modes/script/reference.rst:194
+msgid "Stops the current script after it has been executed to the end."
+msgstr "Останавливает текущий скрипт после того, как он быдет выполнен до конца."
+
+#: ../../../rst/user/modes/script/reference.rst:214
+msgid "$.dev.showNotification(msg: String, isCritical: Boolean)"
+msgstr "$.dev.showNotification(msg: String, isCritical: Boolean)"
+
+#: ../../../rst/user/modes/script/reference.rst:198
+msgid ""
+"Show system notification with text **msg**. If **isCritical** = **true**, the "
+"message is set to a higher priority (the system will decide how this affects the "
+"shown notification)."
+msgstr ""
+"Показать системное уведомление с текстом **msg**. Если **isCritical** = "
+"**true**, то у сообщения устанавливается повышенный приоритет (то, как это "
+"повлияет на отображение уведомления, будет решать система)."
+
+#: ../../../rst/user/modes/script/reference.rst:201
+msgid ""
+"Depending on the operating system and its version, system notifications may "
+"support some HTML tags, such as &lt;b> or &;lti>, as well as links &lt;a>."
+msgstr ""
+"В зависимости от операционной системы и ей версии, системные уведомления могут "
+"поддерживать некоторые теги HTML, например &lt;b> или &;lti>, а также ссылки &lt;"
+"a>."
+
+#: ../../../rst/user/modes/script/reference.rst:205
+msgid ""
+"// Displaying a message with higher priority\n"
+"$.dev.showNotification('Your video card will melt soon!', true)\n"
+"\n"
+"// Showing HTML messages\n"
+"// (may not work or may not show what is needed on some platforms)\n"
+"$.dev.showNotification(\n"
+"    'Here is <a href=\"https://example.com/\">one <i>good</i> example</a>.')"
+msgstr ""
+"// Показ сообщения с повышенным приоритетом\n"
+"$.dev.showNotification('Ваша видеокарта скоро расплавится!', true)\n"
+"\n"
+"// Показ HTML-сообщения\n"
+"// (может не работать или показывать не то, что нужно, на некотрых платформах)\n"
+"$.dev.showNotification(\n"
+"    'Вот вам <a href=\"https://example.com/\">один <i>хороший</i> пример</a>.')"
+
+#: ../../../rst/user/modes/script/reference.rst:231
+msgid "$.dev.customFunction(name: String, val = undefined)"
+msgstr "$.dev.customFunction(name: String, val = undefined)"
+
+#: ../../../rst/user/modes/script/reference.rst:230
+msgid "Any"
+msgstr "Any"
+
+#: ../../../rst/user/modes/script/reference.rst:219
+msgid ""
+"Start the **name** function for this device and return the result. Any value "
+"**val** can be optionally passed to the function. The list of available "
+"functions can be obtained through the property :ref:`$.dev.plugin."
+"customFunctions <script-ref-dev-plugin-customFunctions>`."
+msgstr ""
+"Запустить функцию **name** для данного устройства и вернуть результат. В функцию "
+"можно любое значение **val**, а можно не передавать. Список доступных функций "
+"можно получить через свойство :ref:`$.dev.plugin.customFunctions <script-ref-dev-"
+"plugin-customFunctions>`."
+
+#: ../../../rst/user/modes/script/reference.rst:225
+msgid ""
+"// Example of a function call from nvidia-nvml plugin\n"
+"const reasons = $.dev.customFunction('getThrottleReasons')\n"
+"if(reasons.swThermalSlowdown || reasons.hwThermalSlowdown)\n"
+"    console.log(`Throttling because of the high temperature! Code: 0x${reasons."
+"code.toString(16)}`)"
+msgstr ""
+"// Пример вызова функции из плагина nvidia-nvml\n"
+"const reasons = $.dev.customFunction('getThrottleReasons')\n"
+"if(reasons.swThermalSlowdown || reasons.hwThermalSlowdown)\n"
+"    console.log(`Троттлинг из-за высокой температуры! Код: 0x${reasons.code."
+"toString(16)}`)"
+
+#: ../../../rst/user/modes/script/reference.rst:234
+msgid "General settings for the video card"
+msgstr "Общие настройки для видеокарты"
+
+#: ../../../rst/user/modes/script/reference.rst:240
+msgid "$.dev.customName : String |rw|"
+msgstr "$.dev.customName : String |rw|"
+
+#: ../../../rst/user/modes/script/reference.rst:237
+msgid "The name of the GPU specified by the user."
+msgstr "Заданное пользователем название GPU."
+
+#: ../../../rst/user/modes/script/reference.rst:242
+msgid "**$.dev.colorTempNormal: ColorString** |rw|"
+msgstr "**$.dev.colorTempNormal: ColorString** |rw|"
+
+#: ../../../rst/user/modes/script/reference.rst:243
+msgid "**$.dev.colorTempWarning: ColorString** |rw|"
+msgstr "**$.dev.colorTempWarning: ColorString** |rw|"
+
+#: ../../../rst/user/modes/script/reference.rst:244
+msgid "**$.dev.colorTempDanger: ColorString** |rw|"
+msgstr "**$.dev.colorTempDanger: ColorString** |rw|"
+
+#: ../../../rst/user/modes/script/reference.rst:245
+msgid "**$.dev.tempWarning: Number** |rw|"
+msgstr "**$.dev.tempWarning: Number** |rw|"
+
+#: ../../../rst/user/modes/script/reference.rst:251
+msgid "**$.dev.tempDanger: Number** |rw|"
+msgstr "**$.dev.tempDanger: Number** |rw|"
+
+#: ../../../rst/user/modes/script/reference.rst:247
+msgid ""
+"If the current temperature of the video card (in degrees Celsius) is less than **"
+"$.dev.tempWarning**, the number in the tray icon indicating the temperature will "
+"be **$.dev.colorTempNormal**. If the temperature is greater than or equal to **$."
+"dev.tempWarning**, but not greater than **$.dev.tempDanger**, the number will "
+"have the color **$.dev.colorTempWarning**. If the temperature is greater than or "
+"equal to **$.dev.tempDanger**, the number will have the color **$.dev."
+"colorTempDanger**. For more information about the **ColorString** data type see "
+"\":ref:`script-ref-tools`\"."
+msgstr ""
+"Если текущая температура видеокарты (в градусах Цельсия) меньше, чем **$.dev."
+"tempWarning**, то число в иконке из трея, обозначающее температуру, будет иметь "
+"цвет **$.dev.colorTempNormal**. Если температура больше или равна **$.dev."
+"tempWarning**, но не больше, чем **$.dev.tempDanger**, то число будет иметь цвет "
+"**$.dev.colorTempWarning**. Если температура больше или равна **$.dev."
+"tempDanger**, то число будет иметь цвет **$.dev.colorTempDanger**. Подробнее о "
+"типе данных **ColorString** читайте в разделе \":ref:`script-ref-tools`\"."
+
+#: ../../../rst/user/modes/script/reference.rst:253
+msgid "**$.dev.colorFanSpeedNormal: ColorString** |rw|"
+msgstr "**$.dev.colorFanSpeedNormal: ColorString** |rw|"
+
+#: ../../../rst/user/modes/script/reference.rst:254
+msgid "**$.dev.colorFanSpeedWarning: ColorString** |rw|"
+msgstr "**$.dev.colorFanSpeedWarning: ColorString** |rw|"
+
+#: ../../../rst/user/modes/script/reference.rst:255
+msgid "**$.dev.colorFanSpeedDanger: ColorString** |rw|"
+msgstr "**$.dev.colorFanSpeedDanger: ColorString** |rw|"
+
+#: ../../../rst/user/modes/script/reference.rst:256
+msgid "**$.dev.fanSpeedWarning: Number** |rw|"
+msgstr "**$.dev.fanSpeedWarning: Number** |rw|"
+
+#: ../../../rst/user/modes/script/reference.rst:262
+msgid "**$.dev.fanSpeedDanger: Number** |rw|"
+msgstr "**$.dev.fanSpeedDanger: Number** |rw|"
+
+#: ../../../rst/user/modes/script/reference.rst:258
+msgid ""
+"If the speed of the video card fans (in the range from 0 to 100) is less than **"
+"$.dev.fanSpeedWarning**, the tray icon border will be **$.dev."
+"colorFanSpeedNormal**. If the speed is greater than or equal to **$.dev."
+"fanSpeedWarning**, but no more than **$.dev.fanSpeedDanger**, the border will "
+"have the color **$.dev.colorFanSpeedWarning**. If the speed is greater than or "
+"equal to **$.dev.fanSpeedDanger**, the border will have the color **$.dev."
+"colorFanSpeedDanger**. For more information about the **ColorString** data type "
+"see \":ref:`script-ref-tools`\"."
+msgstr ""
+"Если скорость вентиляторов видеокарты (в диапазоне от 0 до 100) меньше, чем **$."
+"dev.fanSpeedWarning**, то рамка иконки в трее будет иметь цвет **$.dev."
+"colorFanSpeedNormal**. Если скорость больше или равна **$.dev.fanSpeedWarning**, "
+"но не больше, чем **$.dev.fanSpeedDanger**, то рамка будет иметь цвет **$.dev."
+"colorFanSpeedWarning**. Если скорость больше или равна **$.dev.fanSpeedDanger**, "
+"то рамка будет иметь цвет **$.dev.colorFanSpeedDanger**. Подробнее о типе данных "
+"**ColorString** читайте в разделе \":ref:`script-ref-tools`\"."
+
+#: ../../../rst/user/modes/script/reference.rst:266
+msgid "**$.dev.colorBackground: ColorString** |rw|"
+msgstr "**$.dev.colorBackground: ColorString** |rw|"
+
+#: ../../../rst/user/modes/script/reference.rst:265
+msgid "The background color of the tray icon."
+msgstr "Цвет фона иконки в трее."
+
+#: ../../../rst/user/modes/script/reference.rst:270
+msgid "$.dev.trayUpdateInterval : Number |rw|"
+msgstr "$.dev.trayUpdateInterval : Number |rw|"
+
+#: ../../../rst/user/modes/script/reference.rst:269
+msgid "Number rw"
+msgstr "Number rw"
+
+#: ../../../rst/user/modes/script/reference.rst:269
+msgid "The minimum tray update interval for this video card. Measured in seconds."
+msgstr ""
+"Минимальный интервал обновления данных в трее для данной видеокарты. Измеряется "
+"в секундах."
+
+#: ../../../rst/user/modes/script/reference.rst:273
+msgid "\"Curve\" mode settings"
+msgstr "Настройки режима \"Кривая\""
+
+#: ../../../rst/user/modes/script/reference.rst:275
+msgid "These settings apply to the \":doc:`../curve`\" mode."
+msgstr "Данные настройки относятся к режиму \":doc:`../curve`\"."
+
+#: ../../../rst/user/modes/script/reference.rst:306
+msgid "$.dev.curvePoints : Point[] |rw|"
+msgstr "$.dev.curvePoints : Point[] |rw|"
+
+#: ../../../rst/user/modes/script/reference.rst:305
+msgid "Point[] rw"
+msgstr "Point[] rw"
+
+#: ../../../rst/user/modes/script/reference.rst:278
+msgid ""
+"Stores an array of curve points. The array is represented by the standard "
+"**Array** type. Each point is an object with **x** and **y** properties, where "
+"**x** is the temperature in degrees Celsius, **y** is the speed of the fans in "
+"the range from 0 to 100 inclusive. The contents of this array cannot be changed "
+"directly. Instead, you need to create a copy using the :ref:`$.tools.clone "
+"<script-ref-tools-clone>` function, change this copy, and then assign this copy "
+"to the **$.dev.curvePoints** array. After modifying **$.dev.curvePoints** all "
+"the data in it will be normalized relative to the chart boundaries, so the data "
+"assigned to this array may differ from the data that will actually be there "
+"afterwards."
+msgstr ""
+"Хранит массив точек кривой. Массив представлен стандартным типом **Array**. "
+"Каждая точка представляет собой объект со свойствами **x** и **y**, где **x** - "
+"температура в градусах Цельсия, **y** - скорость вентиляторов в диапазоне от 0 "
+"до 100 включительно. Содержимое данного массива нельзя менять напрямую. Вместо "
+"этого необходимо создать его копию с помощью функции :ref:`$.tools.clone <script-"
+"ref-tools-clone>`, изменить эту копию, а затем присвоить массиву **$.dev."
+"curvePoints** эту копию. После изменения **$.dev.curvePoints** все данные в нём "
+"будут нормализованы относительно границ графика, поэтому записанные в этот "
+"массив данные могут отличаться от тех данных, которые реально там окажутся в "
+"конечном итоге."
+
+#: ../../../rst/user/modes/script/reference.rst:285
+msgid ""
+"// increase the fan speed for the penultimate point\n"
+"var pts = $.tools.clone($.dev.curvePoints)\n"
+"pts[pts.length-2].y +=10\n"
+"$.dev.curvePoints = pts\n"
+"\n"
+"// set a new set of points\n"
+"$.dev.curvePoints = [\n"
+"    {x: 0, y: 0,\n"
+"    {x: 60, y: 0},\n"
+"    {x: 100, y: 50}\n"
+"]\n"
+"\n"
+"// attempt to set an incorrect set of points\n"
+"$.dev.curvePoints = [\n"
+"    {x: 20, y: 30},\n"
+"    50, bogus: 123},\n"
+"    {x: 100, y: -10}\n"
+"]\n"
+"$.dev.curvePoints // [{x: 0, y: 30}, {x: 50, y: 0}, {x: 100, y: 0}]"
+msgstr ""
+"// увеличить скорость вентиляторов для предпоследней точки\n"
+"var pts = $.tools.clone($.dev.curvePoints)\n"
+"pts[pts.length-2].y += 10\n"
+"$.dev.curvePoints = pts\n"
+"\n"
+"// задать новый набор точек\n"
+"$.dev.curvePoints = [\n"
+"    {x: 0, y: 0},\n"
+"    {x: 60, y: 0},\n"
+"    {x: 100, y: 50}\n"
+"]\n"
+"\n"
+"// попытка задать некорректный набор точек\n"
+"$.dev.curvePoints = [\n"
+"    {x: 20, y: 30},\n"
+"    {x: 50, bogus: 123},\n"
+"    {x: 100, y: -10}\n"
+"]\n"
+"$.dev.curvePoints // [{x: 0, y: 30}, {x: 50, y: 0}, {x: 100, y: 0}]"
+
+#: ../../../rst/user/modes/script/reference.rst:310
+msgid "$.dev.curveMaxIncTempDiff: Number |rw|"
+msgstr "$.dev.curveMaxIncTempDiff: Number |rw|"
+
+#: ../../../rst/user/modes/script/reference.rst:309
+msgid "The value of \":ref:`Max inc. temp. diff. <curve-maxIncTempDiff>`\"."
+msgstr "Значение параметра \":ref:`Макс. увел. темп. <curve-maxIncTempDiff>`\"."
+
+#: ../../../rst/user/modes/script/reference.rst:314
+msgid "$.dev.curveIncDelay: Number |rw|"
+msgstr "$.dev.curveIncDelay: Number |rw|"
+
+#: ../../../rst/user/modes/script/reference.rst:313
+msgid "The value of the \":ref:`Inc. delay <curve-incDelay>`\" parameter."
+msgstr "Значение параметра \":ref:`Задержка увел. <curve-incDelay>`\"."
+
+#: ../../../rst/user/modes/script/reference.rst:318
+msgid "$.dev.curveMaxDecTempDiff: Number |rw|"
+msgstr "$.dev.curveMaxDecTempDiff: Number |rw|"
+
+#: ../../../rst/user/modes/script/reference.rst:317
+msgid ""
+"The value of \":ref:`Max inc. temp. diff. <curve-maxDecTempDiff>`\" parameter."
+msgstr "Значение параметра \":ref:`Макс. уменьш. темп. <curve-maxDecTempDiff>`\"."
+
+#: ../../../rst/user/modes/script/reference.rst:322
+msgid "$.dev.curveDecDelay: Number |rw|"
+msgstr "$.dev.curveDecDelay: Number |rw|"
+
+#: ../../../rst/user/modes/script/reference.rst:321
+msgid "The value of the \":ref:`Dec. delay <curve-decDelay>`\" parameter."
+msgstr "Значение параметра \":ref:`Задержка уменьш. <curve-decDelay>`\"."
+
+#: ../../../rst/user/modes/script/reference.rst:326
+msgid "$.dev.curveRefTemp: Number"
+msgstr "$.dev.curveRefTemp: Number"
+
+#: ../../../rst/user/modes/script/reference.rst:325
+msgid ""
+"The temperature that is used to calculate the required fan speed according to "
+"the curve. See \":ref:`curve-hysteresis`\", where this temperature is indicated "
+"as |T1|."
+msgstr ""
+"Температура, которая используется для расчёта требуемой скорости вентиляторов по "
+"графику. См. раздел \":ref:`curve-hysteresis`\", там эта температура обозначена "
+"как |T1|."
+
+#: ../../../rst/user/modes/script/reference.rst:329
+msgid "\"Fan toggle\" mode settings"
+msgstr "Настройки режима \"Вкл./выкл. вентиляторов\""
+
+#: ../../../rst/user/modes/script/reference.rst:331
+msgid "These settings refer to the \":doc:`../fanToggle`\" mode."
+msgstr "Данные настройки относятся к режиму \":doc:`../fanToggle`\"."
+
+#: ../../../rst/user/modes/script/reference.rst:337
+msgid "fanToggleEnableFansTemp: Number |rw|"
+msgstr "fanToggleEnableFansTemp: Number |rw|"
+
+#: ../../../rst/user/modes/script/reference.rst:336
+msgid ""
+"Fans will be enabled if the temperature of the video card is equal or higher "
+"than this value for :ref:`fanToggleEnableFansTempSecs <script-ref-dev-"
+"fanToggleEnableFansTempSecs>` seconds."
+msgstr ""
+"Вентиляторы включатся, если температура видеокарты будет равна или больше "
+"данного значения на протяжении :ref:`fanToggleEnableFansTempSecs <script-ref-dev-"
+"fanToggleEnableFansTempSecs>` секунд."
+
+#: ../../../rst/user/modes/script/reference.rst:343
+msgid "fanToggleEnableFansTempSecs: Number |rw|"
+msgstr "fanToggleEnableFansTempSecs: Number |rw|"
+
+#: ../../../rst/user/modes/script/reference.rst:342
+msgid ""
+"Time in seconds after which the fans will be enabled if the temperature has been "
+"at least :ref:`fanToggleEnableFansTemp <script-ref-dev-fanToggleEnableFansTemp>` "
+"all this time."
+msgstr ""
+"Время в секундах, после которого включаются вентиляторы, если температура всё "
+"это время была как минимум :ref:`fanToggleEnableFansTemp <script-ref-dev-"
+"fanToggleEnableFansTemp>`."
+
+#: ../../../rst/user/modes/script/reference.rst:349
+msgid "fanToggleUseLowFanSpeed : Boolean |rw|"
+msgstr "fanToggleUseLowFanSpeed : Boolean |rw|"
+
+#: ../../../rst/user/modes/script/reference.rst:348
+#: ../../../rst/user/modes/script/reference.rst:368
+msgid "Boolean rw"
+msgstr "Boolean rw"
+
+#: ../../../rst/user/modes/script/reference.rst:348
+msgid ""
+"Enable the rule that disable the fans if their speed does not exceed :ref:"
+"`fanToggleLowFanSpeed <script-ref-dev-fanToggleLowFanSpeed>` for :ref:"
+"`fanToggleLowFanSpeedSecs <script-ref-dev-fanToggleLowFanSpeedSecs>` seconds."
+msgstr ""
+"Включить правило, по которому вентиляторы будут отключаться, если их скорость не "
+"будет превышать :ref:`fanToggleLowFanSpeed <script-ref-dev-"
+"fanToggleLowFanSpeed>` на протяжении :ref:`fanToggleLowFanSpeedSecs <script-ref-"
+"dev-fanToggleLowFanSpeedSecs>` секунд."
+
+#: ../../../rst/user/modes/script/reference.rst:356
+msgid "fanToggleLowFanSpeed: Number |rw|"
+msgstr "fanToggleLowFanSpeed: Number |rw|"
+
+#: ../../../rst/user/modes/script/reference.rst:354
+msgid ""
+"Fans will be disabled if their speed was less than or equal to this value "
+"during :ref:`fanToggleLowFanSpeedSecs <script-ref-dev-fanToggleLowFanSpeedSecs>` "
+"seconds. Applies only if :ref:`fanToggleUseLowFanSpeed <script-ref-dev-"
+"fanToggleUseLowFanSpeed>` = **true**."
+msgstr ""
+"Вентиляторы отключатся, если их скорость была меньше или равна данного значения "
+"на протяжении :ref:`fanToggleLowFanSpeedSecs <script-ref-dev-"
+"fanToggleLowFanSpeedSecs>` секунд. Применяется только если :ref:"
+"`fanToggleUseLowFanSpeed <script-ref-dev-fanToggleUseLowFanSpeed>` = **true**."
+
+#: ../../../rst/user/modes/script/reference.rst:363
+msgid "fanToggleLowFanSpeedSecs: Number |rw|"
+msgstr "fanToggleLowFanSpeedSecs: Number |rw|"
+
+#: ../../../rst/user/modes/script/reference.rst:361
+msgid ""
+"Time in seconds after which the fans will be disabled if their speed does not "
+"exceed :ref:`fanToggleLowFanSpeed <script-ref-dev-fanToggleLowFanSpeed>`. "
+"Applies only if :ref:`fanToggleUseLowFanSpeed <script-ref-dev-"
+"fanToggleUseLowFanSpeed>` = **true**."
+msgstr ""
+"Время в секундах, после которого вентиляторы отключатся, если их скорость всё "
+"это время не будет превышать :ref:`fanToggleLowFanSpeed <script-ref-dev-"
+"fanToggleLowFanSpeed>`. Применяется только если :ref:`fanToggleUseLowFanSpeed "
+"<script-ref-dev-fanToggleUseLowFanSpeed>` = **true**."
+
+#: ../../../rst/user/modes/script/reference.rst:369
+msgid "fanToggleUseLowTemp : Boolean |rw|"
+msgstr "fanToggleUseLowTemp : Boolean |rw|"
+
+#: ../../../rst/user/modes/script/reference.rst:368
+msgid ""
+"Enable the rule that disable the fans if the temperature of the video card does "
+"not exceed :ref:`fanToggleLowTemp <script-ref-dev-fanToggleLowTemp>` for :ref:"
+"`fanToggleLowTempSecs <script-ref-dev-fanToggleLowTempSecs>` seconds."
+msgstr ""
+"Включить правило, по которому вентиляторы будут отключаться, если температура "
+"видеокарты не будет превышать :ref:`fanToggleLowTemp <script-ref-dev-"
+"fanToggleLowTemp>` на протяжении :ref:`fanToggleLowTempSecs <script-ref-dev-"
+"fanToggleLowTempSecs>` секунд."
+
+#: ../../../rst/user/modes/script/reference.rst:376
+msgid "fanToggleLowTemp: Number |rw|"
+msgstr "fanToggleLowTemp: Number |rw|"
+
+#: ../../../rst/user/modes/script/reference.rst:374
+msgid ""
+"The fans will be disabled if the temperature of the video card does not exceed "
+"this value for :ref:`fanToggleLowTempSecs <script-ref-dev-fanToggleLowTempSecs>` "
+"seconds. Applies only if :ref:`fanToggleUseLowTemp <script-ref-dev-"
+"fanToggleUseLowTemp>` = **true**."
+msgstr ""
+"Вентиляторы отключатся, если температура видеокарты не будет превышать данного "
+"значения на протяжении :ref:`fanToggleLowTempSecs <script-ref-dev-"
+"fanToggleLowTempSecs>` секунд. Применяется только если :ref:`fanToggleUseLowTemp "
+"<script-ref-dev-fanToggleUseLowTemp>` = **true**."
+
+#: ../../../rst/user/modes/script/reference.rst:383
+msgid "fanToggleLowTempSecs: Number |rw|"
+msgstr "fanToggleLowTempSecs: Number |rw|"
+
+#: ../../../rst/user/modes/script/reference.rst:381
+msgid ""
+"Time in seconds after which the fans will be disabled if the temperature of the "
+"video card does not exceed :ref:`fanToggleLowTemp <script-ref-dev-"
+"fanToggleLowTemp>`. Applies only if :ref:`fanToggleUseLowTemp <script-ref-dev-"
+"fanToggleUseLowTemp>` = **true**."
+msgstr ""
+"Время в секундах, после которого вентиляторы отключатся, если температура "
+"видеокарты всё это время не будет превышать :ref:`fanToggleLowTemp <script-ref-"
+"dev-fanToggleLowTemp>`. Применяется только если :ref:`fanToggleUseLowTemp "
+"<script-ref-dev-fanToggleUseLowTemp>` = **true**."
+
+#: ../../../rst/user/modes/script/reference.rst:386
+msgid "\"Script\" mode settings"
+msgstr "Настройки режима \"Скрипт\""
+
+#: ../../../rst/user/modes/script/reference.rst:388
+msgid "These settings refer to the \":doc:`../script`\" mode."
+msgstr "Данные настройки относятся к режиму \":doc:`../script`\"."
+
+#: ../../../rst/user/modes/script/reference.rst:392
+msgid "$.dev.scriptText: String |rw|"
+msgstr "$.dev.scriptText: String |rw|"
+
+#: ../../../rst/user/modes/script/reference.rst:391
+msgid ""
+"Script source code that is displayed in the editor. This text may not be the "
+"same as the text of the currently running script (see the next parameter)."
+msgstr ""
+"Текст скрипта, который отображается в редакторе. Этот текст может не совпадать с "
+"текстом запущенного на данный момент скрипта (см. след. параметр)."
+
+#: ../../../rst/user/modes/script/reference.rst:396
+msgid "$.dev.runningScriptText: String"
+msgstr "$.dev.runningScriptText: String"
+
+#: ../../../rst/user/modes/script/reference.rst:395
+msgid ""
+"The source code of the script that was executed last time or is being executed "
+"now."
+msgstr "Текст скрипта, который выполнялся последний раз или выполняется сейчас."
+
+#: ../../../rst/user/modes/script/reference.rst:400
+msgid "$.dev.scriptOverride: Boolean |rw|"
+msgstr "$.dev.scriptOverride: Boolean |rw|"
+
+#: ../../../rst/user/modes/script/reference.rst:399
+msgid "Enables the :ref:`\"Override\" <mode-script-override>` mode."
+msgstr "Включает режим :ref:`\"Переопределения\" <mode-script-override>`."
+
+#: ../../../rst/user/modes/script/reference.rst:427
+msgid "$.dev.scriptStatus: String"
+msgstr "$.dev.scriptStatus: String"
+
+#: ../../../rst/user/modes/script/reference.rst:405
+msgid ""
+"The state of the script when the current step will be completed. It can be one "
+"of the following values:"
+msgstr ""
+"Состояние, которое примет скрипт по завершению текущего шага. Может принимать "
+"следующие значения:"
+
+#: ../../../rst/user/modes/script/reference.rst:412
+msgid "``$.dev.SCRIPT_STATUS_STOPPED``"
+msgstr "``$.dev.SCRIPT_STATUS_STOPPED``"
+
+#: ../../../rst/user/modes/script/reference.rst:413
+msgid "Script is :ref:`stopped <mode-script-status-paused>`."
+msgstr "Скприпт :ref:`остановлен <mode-script-status-paused>`."
+
+#: ../../../rst/user/modes/script/reference.rst:415
+msgid "``$.dev.SCRIPT_STATUS_PAUSED``"
+msgstr "``$.dev.SCRIPT_STATUS_PAUSED``"
+
+#: ../../../rst/user/modes/script/reference.rst:416
+msgid "Script is :ref:`paused <mode-script-status-paused>`."
+msgstr "Скприпт :ref:`на паузе <mode-script-status-paused>`."
+
+#: ../../../rst/user/modes/script/reference.rst:418
+msgid "``$.dev.SCRIPT_STATUS_RUNNING``"
+msgstr "``$.dev.SCRIPT_STATUS_RUNNING``"
+
+#: ../../../rst/user/modes/script/reference.rst:419
+msgid "The script is :ref:`running <mode-script-status-running>`."
+msgstr "Скрипт :ref:`запущен <mode-script-status-running>`."
+
+#: ../../../rst/user/modes/script/reference.rst:423
+msgid ""
+"if($.dev.scriptStatus == $.dev.SCRIPT_STATUS_STOPPED)\n"
+"    console.log('The script will be stopped after the current step')"
+msgstr ""
+"if($.dev.scriptStatus == $.dev.SCRIPT_STATUS_STOPPED)\n"
+"    console.log('Скрипт будет остановлен после текущего шага')"
+
+#: ../../../rst/user/modes/script/reference.rst:431
+msgid "$.dev.scriptError: String"
+msgstr "$.dev.scriptError: String"
+
+#: ../../../rst/user/modes/script/reference.rst:430
+msgid ""
+"Current error that occurred in the script. Though this property is accessible "
+"through a script, for a script it will always be an empty string because the "
+"script cannot be started in the presence of errors. This property is used only "
+"in internal scripts of the application."
+msgstr ""
+"Текущая ошибка, которая произошла в скрипте. Хоть это свойство и доступно через "
+"скрипт, но для скрипта оно будет всегда равно пустой строке, т.к. скрипт не "
+"может быть запущен при наличии ошибок. Это свойство используется исключительно "
+"во внутренних скриптах программы."
+
+#: ../../../rst/user/modes/script/reference.rst:434
+msgid "GPU plugin info"
+msgstr "Данные о плагине для GPU"
+
+#: ../../../rst/user/modes/script/reference.rst:441
+msgid "$.dev.plugin.category: String"
+msgstr "$.dev.plugin.category: String"
+
+#: ../../../rst/user/modes/script/reference.rst:437
+msgid ""
+"Plugin category. Denotes the class of the GPU that the plugin works with. In |"
+"project| more than one plugin from a single category cannot be loaded "
+"simultaneously ."
+msgstr ""
+"Категория плагина. Обозначает класс GPU, с которыми работает плагин. В |project| "
+"не может быть загружено одновременно более одного плагина из отдельно взятой "
+"категории."
+
+#: ../../../rst/user/modes/script/reference.rst:440
+msgid "*Example:* ``\"nvidia\"``"
+msgstr "*Пример:* ``\"nvidia\"``"
+
+#: ../../../rst/user/modes/script/reference.rst:447
+msgid "$.dev.plugin.id: String"
+msgstr "$.dev.plugin.id: String"
+
+#: ../../../rst/user/modes/script/reference.rst:444
+msgid "Unique plugin identifier."
+msgstr "Уникальный идентификатор плагина."
+
+#: ../../../rst/user/modes/script/reference.rst:446
+msgid "*Example:* ``\"nvidia-nvml\"``"
+msgstr "*Пример:* ``\"nvidia-nvml\"``"
+
+#: ../../../rst/user/modes/script/reference.rst:453
+msgid "$.dev.plugin.name"
+msgstr "$.dev.plugin.name"
+
+#: ../../../rst/user/modes/script/reference.rst:450
+msgid "Plugin name."
+msgstr "Название плагина."
+
+#: ../../../rst/user/modes/script/reference.rst:452
+msgid "*Example:* ``\"NVIDIA (NVML)\"``"
+msgstr "*Пример:* ``\"NVIDIA (NVML)\"``"
+
+#: ../../../rst/user/modes/script/reference.rst:459
+msgid "$.dev.plugin.description: String"
+msgstr "$.dev.plugin.description: String"
+
+#: ../../../rst/user/modes/script/reference.rst:456
+msgid "Plugin description."
+msgstr "Описание плагина."
+
+#: ../../../rst/user/modes/script/reference.rst:458
+msgid "*Example:* ``\"NVIDIA video card plugin using NVML library.\"``"
+msgstr ""
+"*Пример:* ``\"Плагин для видеокарт NVIDIA, использующий библиотеку NVML.\"``"
+
+#: ../../../rst/user/modes/script/reference.rst:465
+msgid "$.dev.plugin.copyright: String"
+msgstr "$.dev.plugin.copyright: String"
+
+#: ../../../rst/user/modes/script/reference.rst:462
+msgid "Information about the authors of the plugin."
+msgstr "Информация об авторах плагина."
+
+#: ../../../rst/user/modes/script/reference.rst:464
+msgid "*Example:* ``\"Alkatraz Studio, 2018\"``"
+msgstr "*Пример:* ``\"Alkatraz Studio, 2018\"``"
+
+#: ../../../rst/user/modes/script/reference.rst:471
+msgid "$.dev.plugin.misc: String"
+msgstr "$.dev.plugin.misc: String"
+
+#: ../../../rst/user/modes/script/reference.rst:468
+msgid ""
+"Any other information about the plugin that is not suitable for other fields."
+msgstr "Любая другая информация о плагине, не подходящая для других полей."
+
+#: ../../../rst/user/modes/script/reference.rst:470
+msgid ""
+"*Example:* ``\"Project site: https://example.com\\nEmail: user@example.com\"``"
+msgstr ""
+"*Пример:* ``\"Сайт проекта: https://example.com\\nПочта: user@example.com\"``"
+
+#: ../../../rst/user/modes/script/reference.rst:477
+msgid "$.dev.plugin.version: String"
+msgstr "$.dev.plugin.version: String"
+
+#: ../../../rst/user/modes/script/reference.rst:474
+msgid "Plugin version in the `SemVer <https://semver.org>`_ format."
+msgstr "Версия плагина в формате `SemVer <https://semver.org/lang/ru/>`_."
+
+#: ../../../rst/user/modes/script/reference.rst:476
+#: ../../../rst/user/modes/script/reference.rst:564
+msgid "*Example:* ``\"1.0.5\"``"
+msgstr "*Пример:* ``\"1.0.5\"``"
+
+#: ../../../rst/user/modes/script/reference.rst:481
+msgid "$.dev.plugin.majorVersion: Number"
+msgstr "$.dev.plugin.majorVersion: Number"
+
+#: ../../../rst/user/modes/script/reference.rst:480
+msgid ""
+"Major version of the plugin. For example, for version **1.0.5** the major "
+"version will be **1**. Read more about versioning at `SemVer <https://semver."
+"org>`_."
+msgstr ""
+"Мажорная версия плагина. Например, для версии **1.0.5** мажорная версия будет "
+"равна **1**. Подробнее о системе нумерации версий см. `SemVer <https://semver."
+"org/lang/ru/>`_."
+
+#: ../../../rst/user/modes/script/reference.rst:485
+msgid "$.dev.plugin.minorVersion: Number"
+msgstr "$.dev.plugin.minorVersion: Number"
+
+#: ../../../rst/user/modes/script/reference.rst:484
+msgid ""
+"Minor version of the plugin. For example, for version **1.0.5**, the minor "
+"version will be **0**. Read more about versioning at `SemVer <https://semver."
+"org>`_."
+msgstr ""
+"Минорная версия плагина. Например, для версии **1.0.5** минорная версия будет "
+"равна **0**. Подробнее о системе нумерации версий см. `SemVer <https://semver."
+"org/lang/ru/>`_."
+
+#: ../../../rst/user/modes/script/reference.rst:489
+msgid "$.dev.plugin.patchVersion: Number"
+msgstr "$.dev.plugin.patchVersion: Number"
+
+#: ../../../rst/user/modes/script/reference.rst:488
+msgid ""
+"Patch version of the plugin. For example, for version **1.0.5** the patch "
+"version will be **5**. Read more about versioning at `SemVer <https://semver."
+"org>`_."
+msgstr ""
+"Патч-версия плагина. Например, для версии **1.0.5** патч-версия будет равна "
+"**5**. Подробнее о системе нумерации версий см. `SemVer <https://semver.org/lang/"
+"ru/>`_."
+
+#: ../../../rst/user/modes/script/reference.rst:503
+msgid "$.dev.plugin.buildDate: Date"
+msgstr "$.dev.plugin.buildDate: Date"
+
+#: ../../../rst/user/modes/script/reference.rst:492
+msgid ""
+"Plugin build date and time. If this information is not available, the \"Invalid "
+"Date\" object is returned."
+msgstr ""
+"Дата и время сборки плагина. Если эта информация не доступна, то возвращается "
+"объект \"Invalid Date\"."
+
+#: ../../../rst/user/modes/script/reference.rst:497
+msgid ""
+"if(isNaN($.dev.plugin.buildDate))\n"
+"    console.log('Plugin build date is unavailable')\n"
+"else\n"
+"    console.log(`Plugin build date: ${$.dev.plugin.buildDate}`)"
+msgstr ""
+"if(isNaN($.dev.plugin.buildDate))\n"
+"    console.log('Дата сборки плагина недоступна')\n"
+"else\n"
+"    console.log(`Дата сборки плагина: ${$.dev.plugin.buildDate}`)"
+
+#: ../../../rst/user/modes/script/reference.rst:507
+msgid "$.dev.plugin.deviceCount: Number"
+msgstr "$.dev.plugin.deviceCount: Number"
+
+#: ../../../rst/user/modes/script/reference.rst:506
+msgid "The number of video cards the plugin found in the system."
+msgstr "Кол-во видеокарт, которые плагин нашёл в системе."
+
+#: ../../../rst/user/modes/script/reference.rst:513
+msgid "$.dev.plugin.canGetGpuRate: Boolean"
+msgstr "$.dev.plugin.canGetGpuRate: Boolean"
+
+#: ../../../rst/user/modes/script/reference.rst:512
+msgid ""
+"If **true**, the field :ref:`$.dev.gpuRate <script-ref-dev-gpuRate>` contains "
+"correct data."
+msgstr ""
+"Если **true**, то поле :ref:`$.dev.gpuRate <script-ref-dev-gpuRate>` содержит "
+"правильные данные."
+
+#: ../../../rst/user/modes/script/reference.rst:519
+msgid "$.dev.plugin.canGetMemoryRate: Boolean"
+msgstr "$.dev.plugin.canGetMemoryRate: Boolean"
+
+#: ../../../rst/user/modes/script/reference.rst:518
+msgid ""
+"If **true**, the field :ref:`$.dev.memoryRate <script-ref-dev-memoryRate>` "
+"contains correct data."
+msgstr ""
+"Если **true**, то поле :ref:`$.dev.memoryRate <script-ref-dev-memoryRate>` "
+"содержит правильные данные."
+
+#: ../../../rst/user/modes/script/reference.rst:525
+msgid "$.dev.plugin.canGetTotalMemory: Boolean"
+msgstr "$.dev.plugin.canGetTotalMemory: Boolean"
+
+#: ../../../rst/user/modes/script/reference.rst:524
+msgid ""
+"If **true**, the field :ref:`$.dev.totalMemory <script-ref-dev-totalMemory>` "
+"contains correct data."
+msgstr ""
+"Если **true**, то поле :ref:`$.dev.totalMemory <script-ref-dev-totalMemory>` "
+"содержит правильные данные."
+
+#: ../../../rst/user/modes/script/reference.rst:531
+msgid "$.dev.plugin.canGetFreeMemory: Boolean"
+msgstr "$.dev.plugin.canGetFreeMemory: Boolean"
+
+#: ../../../rst/user/modes/script/reference.rst:530
+msgid ""
+"If **true**, the field :ref:`$.dev.freeMemory <script-ref-dev-freeMemory>` "
+"contains the correct data."
+msgstr ""
+"Если **true**, то поле :ref:`$.dev.freeMemory <script-ref-dev-freeMemory>` "
+"содержит правильные данные."
+
+#: ../../../rst/user/modes/script/reference.rst:538
+msgid "$.dev.plugin.customFunctions: Array<String>"
+msgstr "$.dev.plugin.customFunctions: Array<String>"
+
+#: ../../../rst/user/modes/script/reference.rst:536
+msgid ""
+"The list of functions that can be run via :ref:`$.dev.customFunction <script-ref-"
+"dev-customFunction>`. You can find the description of each function in the "
+"documentation of the corresponding plugin."
+msgstr ""
+"Список функций, которые можно запустить через :ref:`$.dev.customFunction <script-"
+"ref-dev-customFunction>`. Описание каждой из функций ищите в документации к "
+"соответствующему плагину."
+
+#: ../../../rst/user/modes/script/reference.rst:541
+msgid "Application info"
+msgstr "Данные о приложении"
+
+#: ../../../rst/user/modes/script/reference.rst:547
+msgid "$.app.id: String"
+msgstr "$.app.id: String"
+
+#: ../../../rst/user/modes/script/reference.rst:544
+msgid "Application ID."
+msgstr "Идентификатор приложения."
+
+#: ../../../rst/user/modes/script/reference.rst:546
+msgid "*Example:* ``\"|project-id|\"``"
+msgstr "*Пример:* ``\"|project-id|\"``"
+
+#: ../../../rst/user/modes/script/reference.rst:553
+msgid "$.app.title"
+msgstr "$.app.title"
+
+#: ../../../rst/user/modes/script/reference.rst:550
+msgid "Application name."
+msgstr "Название приложения."
+
+#: ../../../rst/user/modes/script/reference.rst:552
+msgid "*Example:* ``\"|project|\"``"
+msgstr "*Пример:* ``\"|project|\"``"
+
+#: ../../../rst/user/modes/script/reference.rst:559
+msgid "$.app.author"
+msgstr "$.app.author"
+
+#: ../../../rst/user/modes/script/reference.rst:556
+msgid "Author of the application."
+msgstr "Автор приложения."
+
+#: ../../../rst/user/modes/script/reference.rst:558
+msgid "*Example:* ``\"|project-org|\"``"
+msgstr "*Пример:* ``\"|project-org|\"``"
+
+#: ../../../rst/user/modes/script/reference.rst:565
+msgid "$.app.version: String"
+msgstr "$.app.version: String"
+
+#: ../../../rst/user/modes/script/reference.rst:562
+msgid "Application version in the `SemVer <https://semver.org>`_ format."
+msgstr "Версия приложения в формате `SemVer <https://semver.org/lang/ru/>`_."
+
+#: ../../../rst/user/modes/script/reference.rst:571
+msgid "$.app.majorVersion: Number"
+msgstr "$.app.majorVersion: Number"
+
+#: ../../../rst/user/modes/script/reference.rst:568
+msgid ""
+"Major version of the application. For example, for version **1.0.5**, the major "
+"version will be **1**. Read more about version numbers here: `SemVer <https://"
+"semver.org>`_."
+msgstr ""
+"Мажорная версия плагина. Например, для версии **1.0.5** мажорная версия будет "
+"равна **1**. Подробнее о системе нумерации версий см. `SemVer <https://semver."
+"org/lang/ru/>`_."
+
+#: ../../../rst/user/modes/script/reference.rst:577
+msgid "$.app.minorVersion: Number"
+msgstr "$.app.minorVersion: Number"
+
+#: ../../../rst/user/modes/script/reference.rst:574
+msgid ""
+"Minor version of the application. For example, for version **1.0.5**, the minor "
+"version will be **0**. Read more about version numbers here: `SemVer <https://"
+"semver.org>`_."
+msgstr ""
+"Минорная версия плагина. Например, для версии **1.0.5** минорная версия будет "
+"равна **0**. Подробнее о системе нумерации версий см. `SemVer <https://semver."
+"org/lang/ru/>`_."
+
+#: ../../../rst/user/modes/script/reference.rst:583
+msgid "$.app.patchVersion: Number"
+msgstr "$.app.patchVersion: Number"
+
+#: ../../../rst/user/modes/script/reference.rst:580
+msgid ""
+"Patch version of the application. For example, for version **1.0.5** the patch "
+"version will be **5**. Read more about version numbers here: `SemVer <https://"
+"semver.org>`_."
+msgstr ""
+"Патч-версия плагина. Например, для версии **1.0.5** патч-версия будет равна "
+"**5**. Подробнее о системе нумерации версий см. `SemVer <https://semver.org/lang/"
+"ru/>`_."
+
+#: ../../../rst/user/modes/script/reference.rst:586
+msgid "System info"
+msgstr "Данные о системе"
+
+#: ../../../rst/user/modes/script/reference.rst:588
+msgid ""
+"Through the **$.sys** object, the script can access some system features (e.g. "
+"operating system name). Properties of the given object correspond to the methods "
+"described in `<https://doc.qt.io/qt-5.12/qsysinfo.html>`_."
+msgstr ""
+"Через объект **$.sys** скрипт может получить доступ к некоторым характеристикам "
+"системы (например, название операционной системы). Свойства данного объекта "
+"соответствуют методам, описанным на `<https://doc.qt.io/qt-5.12/qsysinfo.html>`_."
+
+#: ../../../rst/user/modes/script/reference.rst:594
+msgid "$.sys.buildAbi: String"
+msgstr "$.sys.buildAbi: String"
+
+#: ../../../rst/user/modes/script/reference.rst:591
+msgid ""
+"Full description of the architecture for which the current application is built."
+msgstr ""
+"Полное описание архитектуры, для которой предназначена текущая сборка приложения."
+
+#: ../../../rst/user/modes/script/reference.rst:593
+msgid "*Example:* ``\"x86_64-little_endian-lp64\"``"
+msgstr "*Пример:* ``\"x86_64-little_endian-lp64\"``"
+
+#: ../../../rst/user/modes/script/reference.rst:600
+msgid "$.sys.buildCpuArchitecture: String"
+msgstr "$.sys.buildCpuArchitecture: String"
+
+#: ../../../rst/user/modes/script/reference.rst:597
+msgid "CPU architecture for which the current application is built."
+msgstr "Архитектура CPU, для которой предназначена текущая сборка приложения."
+
+#: ../../../rst/user/modes/script/reference.rst:599
+#: ../../../rst/user/modes/script/reference.rst:605
+msgid "*Example:* ``\"x86_64\"``"
+msgstr "*Пример:* ``\"x86_64\"``"
+
+#: ../../../rst/user/modes/script/reference.rst:606
+msgid "$.sys.currentCpuArchitecture: String"
+msgstr "$.sys.currentCpuArchitecture: String"
+
+#: ../../../rst/user/modes/script/reference.rst:603
+msgid "The CPU architecture on which the application is currently running."
+msgstr "Архитектура CPU, на котором выполняется сейчас программа."
+
+#: ../../../rst/user/modes/script/reference.rst:612
+msgid "$.sys.kernelType: String"
+msgstr "$.sys.kernelType: String"
+
+#: ../../../rst/user/modes/script/reference.rst:609
+msgid "Type of operating system kernel."
+msgstr "Тип ядра операционной системы."
+
+#: ../../../rst/user/modes/script/reference.rst:611
+msgid "*Example:* ``\"linux\"``"
+msgstr "*Пример:* ``\"linux\"``"
+
+#: ../../../rst/user/modes/script/reference.rst:618
+msgid "$.sys.kernelVersion: String"
+msgstr "$.sys.kernelVersion: String"
+
+#: ../../../rst/user/modes/script/reference.rst:615
+msgid "Operating system kernel version."
+msgstr "Версия ядра операционной системы."
+
+#: ../../../rst/user/modes/script/reference.rst:617
+msgid "*Example:* ``\"4.15.0-34-lowlatency\"``"
+msgstr "*Пример:* ``\"4.15.0-34-lowlatency\"``"
+
+#: ../../../rst/user/modes/script/reference.rst:624
+msgid "$.sys.prettyProductName: String"
+msgstr "$.sys.prettyProductName: String"
+
+#: ../../../rst/user/modes/script/reference.rst:621
+msgid "Name of the operating system (may not correspond to the actual name)."
+msgstr "Название операционной системы (может не соответствовать действительности)."
+
+#: ../../../rst/user/modes/script/reference.rst:623
+msgid "*Example:* ``\"Ubuntu 18.04.1 LTS\"``"
+msgstr "*Пример:* ``\"Ubuntu 18.04.1 LTS\"``"
+
+#: ../../../rst/user/modes/script/reference.rst:630
+msgid "$.sys.productType: String"
+msgstr "$.sys.productType: String"
+
+#: ../../../rst/user/modes/script/reference.rst:627
+msgid "Type of operating system distribution."
+msgstr "Тип дистрибутива операционной системы."
+
+#: ../../../rst/user/modes/script/reference.rst:629
+msgid "*Example:* ``\"ubuntu\"``"
+msgstr "*Пример:* ``\"ubuntu\"``"
+
+#: ../../../rst/user/modes/script/reference.rst:636
+msgid "$.sys.productVersion: String"
+msgstr "$.sys.productVersion: String"
+
+#: ../../../rst/user/modes/script/reference.rst:633
+msgid "Operating system version."
+msgstr "Версия операционной системы."
+
+#: ../../../rst/user/modes/script/reference.rst:635
+msgid "*Example:* ``\"18.04\"``"
+msgstr "*Пример:* ``\"18.04\"``"
+
+#: ../../../rst/user/modes/script/reference.rst:639
+msgid "System functions"
+msgstr "Системные функции"
+
+#: ../../../rst/user/modes/script/reference.rst:741
+msgid "$.sys.exec(parts = {})"
+msgstr "$.sys.exec(parts = {})"
+
+#: ../../../rst/user/modes/script/reference.rst:740
+msgid "String|Object, opts"
+msgstr "String|Object, opts"
+
+#: ../../../rst/user/modes/script/reference.rst:740
+msgid "Object = {})"
+msgstr "Object = {})"
+
+#: ../../../rst/user/modes/script/reference.rst:740
+#: ../../../rst/user/modes/script/reference.rst:789
+#: ../../../rst/user/plugins/nvidia-nvml.rst:84
+msgid "Object"
+msgstr "Object"
+
+#: ../../../rst/user/modes/script/reference.rst:642
+msgid ""
+"Launch an external program. In the **parts** array you can specify an executable "
+"file (the first element) as well as arguments for the program to be run (the "
+"following elements). If you don't need arguments, you can specify the executable "
+"file as a string instead of an array in **parts**."
+msgstr ""
+"Запуск внешней программы. В массиве **parts** можно задать исполняемый файл "
+"(первый элемент), а также аргументы для запускаемой программы (последующие "
+"элементы). Если аргументы не нужны, то вместо массива в **parts** можно указать "
+"исполняемый файл как строку."
+
+#: ../../../rst/user/modes/script/reference.rst:646
+msgid "**opts** - options. List of supported options for **$.sys.exec**:"
+msgstr ""
+"**opts** - набор параметров. Список поддерживаемых параметров для **$.sys.exec**:"
+
+#: ../../../rst/user/modes/script/reference.rst:653
+msgid "env: Object"
+msgstr "env: Object"
+
+#: ../../../rst/user/modes/script/reference.rst:649
+msgid ""
+"A set of environment variables. This set will be added to the environment "
+"variables with which |project| was launched. If the names of the variables match "
+"the existing variables, the variables from **env** will overwrite the variables "
+"of |project|."
+msgstr ""
+"Набор переменных окружения. Этот набор будет добавлен к переменным окружения, с "
+"которыми был запущен |project|. При совпадении названий переменных, переменные "
+"из **env** перезапишут переменные |project|."
+
+#: ../../../rst/user/modes/script/reference.rst:653
+msgid "*Default:* ``{}``"
+msgstr "*Значение по-умолчанию:* ``{}``"
+
+#: ../../../rst/user/modes/script/reference.rst:659
+msgid "detached: Boolean"
+msgstr "detached: Boolean"
+
+#: ../../../rst/user/modes/script/reference.rst:656
+msgid ""
+"Do not wait until the process is completed, and return control of the script "
+"immediately. You will not be able to get the exit code or data from stdout and "
+"stderr."
+msgstr ""
+"Не дожидаться, пока процесс завершится, а вернуть управление скрипту сразу же. "
+"При этом, нельзя будет получить код выхода или данные из stdout и stderr."
+
+#: ../../../rst/user/modes/script/reference.rst:659
+msgid "*Default:* ``false``"
+msgstr "*Значение по-умолчанию:* ``false``"
+
+#: ../../../rst/user/modes/script/reference.rst:665
+msgid "timeout: Number"
+msgstr "timeout: Number"
+
+#: ../../../rst/user/modes/script/reference.rst:662
+msgid ""
+"Maximum allowable program execution time in seconds. If the program takes longer "
+"to complete than the specified time, it is forcibly terminated."
+msgstr ""
+"Максимально допустимое время выполнения программы в секундах. Если запускаемая "
+"программа выполняется дольше, чем указанное время, то она принудительно "
+"завершается."
+
+#: ../../../rst/user/modes/script/reference.rst:665
+msgid "*Default:* ``3``"
+msgstr "*Значение по-умолчанию:* ``3``"
+
+#: ../../../rst/user/modes/script/reference.rst:671
+msgid "stdin: String"
+msgstr "stdin: String"
+
+#: ../../../rst/user/modes/script/reference.rst:668
+msgid ""
+"String data in the UTF-8 encoding, which will be transferred to the launched "
+"program into the standard stdin input stream."
+msgstr ""
+"Строковые данные в кодировке UTF-8, которые будут переданы запускаемой программе "
+"в стандартный поток ввода stdin."
+
+#: ../../../rst/user/modes/script/reference.rst:670
+msgid "*Default:* ``\"\"``"
+msgstr "*Значение по-умолчанию:* ``\"\"``"
+
+#: ../../../rst/user/modes/script/reference.rst:673
+msgid ""
+"**$.sys.exec** returns an object that contains information about the launched "
+"process:"
+msgstr ""
+"**$.sys.exec** возвращает объект, в котором содержится информация о запущенном "
+"процессе:"
+
+#: ../../../rst/user/modes/script/reference.rst:677
+msgid "started: Boolean"
+msgstr "started: Boolean"
+
+#: ../../../rst/user/modes/script/reference.rst:676
+msgid ""
+"If **true**, the program has been successfully launched. This does not mean, "
+"however, that the program has been successfully completed."
+msgstr ""
+"Если **true**, то программа была успешно запущена. Это, однако, не означает, что "
+"программа была успешно завершена."
+
+#: ../../../rst/user/modes/script/reference.rst:681
+msgid "crashed: Boolean"
+msgstr "crashed: Boolean"
+
+#: ../../../rst/user/modes/script/reference.rst:680
+msgid ""
+"If **true**, an unexpected failure has occurred during the program operation. "
+"Absent if **opts.detached** = ``true``."
+msgstr ""
+"Если **true**, то в процессе работы программы произошёл непредвиденный сбой. "
+"Отсутствует, если **opts.detached** = ``true``."
+
+#: ../../../rst/user/modes/script/reference.rst:706
+msgid "failedAt: String"
+msgstr "failedAt: String"
+
+#: ../../../rst/user/modes/script/reference.rst:686
+msgid "State name of the stage at which the error occurred in the program."
+msgstr "Идентификатор этапа, на котором произошла ошибка в программе."
+
+#: ../../../rst/user/modes/script/reference.rst:693
+msgid "Description of the situation"
+msgstr "Описание ситуации"
+
+#: ../../../rst/user/modes/script/reference.rst:694
+msgid "``\"start\"``"
+msgstr "``\"start\"``"
+
+#: ../../../rst/user/modes/script/reference.rst:695
+msgid "``$.sys.FAILED_AT_START``"
+msgstr "``$.sys.FAILED_AT_START``"
+
+#: ../../../rst/user/modes/script/reference.rst:696
+msgid "Couldn't start the program."
+msgstr "Не удалось запустить программу."
+
+#: ../../../rst/user/modes/script/reference.rst:697
+msgid "``\"write\"``"
+msgstr "``\"write\"``"
+
+#: ../../../rst/user/modes/script/reference.rst:698
+msgid "``$.sys.FAILED_AT_WRITE``"
+msgstr "``$.sys.FAILED_AT_WRITE``"
+
+#: ../../../rst/user/modes/script/reference.rst:699
+msgid ""
+"Error in writing data to stdin. If **crashed** = ``false``, then the time "
+"allotted for writing data to stdin has expired."
+msgstr ""
+"Ошибка при записи данных в stdin. Если **crashed** = ``false``, то значит время, "
+"отведённое на запись данных в stdin, истекло."
+
+#: ../../../rst/user/modes/script/reference.rst:701
+msgid "``\"finish\"``"
+msgstr "``\"finish\"``"
+
+#: ../../../rst/user/modes/script/reference.rst:702
+msgid "``$.sys.FAILED_AT_FINISH``"
+msgstr "``$.sys.FAILED_AT_FINISH``"
+
+#: ../../../rst/user/modes/script/reference.rst:703
+msgid ""
+"Error pending completion of the program. If **crashed** = ``false``, it means "
+"that the program has not been completed in time."
+msgstr ""
+"Ошибка при ожидании завершения программы. Если **crashed** = ``false``, то "
+"значит программа не успела завершиться в срок."
+
+#: ../../../rst/user/modes/script/reference.rst:706
+msgid ""
+"If **opts.detached** = ``true``, then this parameter can only contain the value "
+"``$.sys.FAILED_AT_START``."
+msgstr ""
+"Если **opts.detached** = ``true``, то данный параметр может содержать только "
+"значение ``$.sys.FAILED_AT_START``."
+
+#: ../../../rst/user/modes/script/reference.rst:710
+msgid "stdout: String"
+msgstr "stdout: String"
+
+#: ../../../rst/user/modes/script/reference.rst:709
+msgid ""
+"Contents of the standard program output (stdin), represented as a string in the "
+"UTF-8 encoding. Absent if **opts.detached** = ``true``."
+msgstr ""
+"Содержимое стандартного вывода программы (stdin), представленное как строка в "
+"кодировке UTF-8. Отсутствует, если **opts.detached** = ``true``."
+
+#: ../../../rst/user/modes/script/reference.rst:714
+msgid "stderr: String"
+msgstr "stderr: String"
+
+#: ../../../rst/user/modes/script/reference.rst:713
+msgid ""
+"Contents of the standard program error output (stderr), represented as a string "
+"in the UTF-8 encoding. Absent if **opts.detached** = ``true``."
+msgstr ""
+"Содержимое стандартного вывода ошибок программы (stderr), представленное как "
+"строка в кодировке UTF-8. Отсутствует, если **opts.detached** = ``true``."
+
+#: ../../../rst/user/modes/script/reference.rst:718
+msgid "exitCode: Number"
+msgstr "exitCode: Number"
+
+#: ../../../rst/user/modes/script/reference.rst:717
+msgid "Program exit code. Absent if **opts.detached** = ``true``."
+msgstr "Код выхода программы. Отсутствует, если **opts.detached** = ``true``."
+
+#: ../../../rst/user/modes/script/reference.rst:722
+msgid ""
+"// execute the program and show the result\n"
+"console.log($.sys.exec('fortune').stdout)\n"
+"\n"
+"// execute the program and check if there's any startup error\n"
+"if($.sys.exec('ls').failedAt == $.sys.FAILED_AT_START)\n"
+"    console.log('Program failed to start')\n"
+"\n"
+"// execute the program by passing the data into stdin and additional arguments\n"
+"var result = $.sys.exec(['cowsay', '-t'], {\n"
+"    stdin: $.dev.name,\n"
+"    timeout: 1\n"
+"})\n"
+"console.log(\n"
+"    result.exitCode === 0\n"
+"        ? result.stdout\n"
+"        : 'Error: ' + result.failedAt + ': ' + result.stderr\n"
+")"
+msgstr ""
+"// выполнить программу и показать результат\n"
+"console.log($.sys.exec('fortune').stdout)\n"
+"\n"
+"// выполнить программу и проверить, не произошла ли ошибка приз запуске\n"
+"if($.sys.exec('ls').failedAt == $.sys.FAILED_AT_START)\n"
+"    console.log('Программу не удалось запустить')\n"
+"\n"
+"// выполнить программу, передав ей данные в stdin и дополнительные аргументы\n"
+"var result = $.sys.exec(['cowsay', '-t'], {\n"
+"    stdin: $.dev.name,\n"
+"    timeout: 1\n"
+"})\n"
+"console.log(\n"
+"    result.exitCode === 0\n"
+"        ? result.stdout\n"
+"        : 'Произошла ошибка: ' + result.failedAt + ': ' + result.stderr\n"
+")"
+
+#: ../../../rst/user/modes/script/reference.rst:746
+msgid "Helper functions"
+msgstr "Вспомогательные функции"
+
+#: ../../../rst/user/modes/script/reference.rst:748
+msgid "**$.tools.fromColor(color: ColorString) : ColorObject**"
+msgstr "**$.tools.fromColor(color: ColorString) : ColorObject**"
+
+#: ../../../rst/user/modes/script/reference.rst:749
+msgid "**$.tools.fromColorF(color: ColorString) : ColorObject**"
+msgstr "**$.tools.fromColorF(color: ColorString) : ColorObject**"
+
+#: ../../../rst/user/modes/script/reference.rst:750
+msgid "**$.tools.toColor(color: ColorObject) : ColorString**"
+msgstr "**$.tools.toColor(color: ColorObject) : ColorString**"
+
+#: ../../../rst/user/modes/script/reference.rst:768
+msgid "**$.tools.toColorF(color: ColorObject) : ColorString**"
+msgstr "**$.tools.toColorF(color: ColorObject) : ColorString**"
+
+#: ../../../rst/user/modes/script/reference.rst:752
+msgid ""
+"Convert a string containing color information (**ColorString** type) into an "
+"object containing information on individual RGBA color components "
+"(**ColorObject** type) and vice versa. The suffix \"F\" means that "
+"**ColorObject** contains data in normalized form (from 0 to 1 inclusive). "
+"Functions without this suffix imply that each RGBA color component contains "
+"values in the range from 0 to 255 inclusive. Type **ColorString** can be a "
+"string in the following formats: **#rrggbb** (e.g. ``\"#ff9900\"``), "
+"**#aarrggbb** (e.g. ``\"#eeff9900\"``) or string color representation (e.g. ``"
+"\"lightblue\"``). The **toColor** and **toColorF** functions return the color in "
+"**#rrggbb** format if the color is not transparent (alpha channel has a maximum "
+"value). If transparency is available, these functions return the color in "
+"**#aarrggbb** format."
+msgstr ""
+"Преобразование строки, содержащую информацию о цвете (тип **ColorString**), в "
+"объект, содержащий информацию по отдельным цветовым компонентам RGBA (тип "
+"**ColorObject**), и наоборот. Суффикс \"F\" означает, что **ColorObject** "
+"содержит данные в нормализованной форме (от 0 до 1 включительно). Функции без "
+"этого суффикса подразумевают, что каждая цветовая компонента RGBA содержит "
+"значения в диапазоне от 0 до 255 включительно. Тип **ColorString** может "
+"представлять из себя строку в следующих форматах: **#rrggbb** (например, ``"
+"\"#ff9900\"``), **#aarrggbb** (например, ``\"#eeff9900\"``) или строковое "
+"представление цвета (например, ``\"lightblue\"``). Функции **toColor** и "
+"**toColorF** воззвращают цвет в формате **#rrggbb**, если прозрачность у цвета "
+"отсутствует (альфа-канал имеет максимальное значение). Если прозрачность "
+"имеется, то эти функции возвращают цвет в формате **#aarrggbb**."
+
+#: ../../../rst/user/modes/script/reference.rst:756
+msgid ""
+"var cStr = $.dev.colorTempWarning // #ff9900\n"
+"var cObj = $.tools.toColorF(cStr) // {r: 1, g: 0.6, b: 0, a: 1}\n"
+"cObj.g = 0.2\n"
+"cObj.a = 0.25\n"
+"cStr = $.tools.fromColorF(cObj) // #40809900\n"
+"$.dev.colorTempWarning = cStr\n"
+"\n"
+"cStr = 'lightblue'\n"
+"cObj = $.tools.toColor(cStr) // {r: 173, g: 216, b: 230, a: 255}\n"
+"cStr = $.tools.fromColor(cObj) // #add8e6"
+msgstr ""
+"var cStr = $.dev.colorTempWarning // #ff9900\n"
+"var cObj = $.tools.toColorF(cStr) // {r: 1, g: 0.6, b: 0, a: 1}\n"
+"cObj.g = 0.2\n"
+"cObj.a = 0.25\n"
+"cStr = $.tools.fromColorF(cObj) // #40809900\n"
+"$.dev.colorTempWarning = cStr\n"
+"\n"
+"cStr = 'lightblue'\n"
+"cObj = $.tools.toColor(cStr) // {r: 173, g: 216, b: 230, a: 255}\n"
+"cStr = $.tools.fromColor(cObj) // #add8e6"
+
+#: ../../../rst/user/modes/script/reference.rst:790
+msgid "$.tools.clone(obj, deep: Boolean = false)"
+msgstr "$.tools.clone(obj, deep: Boolean = false)"
+
+#: ../../../rst/user/modes/script/reference.rst:773
+msgid ""
+"Create a copy of the object **obj**. If **deep** = ``true``, then recursively "
+"create copies of all nested properties of the object. If **deep** = ``false``, "
+"the object properties are copied by simple assignment."
+msgstr ""
+"Создание копии объекта **obj**. Если **deep** = ``true``, то рекурсивно "
+"создаются копии всех вложенных свойств объекта. Если **deep** = ``false``, то "
+"свойства объектов копируются путём простого присваивания."
+
+#: ../../../rst/user/modes/script/reference.rst:779
+msgid ""
+"var obj = {a: {}}\n"
+"\n"
+"var shallowCopy = $.tools.clone(obj)\n"
+"obj === shallowCopy // false\n"
+"obj.a === shallowCopy.a // true\n"
+"\n"
+"var deepCopy = $.tools.clone(obj, true)\n"
+"obj === shallowCopy // false\n"
+"obj.a === shallowCopy.a // false"
+msgstr ""
+"var obj = {a: {}}\n"
+"\n"
+"var shallowCopy = $.tools.clone(obj)\n"
+"obj === shallowCopy // false\n"
+"obj.a === shallowCopy.a // true\n"
+"\n"
+"var deepCopy = $.tools.clone(obj, true)\n"
+"obj === shallowCopy // false\n"
+"obj.a === shallowCopy.a // false"
+
+#: ../../../rst/user/plugins.rst:2 ../../../rst/user/resources.rst:8
+msgid "Plugins"
+msgstr "Плагины"
+
+#: ../../../rst/user/plugins.rst:4
+msgid ""
+"|project| does not support video cards by itself. This feature is added by "
+"plugins. Each plugin is a set of files that will be loaded by the main "
+"application."
+msgstr ""
+"|project| не имеет поддержки видеокарт сам по себе. Эту возможность добавляют "
+"плагины. Каждый плагин представляет из себя набор файлов, которые будут "
+"загружаться основной программой."
+
+#: ../../../rst/user/plugins.rst:6
+msgid ""
+"Before you start using |project|, you need to install a plugin that supports "
+"your video card. You can download the required plugin from the Internet or :doc:"
+"`write it yourself </dev/plugins>`. Plugins should be placed in one of the :doc:"
+"`search folders <resources>`, in the subfolder **plugins/<id>**. For example, if "
+"the plugin is called **amd-mesa-free** and one of the search folders /usr/local/"
+"share/|project-id|, the plugin can be placed in /usr/local/share/|project-id|/"
+"plugins/amd-mesa-free to be detected by the application."
+msgstr ""
+"Перед тем, как начать пользоваться |project|, вам надо установить плагин, "
+"который поддерживает вашу видеокарту. Вы можете скачать нужный плагин из "
+"интернета или :doc:`написать его сами </dev/plugins>`. Плагины должны "
+"размещаться в одной из :doc:`папок для поиска <resources>`, в подпапке **plugins/"
+"<id>**. Например, если плагин называется **amd-mesa-free**, а одна из папок "
+"поиска /usr/local/share/|project-id|, то плагин, чтобы его могло обнаружить "
+"приложение, может быть размещён в папке /usr/local/share/|project-id|/plugins/"
+"amd-mesa-free."
+
+#: ../../../rst/user/plugins.rst:8
+msgid "List of plugins supported by the |project| developer:"
+msgstr "Список плагинов, поддерживаемых разработчиком |project|:"
+
+#: ../../../rst/user/plugins.rst:17
+msgid ""
+":doc:`plugins/nvidia-nvml` is a plugin for managing NVIDIA video cards that run "
+"under official proprietary drivers."
+msgstr ""
+":doc:`plugins/nvidia-nvml` - плагин для управления видеокартами NVIDIA, которые "
+"работают под управлением официальных проприетарных драйверов."
+
+#: ../../../rst/user/plugins.rst:18
+msgid ""
+":doc:`plugins/test-manual` - a plugin that emulates the video card and allows "
+"you to manually set the current temperature."
+msgstr ""
+":doc:`plugins/test-manual` - плагин, эмулирующий видеокарту и позволяющий "
+"вручную задавать текущую температуру."
+
+#: ../../../rst/user/plugins.rst:20
+msgid ""
+"Downloaded plugins will have the same access rights as the account from which |"
+"project| is launched, i.e. almost full access to all your data."
+msgstr ""
+"Загруженные плагины будут иметь те же права доступа, что и учётная запись, из "
+"под которой происходит запуск |project|, т.е. почти полный доступ ко всем вашим "
+"данным."
+
+#: ../../../rst/user/plugins.rst:22
+msgid ""
+"The first time you start the program, the \":doc:`gui/enabledPlugins`\" window "
+"will open, where you can select the plugins you want to automatically load at "
+"subsequent program launches. This window can also be opened manually - read more "
+"in :doc:`this window description <gui/enabledPlugins>`."
+msgstr ""
+"При первом запуске программы будет открыто окно \":doc:`gui/enabledPlugins`\", "
+"где можно выбрать плагины, которые вы хотите автоматически загружать при "
+"последующих запусках программы. Это окно также можно открыть вручную - подробнее "
+"читайте в :doc:`справке к этому окну <gui/enabledPlugins>`."
+
+#: ../../../rst/user/plugins/nvidia-nvml.rst:2
+msgid "nvidia-nvml"
+msgstr "nvidia-nvml"
+
+#: ../../../rst/user/plugins/nvidia-nvml.rst:4
+msgid ""
+"This plugin, which comes with |project|, allows you to control NVIDIA video "
+"cards with official proprietary drivers installed."
+msgstr ""
+"Данный плагин, который поставляется вместе с |project|, позволяет контролировать "
+"видеокарты NVIDIA, для которых установлены официальные проприетарные драйвера."
+
+#: ../../../rst/user/plugins/nvidia-nvml.rst:6
+msgid "The following things are required to operate this plugin:"
+msgstr "Для работы этого плагина требуются следующие вещи:"
+
+#: ../../../rst/user/plugins/nvidia-nvml.rst:8
+msgid ""
+"NVIDIA Kepler or newer architecture graphics cards (GeForce 600 series and "
+"later). At your own risk, you can try this plugin with Fermi architecture cards "
+"(GeForce 400 and 500 series)."
+msgstr ""
+"Видеокарта NVIDIA архитектуры Kepler или более новой (серия GeForce 600 и "
+"новее). На свой страх и риск вы можете попробовать данный плагин вместе с "
+"видеокартами архитектуры Fermi (серии GeForce 400 и 500)."
+
+#: ../../../rst/user/plugins/nvidia-nvml.rst:11
+msgid "NVIDIA proprietary drivers installed in any way available:"
+msgstr "Проприетарные драйвера NVIDIA, установленные любым доступным способом:"
+
+#: ../../../rst/user/plugins/nvidia-nvml.rst:13
+msgid "Official website:"
+msgstr "Официальный сайт:"
+
+#: ../../../rst/user/plugins/nvidia-nvml.rst:15
+msgid "https://www.geforce.com/drivers"
+msgstr "https://www.geforce.com/drivers"
+
+#: ../../../rst/user/plugins/nvidia-nvml.rst:17
+msgid "https://www.nvidia.ru/Download/index.aspx"
+msgstr "https://www.nvidia.ru/Download/index.aspx"
+
+#: ../../../rst/user/plugins/nvidia-nvml.rst:19
+msgid ""
+"Proprietary GPU Drivers PPA: https://launchpad.net/~graphics-drivers/+archive/"
+"ubuntu/ppa"
+msgstr ""
+"Proprietary GPU Drivers PPA: https://launchpad.net/~graphics-drivers/+archive/"
+"ubuntu/ppa"
+
+#: ../../../rst/user/plugins/nvidia-nvml.rst:21
+msgid ""
+"Package manager or other system utilities (for example, Driver Manager in "
+"Ubuntu)."
+msgstr ""
+"Пакетный менеджер или другие системные утилиты (например, Driver Manager в "
+"Ubuntu)."
+
+#: ../../../rst/user/plugins/nvidia-nvml.rst:24
+msgid ""
+"The NVIDIA X Server Settings program that is available via the \"nvidia-settings"
+"\" command (i.e. the program must be located in one of the $PATH directories)."
+msgstr ""
+"Программа NVIDIA X Server Settings, доступная через команду \"nvidia-settings"
+"\" (т.е. программа должна находиться в одной из директорий $PATH)."
+
+#: ../../../rst/user/plugins/nvidia-nvml.rst:26
+msgid ""
+"An NVIDIA X Configuration Tool application that can be accessed via the \"nvidia-"
+"xconfig\" command (i.e. the program must be located in one of the $PATH "
+"directories)."
+msgstr ""
+"Программа NVIDIA X Configuration Tool, достапная через команду \"nvidia-xconfig"
+"\" (т.е. программа должна находиться в одной из директорий $PATH)."
+
+#: ../../../rst/user/plugins/nvidia-nvml.rst:28
+msgid ""
+"Fan control enabled. This is done by setting the second bit of the CoolBits "
+"variable to Xorg.conf. More information about CoolBits can be found here: "
+"`<https://wiki.archlinux.org/index.php/NVIDIA/"
+"Tips_and_tricks#Enabling_overclocking>`_. The easiest way to set the second bit "
+"in CoolBits: ``sudo nvidia-xconfig --cool-bits=4``. After that it is necessary "
+"to reboot the computer."
+msgstr ""
+"Включённая возможность контроля вентиляторов. Это делается установкой второго "
+"бита переменной CoolBits в Xorg.conf. Более подробно про CoolBits можно найти "
+"здесь: `<https://wiki.archlinux.org/index.php/NVIDIA/"
+"Tips_and_tricks_(Русский)#Включение_разгона>`_. Самый простой способ установить "
+"второй бит в CoolBits: ``sudo nvidia-xconfig --cool-bits=4``. После этого "
+"необходимо перезагрузить компьютер."
+
+#: ../../../rst/user/plugins/nvidia-nvml.rst:34
+msgid "Plugin functions"
+msgstr "Функции плагина"
+
+#: ../../../rst/user/plugins/nvidia-nvml.rst:36
+msgid ""
+"The nvidia-nvml plugin contains one function that can be run from the :doc:"
+"`script </user/modes/script>` through :ref:`$.dev.customFunction <script-ref-dev-"
+"customFunction>`:"
+msgstr ""
+"Плагин nvidia-nvml содержит одну функцию, которую можно запускать из :doc:"
+"`скрипта </user/modes/script>` через :ref:`$.dev.customFunction <script-ref-dev-"
+"customFunction>`:"
+
+#: ../../../rst/user/plugins/nvidia-nvml.rst:85
+msgid "getThrottleReasons()"
+msgstr "getThrottleReasons()"
+
+#: ../../../rst/user/plugins/nvidia-nvml.rst:39
+msgid ""
+"Gives reasons for the throttling of the video card. The result of the function "
+"is an object that contains throttling reason IDs as keys. Each field is an "
+"integer value. Each field can have one of two values:"
+msgstr ""
+"Выдаёт причины троттлинга видеокарты. Результат функции - объект, содержащий в "
+"качестве ключей идентификаторы причины троттлинга. Каждое поле представляет "
+"собой целочисленное значение. Каждое поле может иметь одно из двух значений:"
+
+#: ../../../rst/user/plugins/nvidia-nvml.rst:43
+msgid "**Zero** - throttling, if exists, is not caused by this reason."
+msgstr "**ноль** - троттлинг, если он имеется, не вызван этой причиной."
+
+#: ../../../rst/user/plugins/nvidia-nvml.rst:45
+msgid "**Cause code** - throttling is caused by this reason."
+msgstr "**код причины** - троттлинг вызван данной причиной."
+
+#: ../../../rst/user/plugins/nvidia-nvml.rst:47
+msgid "Possible string values:"
+msgstr "Возможные значения строк:"
+
+#: ../../../rst/user/plugins/nvidia-nvml.rst:49
+msgid ""
+"**gpuIdle** - the frequency of the GPU is reduced because no tasks are running "
+"on the GPU."
+msgstr ""
+"**gpuIdle** - частота GPU уменьшена, т.к. на GPU не запущено никаких задач."
+
+#: ../../../rst/user/plugins/nvidia-nvml.rst:51
+msgid ""
+"**applicationsClocksSetting** - the frequency of the GPU is limited by the "
+"general frequency setting for applications."
+msgstr ""
+"**applicationsClocksSetting** - частота GPU ограничена общей настройкой частоты "
+"для приложений."
+
+#: ../../../rst/user/plugins/nvidia-nvml.rst:53
+msgid "**swPowerCap** - the power-scaling algorithm lowers the GPU frequency."
+msgstr "**swPowerCap** - power-scaling алгоритм занижает частоту GPU."
+
+#: ../../../rst/user/plugins/nvidia-nvml.rst:55
+msgid "**hwSlowdown** - hardware-initiated slowdown; reasons can be different:"
+msgstr ""
+"**hwSlowdown** - замедление по требованию оборудования; причины могут быть "
+"разные:"
+
+#: ../../../rst/user/plugins/nvidia-nvml.rst:57
+msgid "the temperature is too high"
+msgstr "слишком высокая температура"
+
+#: ../../../rst/user/plugins/nvidia-nvml.rst:59
+msgid "the current is too high"
+msgstr "слишком высокий ток"
+
+#: ../../../rst/user/plugins/nvidia-nvml.rst:61
+msgid "PCIe bus or power supply throttling"
+msgstr "троттлинг шины PCIe или блока питания"
+
+#: ../../../rst/user/plugins/nvidia-nvml.rst:63
+msgid "GPU is in a process of switching frequencies or power modes"
+msgstr "GPU в процессе переключения частот или режимов питания"
+
+#: ../../../rst/user/plugins/nvidia-nvml.rst:65
+msgid ""
+"**syncBoost** - the video card is placed in the \"Sync boost\" group. All video "
+"cards in this group have the same maximum frequency. The **syncBoost** flag "
+"indicates that other video cards in this group slow down this video card."
+msgstr ""
+"**syncBoost** - видеокарта помещена в группу \"Sync boost\". Все видеокарты в "
+"такой группе имеют одну и ту же максимальную частоту. Флаг **syncBoost** говорит "
+"о том, что другие видеокарты в этой группе тормозят данную видеокарту."
+
+#: ../../../rst/user/plugins/nvidia-nvml.rst:69
+msgid ""
+"**swThermalSlowdown** - driver-initiated frequency reduction due to high GPU or "
+"memory temperature."
+msgstr ""
+"**swThermalSlowdown** - понижение частоты по требованию драйвера из-за высокой "
+"температуры GPU или памяти."
+
+#: ../../../rst/user/plugins/nvidia-nvml.rst:71
+msgid ""
+"**hwThermalSlowdown** - hardware-initiated frequency reduction due to high "
+"temperature."
+msgstr ""
+"**hwThermalSlowdown** - понижение частоты по требованию оборудования из-за "
+"высокой температуры."
+
+#: ../../../rst/user/plugins/nvidia-nvml.rst:73
+msgid "**hwPowerBrakeSlowdown** - PCIe bus or power supply throttling."
+msgstr "**hwPowerBrakeSlowdown** - троттлинг шины PCIe или блока питания."
+
+#: ../../../rst/user/plugins/nvidia-nvml.rst:75
+msgid ""
+"**unknown** - the throttling is detected, but the reason couldn't be determined."
+msgstr "**unknown** - троттлинг имеется, но причину выяснить не удалось."
+
+#: ../../../rst/user/plugins/nvidia-nvml.rst:77
+msgid ""
+"**code** - code of reasons of throttling, which is a logical OR all the IDs of "
+"individual reasons of throttling mentioned above. If this field is zero, there "
+"is no throttling."
+msgstr ""
+"**code** - код причин троттлинга, представляющий собой логическое ИЛИ всех кодов "
+"отдельных причин троттлинга, указанных выше. Если это поле равно нулю, то "
+"троттлинг отсутствует."
+
+#: ../../../rst/user/plugins/nvidia-nvml.rst:81
+msgid ""
+"const reasons = $.dev.customFunction('getThrottleReasons')\n"
+"if(reasons.swThermalSlowdown || reasons.hwThermalSlowdown)\n"
+"    console.log(`Throttling because of the high temperature! Code: 0x${reasons."
+"code.toString(16)}`)"
+msgstr ""
+"const reasons = $.dev.customFunction('getThrottleReasons')\n"
+"if(reasons.swThermalSlowdown || reasons.hwThermalSlowdown)\n"
+"    console.log(`Троттлинг из-за высокой температуры! Код: 0x${reasons.code."
+"toString(16)}`)"
+
+#: ../../../rst/user/plugins/test-manual.rst:2
+msgid "test-manual"
+msgstr "test-manual"
+
+#: ../../../rst/user/plugins/test-manual.rst:4
+msgid ""
+"This plugin can be used to test the rules for controlling video card fans. The "
+"plugin creates a virtual video card, and also allows you to arbitrarily adjust "
+"its temperature."
+msgstr ""
+"Данный плагин может использоваться для тестирования правил управления "
+"вентиляторами видеокарты. Плагин создаёт виртуальную видеокарту, а также даёт "
+"возможность произвольно регулировать её температуру."
+
+#: ../../../rst/user/resources.rst:2
+msgid "External resources"
+msgstr "Сторонние ресурсы"
+
+#: ../../../rst/user/resources.rst:4
+msgid ""
+"|project| can download various third-party resources: :doc:`plugins <plugins>`, "
+"documentation and localization. |project| searches for these resources in "
+"specific folders. The list of these folders depends on the operating system. A "
+"complete list of folders where |project| will search for resources can be "
+"obtained through the :ref:`--dirs <cli-dirs>` parameter of the command line. "
+"When trying to load a resource |project| searches in all search folders and "
+"tries to find the resource in a particular subfolder that matches the resource "
+"type. The process of searching and loading each resource type is described below."
+msgstr ""
+"|project| в процессе работы может загружать разные сторонние ресурсы: :doc:"
+"`плагины <plugins>`, документацию и локализацию. |project| ищет эти ресурсы в "
+"определённых папках. Список этих папок зависит от операционной системы. Полный "
+"список папок, в которых |project| будет искать ресурсы, можно получить через "
+"параметр :ref:`--dirs <cli-dirs>` командной строки. При попытке загрузить какой-"
+"либо ресурс |project| перебирает все папки для поиска и пытается найти ресурс в "
+"определённой подпапке, которая соответствует типу ресурса. Ниже описан процесс "
+"поиска и загрузки каждого типа ресурса."
+
+#: ../../../rst/user/resources.rst:10
+msgid ""
+"The process of searching and loading :doc:`plugins <plugins>` is as follows:"
+msgstr "Процесс поиска и загрузки :doc:`плагинов <plugins>` следующий:"
+
+#: ../../../rst/user/resources.rst:12 ../../../rst/user/resources.rst:32
+msgid ""
+"All folders are searched in the order returned by the CLI parameter :ref:`--dirs "
+"<cli-dirs>`."
+msgstr ""
+"Перебираются все папки для поиска в том порядке, который выдаётся CLI-"
+"параметром :ref:`--dirs <cli-dirs>`."
+
+#: ../../../rst/user/resources.rst:14
+msgid ""
+"The plugin is searched in the folder **<current search folder>/plugins/<plugin "
+"identifier>**."
+msgstr ""
+"Плагин ищется в папке **<текущая папка для поиска>/plugins/<идентификатор-"
+"плагина>**."
+
+#: ../../../rst/user/resources.rst:16
+msgid ""
+"If a plugin is found, then this plugin is loaded, and any plugin with the same "
+"name will not be loaded from all other search folders."
+msgstr ""
+"Если плагин найден, то он загружается, а все остальные плагины с этим именем из "
+"других папок поиска игнорируются."
+
+#: ../../../rst/user/resources.rst:19
+msgid ""
+"**Example:** If you have a search folder /usr/local/share/|project-id| and a "
+"plugin called **amd-mesa**, |project| will be able to load this plugin from /usr/"
+"local/share/|project-id|/plugins/amd-mesa."
+msgstr ""
+"**Пример:** если имеется папка для поиска /usr/local/share/|project-id|, а "
+"плагин называется **amd-mesa**, то |project| сможет загрузить этот плагин из "
+"папки /usr/local/share/|project-id|/plugins/amd-mesa."
+
+#: ../../../rst/user/resources.rst:22
+msgid ""
+"To create your own plugin for |project|, see \":doc:`/dev/plugins`\". You can "
+"find an example plugin here: `<https://github.com/alkatrazstudio/gpu-fan-meister/"
+"blob/master/plugins>`_."
+msgstr ""
+"О том, как создать свой плагин для |project|, читайте в разделе \":doc:`/dev/"
+"plugins`\". Пример плагина вы можете найти здесь: `<https://github.com/"
+"alkatrazstudio/gpu-fan-meister/blob/master/plugins>`_."
+
+#: ../../../rst/user/resources.rst:28
+msgid "Documentation"
+msgstr "Документация"
+
+#: ../../../rst/user/resources.rst:30
+msgid "The process of searching and loading a documentation is as follows:"
+msgstr "Процесс поиска и загрузки документации следующий:"
+
+#: ../../../rst/user/resources.rst:34
+msgid ""
+"Look for the folder **<current search folder>/docs/<language code>**, where "
+"**<language code>** is IETF-code\\ [#ietf]_ of the language of the system locale."
+msgstr ""
+"Ищется папка **<текущая папка для поиска>/docs/<код языка>**, где **<код "
+"языка>** - это IETF-код\\ [#ietf]_ языка, соответствующий системной локали."
+
+#: ../../../rst/user/resources.rst:36
+msgid ""
+"If a folder is found, the documentation from this folder is used. All other "
+"folders are ignored."
+msgstr ""
+"Если папка найдена, то используется документация именно из этой папки. Все "
+"остальные папки игнорируются."
+
+#: ../../../rst/user/resources.rst:38
+msgid ""
+"If no documentation is found in any folder to search for, the last element after "
+"the \"-\" sign is removed from **<language code>** (zh-TW => zh). The process is "
+"then repeated."
+msgstr ""
+"Если ни в одной папке для поиска документация не найдена, то из **<код языка>** "
+"убирается последний элемент после знака \"-\" (zh-TW => zh). Затем процесс "
+"повторяется заново."
+
+#: ../../../rst/user/resources.rst:40
+msgid ""
+"If the last element of **<language code>** is removed and the documentation is "
+"still not found, |project| searches the search folders for documentation for the "
+"\"en\" language (which is guaranteed to be present in at least one search "
+"folder)."
+msgstr ""
+"Если последний элемент из **<код языка>** убран, а документация всё ещё не "
+"найдена, то |project| ищет в папках для поиска документацию для языка \"en"
+"\" (которая гарантированно будет присутствовать хотя бы в одной папке для "
+"поиска)."
+
+#: ../../../rst/user/resources.rst:43
+msgid ""
+"**Example:** If you have a search folder /usr/local/share/|project-id| and "
+"French Canadian is your system locale, |project| will search the documentation "
+"in /usr/local/share/|project-id|/docs/fr-CA, /usr/local/share/|project-id|/docs/"
+"fr and /usr/local/share/|project-id|/docs/en."
+msgstr ""
+"**Пример:** если имеется папка для поиска /usr/local/share/|project-id|, а в "
+"системе установлен французский канадский язык, то |project| будет искать "
+"документацию в папках /usr/local/share/|project-id|/docs/fr-CA, /usr/local/"
+"share/|project-id|/docs/fr и /usr/local/share/|project-id|/docs/en."
+
+#: ../../../rst/user/resources.rst:46
+msgid ""
+"You can translate the |project| documentation into any language. The "
+"documentation is written in `reStructuredText <http://docutils.sourceforge.net/"
+"rst.html>`_ and built via `Sphinx <https://www.sphinx-doc.org/>`_. The process "
+"of localization/internationalization in Sphinx is described here: `<https://www."
+"sphinx-doc.org/en/master/usage/advanced/intl.html>`_. The script ``docs/src/"
+"build.sh`` already does a lot of job for you. In summary, you need to do the "
+"following:"
+msgstr ""
+"Вы можете перевести документацию |project| на любой язык. Документация написана "
+"на `reStructuredText <http://docutils.sourceforge.net/rst.html>`_ и собрана с "
+"помощью `Sphinx <https://www.sphinx-doc.org/>`_. Процесс локализации в Sphinx "
+"описан здесь: `<https://www.sphinx-doc.org/en/master/usage/advanced/intl."
+"html>`_. Скрипт ``docs/src/build.sh`` уже делает большую часть работы за вас. В "
+"конечном счёте, вам необходимо сделать следующее:"
+
+#: ../../../rst/user/resources.rst:48
+msgid "Clone the main repository:"
+msgstr "Склонировать основной репозиторий:"
+
+#: ../../../rst/user/resources.rst:50
+msgid "``git clone https://github.com/alkatrazstudio/gpu-fan-meister``"
+msgstr "``git clone https://github.com/alkatrazstudio/gpu-fan-meister``"
+
+#: ../../../rst/user/resources.rst:52
+msgid "Generate or update PO-files:"
+msgstr "Сгенерировать или обновить PO-файлы:"
+
+#: ../../../rst/user/resources.rst:54
+msgid "``docs/src/build.sh <language IETF-code> po``"
+msgstr "``docs/src/build.sh <IETF-код языка> po``"
+
+#: ../../../rst/user/resources.rst:56
+msgid "Translate the PO-files."
+msgstr "Перевести PO-файлы."
+
+#: ../../../rst/user/resources.rst:58
+msgid "Run the documentation build script:"
+msgstr "Запустить скрипт сборки документации:"
+
+#: ../../../rst/user/resources.rst:60
+msgid "``docs/src/build.sh <language IETF-code>``"
+msgstr "``docs/src/build.sh <IETF-код языка>``"
+
+#: ../../../rst/user/resources.rst:62
+msgid ""
+"Move the generated documentation from the folder **docs/<language IETF-code>** "
+"to any :ref:`search folder<resources-docs>`."
+msgstr ""
+"Переместить полученную документацию из папки **docs/<IETF-код языка>** в любую :"
+"ref:`папку поиска <resources-docs>`."
+
+#: ../../../rst/user/resources.rst:66
+msgid "Localization"
+msgstr "Локализация"
+
+#: ../../../rst/user/resources.rst:68
+msgid "The process of searching and loading localization files is as follows:"
+msgstr "Процесс поиска и загрузки локализаций следующий:"
+
+#: ../../../rst/user/resources.rst:70
+msgid ""
+"All folders are searched in the order opposite to the one returned by the CLI "
+"parameter :ref:`--dirs <cli-dirs>`."
+msgstr ""
+"Перебираются все папки для поиска в порядке, обратном тому, который выдаётся CLI-"
+"параметром :ref:`--dirs <cli-dirs>`."
+
+#: ../../../rst/user/resources.rst:72
+msgid ""
+"Localization files are searched in the **<current search folder>/translations** "
+"and loaded according to Qt rules: `<https://doc.qt.io/qt-5.12/qtranslator."
+"html#load-1>`_."
+msgstr ""
+"Файлы локализации ищутся в папке **<текущая папка для поиска>/translations** и "
+"загружаются по правилам Qt: `<https://doc.qt.io/qt-5.12/qtranslator."
+"html#load-1>`_."
+
+#: ../../../rst/user/resources.rst:74
+msgid ""
+"If a localization file is found, the translation it contains is added to the "
+"already loaded localization files. If there are duplicates of translations, the "
+"priority will be given to the last loaded localization."
+msgstr ""
+"Если файл локализации найден, то содержащийся в нём перевод добавляется к уже "
+"загруженным файлам локализации. При наличии дубликатов переводов, приоритет "
+"будет отдаваться последней загруженной локализации."
+
+#: ../../../rst/user/resources.rst:77
+msgid ""
+"**Example:** If you have a search folder /usr/local/share/|project-id| and "
+"German is your system locale, |project| can search for files with translations "
+"in /usr/local/share/|project-id|/translations/de-DE.qm (or other de-\\*.qm files "
+"depending on the locale) and /usr/local/share/|project-id|/translations/de.qm."
+msgstr ""
+"**Пример:** если имеется папка для поиска /usr/local/share/|project-id|, а в "
+"системе установлен немецкий язык, то |project| может искать файлы с переводом в "
+"файлах /usr/local/share/|project-id|/translations/de-DE.qm (или в других de-\\*."
+"qm файлах в зависимости от локали) и /usr/local/share/|project-id|/translations/"
+"de.qm."
+
+#: ../../../rst/user/resources.rst:79
+msgid ""
+"To create your own translation for |project|, see the Qt Linguist Help: "
+"`<https://doc.qt.io/qt-5.12/linguist-translators.html>`_."
+msgstr ""
+"О том, как создать свой перевод для |project|, читайте в справке к Qt Linguist: "
+"`<https://doc.qt.io/qt-5.12/linguist-translators.html>`_."
+
+#: ../../../rst/user/resources.rst:85
+msgid ""
+"Wikipedia article \"IETF language tag\": `<https://en.wikipedia.org/wiki/"
+"IETF_language_tag>`_."
+msgstr ""
+"Статья \"IETF language tag\" в Википедии: `<https://en.wikipedia.org/wiki/"
+"IETF_language_tag>`_."
+
+#~ msgid ""
+#~ "// Example of a function call from nvidia-nvml plugin\n"
+#~ "const reasons = $.dev.customFunction('getThrottleReasons')\n"
+#~ "if(['swThermalSlowdown', 'hwThermalSlowdown'].some(x => reasons.indexOf(x) != "
+#~ "-1))\n"
+#~ "    console.log.('Throttling because of a high temperature!')"
+#~ msgstr ""
+#~ "// Пример вызова функции из плагина nvidia-nvml\n"
+#~ "const reasons = $.dev.customFunction('getThrottleReasons')\n"
+#~ "if(['swThermalSlowdown', 'hwThermalSlowdown'].some(x => reasons.indexOf(x) != "
+#~ "-1))\n"
+#~ "    console.log('Троттлинг из-за высокой температуры!')"
+
+#~ msgid ""
+#~ "You can translate the documentation |project| into any language. To do this, "
+#~ "you need the following:"
+#~ msgstr ""
+#~ "Вы можете перевести документацию |project| на любой язык. Для этого вам "
+#~ "необходимо следующее:"
+
+#~ msgid "Copy the existing documentation from the **docs/src/lang** folder."
+#~ msgstr "Сделать копию существующей документации из папки **docs/src/lang**."
+
+#~ msgid "Place this copy in the **docs/src/lang/<language IETF code>**."
+#~ msgstr "Поместить эту копию в папку **docs/src/lang/<IETF-код языка>**."

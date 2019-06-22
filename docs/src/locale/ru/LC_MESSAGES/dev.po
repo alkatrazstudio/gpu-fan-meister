@@ -1,0 +1,387 @@
+# GPU Fan Meister - Russian translation.
+# Copyright (C) 2019, Alkatraz Studio
+# This file is distributed under the same license
+# as the GPU Fan Meister package.
+# Alexey Parfenov <zxed@alkatrazstudio.net>, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: GPU Fan Meister 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-08 21:11+0300\n"
+"PO-Revision-Date: 2019-04-08 21:12+0300\n"
+"Last-Translator: \n"
+"Language: ru_RU\n"
+"Language-Team: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+"X-Generator: Poedit 2.1.1\n"
+
+#: ../../../rst/dev/build.rst:2
+msgid "Building from sources"
+msgstr "Сборка из исходников"
+
+#: ../../../rst/dev/build.rst:4
+msgid ""
+"|project| is available as a ready-made :doc:`build for Linux </user/download>`, "
+"but it is also possible to build everything from source manually."
+msgstr ""
+"|project| доступен в качестве готовых :doc:`сборок для Linux </user/download>`, "
+"но также имеется возможность собрать всё из исходников вручную."
+
+#: ../../../rst/dev/build.rst:6
+msgid "Instructions for building on Linux:"
+msgstr "Инструкции по сборке на Linux:"
+
+#: ../../../rst/dev/build.rst:8
+msgid ""
+"Custom build of `Qt <https://www.qt.io>`_ with special patches and additional "
+"libraries is used. Qt's automatic build script for Linux can be found in the "
+"repository: `<https://gitlab.com/alkatrazstudio/qt5-build>`_."
+msgstr ""
+"Используется кастомная сборка `Qt <https://www.qt.io>`_ со специальными патчами "
+"и дополнительными библиотеками. Скрипт автоматической сборки Qt для Linux можно "
+"найти в репозитории: `<https://gitlab.com/alkatrazstudio/qt5-build>`_."
+
+#: ../../../rst/dev/build.rst:10
+msgid "Clone the main repository with the submodules:"
+msgstr "Склонируйте основной репозиторий вместе с подмодулями:"
+
+#: ../../../rst/dev/build.rst:12
+msgid "``git clone --recursive https://github.com/alkatrazstudio/gpu-fan-meister``"
+msgstr ""
+"``git clone --recursive https://github.com/alkatrazstudio/gpu-fan-meister``"
+
+#: ../../../rst/dev/build.rst:14
+msgid ""
+"The system must have a developer package for the `libnotify library <https://"
+"developer.gnome.org/libnotify/>`_ installed. For example, for Ubuntu, it's the "
+"**libnotify-dev** package."
+msgstr ""
+"В системе должен быть установлен пакет разработчика для библиотеки `libnotify "
+"<https://developer.gnome.org/libnotify/>`_. Например, для Ubuntu это пакет "
+"**libnotify-dev**."
+
+#: ../../../rst/dev/build.rst:16
+msgid ""
+"If you want to eventually pack everything in `AppImage <https://appimage.org>`_, "
+"you need `appimagetool <https://github.com/AppImage/AppImageKit>`_ installed in "
+"your system."
+msgstr ""
+"Если вы хотите в конечном итоге упаковать всё в `AppImage <https://appimage."
+"org>`_, то в системе нужен установленный `appimagetool <https://github.com/"
+"AppImage/AppImageKit>`_."
+
+#: ../../../rst/dev/build.rst:18
+msgid ""
+"If you also want to build a :doc:`/user/plugins/nvidia-nvml` plugin, then "
+"`NVIDIA CUDA Toolkit <https://developer.nvidia.com/cuda-toolkit>`_ must be "
+"installed in the system. For example, for Ubuntu it's **nvidia-cuda-dev** "
+"package."
+msgstr ""
+"Если вы хотите собрать также и плагин :doc:`/user/plugins/nvidia-nvml`, то в "
+"системе должен быть установлен `NVIDIA CUDA Toolkit <https://developer.nvidia."
+"com/cuda-toolkit>`_. Например, для Ubuntu это пакет **nvidia-cuda-dev**."
+
+#: ../../../rst/dev/build.rst:20
+msgid ""
+"Further instructions can be found in the ``build.sh`` file in the cloned "
+"repository."
+msgstr ""
+"Дальнейшие инструкции можно найти в файле ``build.sh`` в склонированном "
+"репозитории."
+
+#: ../../../rst/dev/plugins.rst:2
+msgid "Adding support for new video cards and drivers"
+msgstr "Добавление поддержки новых видеокарт и драйверов"
+
+#: ../../../rst/dev/plugins.rst:4
+msgid ""
+"|project| does not support video cards by itself. This feature is added by :doc:"
+"`plugins </user/plugins>`. Each plugin is a set of files that will be loaded by "
+"the main application."
+msgstr ""
+"|project| не имеет поддержки видеокарт сам по себе. Эту возможность добавляют :"
+"doc:`плагины </user/plugins>`. Каждый плагин представляет из себя набор файлов, "
+"которые будут загружаться основной программой."
+
+#: ../../../rst/dev/plugins.rst:8
+msgid "Plugin ID"
+msgstr "Идентификатор плагина"
+
+#: ../../../rst/dev/plugins.rst:10
+msgid ""
+"Each plugin must have an identifier that looks like this: ``<category>-<name>``."
+msgstr "Каждый плагин должен иметь идентификатор вида ``<категория>-<имя>``."
+
+#: ../../../rst/dev/plugins.rst:12
+msgid ""
+"**Category** defines the type of supported devices. Example: ``amd``. Only one "
+"plugin from each category can be included at a time. Category name can consist "
+"of letters a-z in lower case and digits 0-9, and should start with a letter."
+msgstr ""
+"**Категория** определяет тип поддерживаемых устройств. Пример: ``amd``. "
+"Одновременно может быть включён только один плагин из каждой категории. Название "
+"категории может состоять из букв a-z в нижнем регистре и цифр 0-9, при этом "
+"должно начинаться с буквы."
+
+#: ../../../rst/dev/plugins.rst:14
+msgid ""
+"**Name** sets the unique plugin identifier within the selected category. "
+"Example: ``mesa-free``. The name can consist of letters a-z in the lower case, "
+"digits 0-9 and a hyphen ``-``, and should start with a letter."
+msgstr ""
+"**Имя** задаёт уникальный идентификатор плагина внутри выбранной категории. "
+"Пример: ``mesa-free``. Имя может состоять из букв a-z в нижнем регистре, цифр "
+"0-9 и дефиса ``-``, при этом должно начинаться с буквы."
+
+#: ../../../rst/dev/plugins.rst:16
+msgid ""
+"For the sake of brevity, the plugin identifier below will be referred to as "
+"**<id>**."
+msgstr "Для краткости идентификатор плагина далее будет обозначаться как **<id>**."
+
+#: ../../../rst/dev/plugins.rst:20
+msgid "Plugin files"
+msgstr "Файлы плагина"
+
+#: ../../../rst/dev/plugins.rst:22
+msgid ""
+"The files of each plugin can be placed in one of the :doc:`search folders </user/"
+"resources>`, in the subfolder **plugins/<id>**. For example, if the plugin is "
+"called **amd-mesa-free** and one of the search folders /usr/local/share/|project-"
+"id|, the plugin can be placed in /usr/local/share/|project-id|/plugins/amd-mesa-"
+"free to be detected by the application. The plugin must contain at least three "
+"files:"
+msgstr ""
+"Файлы каждого плагина могут размещаться в одной из :doc:`папок для поиска </user/"
+"resources>`, в подпапке **plugins/<id>**. Например, если плагин называется **amd-"
+"mesa-free**, а одна из папок поиска /usr/local/share/|project-id|, то плагин, "
+"чтобы его могло обнаружить приложение, может быть размещён в папке /usr/local/"
+"share/|project-id|/plugins/amd-mesa-free. Плагин должен содержать как минимум "
+"три файла:"
+
+#: ../../../rst/dev/plugins.rst:66
+msgid "<id>-init"
+msgstr "<id>-init"
+
+#: ../../../rst/dev/plugins.rst:25
+msgid ""
+"The code in this file is executed before starting |project|. If the file "
+"finishes its work by returning a non-zero output code, the corresponding plugin "
+"will not be loaded and the user will receive a system message containing the "
+"text from the standard error output stream (stderr). The file can have any "
+"extension or none at all, but the operating system should be able to understand "
+"that the file is executable (for example, in Linux it is necessary to set an "
+"executable flag on this file)."
+msgstr ""
+"Код в этом файле выполняется до запуска |project|. Если файл завершит работу, "
+"вернув ненулевой код выхода, то соответствующий плагин не будет загружен, а "
+"пользователю выдастся системное сообщение, содержащее текст из стандартного "
+"потока вывода ошибок (stderr). Файл может иметь любое расширение или совсем "
+"никакого, но операционная система должна иметь возможность понять, что файл "
+"является запускаемым (например, в Linux надо установить исполняемый флаг на этот "
+"файл)."
+
+#: ../../../rst/dev/plugins.rst:27
+msgid "*Location example:* ``.../plugins/amd-mesa-free/amd-mesa-free-init.sh``"
+msgstr "*Пример расположения:* ``.../plugins/amd-mesa-free/amd-mesa-free-init.sh``"
+
+#: ../../../rst/dev/plugins.rst:29
+msgid ""
+"This file can set new environment variables that will be passed to the main "
+"program and other plugins. To do this, the **<id>-init** file must output a "
+"string in the standard output stream (stdout) in the format of "
+"**<key>=<value>**. Empty lines, lines starting with ``#`` and lines without "
+"```=`` are ignored. **<key>** cannot contain the symbol ``=``. If **<key>** or "
+"**<value>** contain spaces from the beginning or the end of a line, these spaces "
+"will be removed."
+msgstr ""
+"Данный файл может установить новые переменные окружения, которые будут переданы "
+"основной программе и другими плагинам. Для этого, файл **<id>-init** должен "
+"вывести в стандартный поток вывода (stdout) строки в формате "
+"**<ключ>=<значение>**. Пустые строки, строки, начинающиеся с ``#``, и строки без "
+"символа ``=`` игнорируются. **<ключ>** не может содержать символ ``=``. Если "
+"**<ключ>** или **<значение>** содержат пробелы с начала или конца строки, то эти "
+"пробелы будут удалены."
+
+#: ../../../rst/dev/plugins.rst:31
+msgid ""
+"Existing environment variables can be overwritten or appended to. If it is "
+"required to add new data in the end of an existing environment variable, the "
+"first symbol in a **<value>** line should be the operating system path delimiter "
+"(for example, for Linux it is ``:``). If it is required to add something in the "
+"beginning of a variable the delimiter should be the last symbol in a **<value>** "
+"line."
+msgstr ""
+"Существующие переменные окружения могут быть перезаписаны или дополнены. Если "
+"требуется дописать новые данные в конец существующей переменной окружения, то "
+"первым символом в строке **<значение>** должен быть разделитель пути, который "
+"используется в операционной системе (например, для Linux это ``:``). Если "
+"требуется дописать что-то в начало переменной, то разделитель пути должен быть "
+"последним символом в строке **<значение>**."
+
+#: ../../../rst/dev/plugins.rst:33
+msgid "*Example:*"
+msgstr "*Пример:*"
+
+#: ../../../rst/dev/plugins.rst:35
+msgid "There are following existing environment variables:"
+msgstr "Имеются следующие существующие переменные окружения:"
+
+#: ../../../rst/dev/plugins.rst:37
+msgid ""
+"PATH=/bin:/usr/bin\n"
+"LD_LIBRARY_PATH=/usr/lib\n"
+"ABC=123\n"
+"BOGUS=simsalabim"
+msgstr ""
+"PATH=/bin:/usr/bin\n"
+"LD_LIBRARY_PATH=/usr/lib\n"
+"ABC=123\n"
+"BOGUS=simsalabim"
+
+#: ../../../rst/dev/plugins.rst:44
+msgid "File **<id>-init** returns the following text in stdout:"
+msgstr "Файл **<id>-init** выводит следующий текст в stdout:"
+
+#: ../../../rst/dev/plugins.rst:46
+msgid ""
+"ABC = 666\n"
+"DEF = 7 7 7 7\n"
+"\n"
+"PATH=:/opt/bin:/home/user/bin\n"
+"#BOGUS=abracadabra\n"
+"LD_LIBRARY_PATH=/opt/lib:"
+msgstr ""
+"ABC =  666\n"
+"DEF = 7 7 7\n"
+"\n"
+"PATH=:/opt/bin:/home/user/bin\n"
+"#BOGUS=abracadabra\n"
+"LD_LIBRARY_PATH=/opt/lib:"
+
+#: ../../../rst/dev/plugins.rst:55
+msgid ""
+"In this case, the final set of environment variables after the completion of "
+"**<id>-init** will be as follows:"
+msgstr ""
+"В таком случае, итоговый набор переменных окружения по завершению работы **<id>-"
+"init**, будет следующим:"
+
+#: ../../../rst/dev/plugins.rst:57
+msgid ""
+"PATH=/bin:/usr/bin:/opt/bin:/home/user/bin\n"
+"LD_LIBRARY_PATH=/opt/lib:/usr/lib\n"
+"ABC=6666\n"
+"BOGUS=simsalabim\n"
+"DEF=7 7 7 7"
+msgstr ""
+"PATH=/bin:/usr/bin:/opt/bin:/home/user/bin\n"
+"LD_LIBRARY_PATH=/opt/lib:/usr/lib\n"
+"ABC=666\n"
+"BOGUS=simsalabim\n"
+"DEF=7 7 7"
+
+#: ../../../rst/dev/plugins.rst:65
+msgid ""
+"These environment variables will be accessed by all plugins and files loaded "
+"after this file, except for other **\\*-init** files."
+msgstr ""
+"К этим переменным окружения будут иметь доступ все плагины и файлы, загружаемые "
+"после данного файла, за исключением других **\\*-init** файлов."
+
+#: ../../../rst/dev/plugins.rst:72
+msgid "<id>-deinit"
+msgstr "<id>-deinit"
+
+#: ../../../rst/dev/plugins.rst:69
+msgid ""
+"The code in this file is executed after |project| is closed. If the file returns "
+"a non-zero output code, the user will get a system message containing the text "
+"from the standard error output stream (stderr). This file is started only if "
+"**<id>-init** is successfully executed. The file will be executed even if a "
+"fatal failure that caused a sudden stop of the application has occurred in |"
+"project|. The file can have any extension or none at all, but the operating "
+"system should be able to understand that the file is executable (for example, in "
+"Linux it is necessary to set an executable flag on this file)."
+msgstr ""
+"Код в этом файле выполняется после завершения работы |project|. Если файл вернёт "
+"ненулевой код выхода, то пользователю выдастся системное сообщение, содержащее "
+"текст из стандартного потока вывода ошибок (stderr). Запуск этого файла "
+"происходит только в случае успешного выполнения **<id>-init**. Файл будет "
+"выполнен, даже если в |project| произошёл фатальный сбой, повлекший за собой "
+"внезапную остановку программы. Файл может иметь любое расширение или совсем "
+"никакого, но операционная система должна иметь возможность понять, что файл "
+"является запускаемым (например, в Linux надо установить исполняемый флаг на этот "
+"файл)."
+
+#: ../../../rst/dev/plugins.rst:71
+msgid "*Location example:* ``.../plugins/amd-mesa-free/amd-mesa-free-deinit.py``"
+msgstr ""
+"*Пример расположения:* ``.../plugins/amd-mesa-free/amd-mesa-free-deinit.py``"
+
+#: ../../../rst/dev/plugins.rst:80
+msgid "gpufancontrol-<id>"
+msgstr "gpufancontrol-<id>"
+
+#: ../../../rst/dev/plugins.rst:75
+msgid ""
+"This file is a dynamic library that will be downloaded by |project| The file "
+"should have a name that corresponds to the standard name of the dynamic "
+"libraries in the operating system, including the major version number where "
+"applicable (e.g., for Linux the prefix \"lib\", the extension \".so\" and the "
+"version number like \".1\" should be added). The required library interface is "
+"described in the file `shared/include/gpufanmeister/plugin.h <https://github.com/"
+"alkatrazstudio/gpu-fan-meister/blob/master/shared/include/gpufanmeister/plugin."
+"h>`_."
+msgstr ""
+"Данный файл является динамической библиотекой, которая будет загружена |"
+"project|. Файл должен иметь название, соответствующее стандартному именованию "
+"динамических библиотек в операционной системе, включая номер мажорной версии, "
+"где это применимо (например, для Linux требуется добавление префикса \"lib\", "
+"расширения \".so\" и номера версии типа \".1\"). Требуемый интерфейс библиотеки "
+"описан в файле `shared/include/gpufanmeister/plugin.h <https://github.com/"
+"alkatrazstudio/gpu-fan-meister/blob/master/shared/include/gpufanmeister/plugin."
+"h>`_."
+
+#: ../../../rst/dev/plugins.rst:77
+msgid ""
+"*Location example:* ``.../plugins/amd-mesa-free/libgpufancontrol-amd-mesa-free."
+"so.1``"
+msgstr ""
+"*Пример расположения:* ``.../plugins/amd-mesa-free/libgpufancontrol-amd-mesa-"
+"free.so.1``"
+
+#: ../../../rst/dev/plugins.rst:79
+msgid ""
+"The library with the version number corresponding to the major version of |"
+"project| will be loaded. For example, if the version of |project| is **1.2.3**, "
+"then a library **libgpufancontrol-amd-mesa-free.so.1** will be loaded, and if "
+"the version of |project| is **2.3.4**, then a library **libgpufancontrol-amd-"
+"mesa-free.so.2** will be loaded. As a consequence, the plugin may contain "
+"several versions of the library. Libraries can be symbolic links."
+msgstr ""
+"При этом, будет загружен библиотека с номером версии, соответствующим мажорной "
+"версии |project|. Например, если версия |project| - **1.2.3**, то будет "
+"загружена библиотека **libgpufancontrol-amd-mesa-free.so.1**, а если версия |"
+"project| - **2.3.4**, то будет загружена библиотека **libgpufancontrol-amd-mesa-"
+"free.so.2**. Как следствие, плагин может содержать в себе несколько версий "
+"библиотеки. Библиотеки могут быть символьными ссылками."
+
+#: ../../../rst/dev/plugins.rst:83
+msgid "Example"
+msgstr "Пример"
+
+#: ../../../rst/dev/plugins.rst:85
+msgid ""
+"As an example of a complete plugin you can take the sources of the :doc:`/user/"
+"plugins/nvidia-nvml` plugin, which comes with |project|: `<https://github.com/"
+"alkatrazstudio/gpu-fan-meister/blob/master/plugins/nvidia-nvml>`_."
+msgstr ""
+"В качестве примера готового плагина можно взять исходники плагина :doc:`/user/"
+"plugins/nvidia-nvml`, который поставляется вместе с |project|: `<https://github."
+"com/alkatrazstudio/gpu-fan-meister/blob/master/plugins/nvidia-nvml>`_."

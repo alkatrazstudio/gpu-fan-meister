@@ -1,0 +1,7 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Type=Application
+Exec=gpu-fan-meister
+Name=GPU Fan Meister
+Icon=gpu-fan-meister
+Categories=System;HardwareSettings;Qt;

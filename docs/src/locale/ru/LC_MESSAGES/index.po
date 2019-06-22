@@ -1,0 +1,43 @@
+# GPU Fan Meister - Russian translation.
+# Copyright (C) 2019, Alkatraz Studio
+# This file is distributed under the same license
+# as the GPU Fan Meister package.
+# Alexey Parfenov <zxed@alkatrazstudio.net>, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: GPU Fan Meister 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-09 13:20+0300\n"
+"PO-Revision-Date: 2019-04-07 17:52+0300\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru\n"
+"X-Generator: Poedit 2.1.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Language: ru\n"
+"X-Source-Language: en_US\n"
+
+#: ../../../rst/index.rst:2
+msgid "|project| documentation"
+msgstr "Документация |project|"
+
+#: ../../../rst/index.rst:4
+msgid "|project| - application for an automated video card fan speed control."
+msgstr "|project| - программа для автоматического контроля скоростей вращения вентиляторов на видеокартах."
+
+#: ../../../rst/index.rst:6
+msgid "With |project| you can describe a graph of fan speed versus temperature, set your own algorithm for calculating the required speed, or set up one of the preset modes of operation."
+msgstr "С помощью |project| вы можете описать график зависимости скорости вентиляторов от температуры, задать собственный алгоритм расчёта требуемой скорости или настроить один из предустановленных режимов работы."
+
+#: ../../../rst/index.rst:12
+msgid "User manual"
+msgstr "Руководство пользователя"
+
+#: ../../../rst/index.rst:24
+msgid "Developer manual"
+msgstr "Руководство разработчика"

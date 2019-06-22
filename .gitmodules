@@ -1,0 +1,6 @@
+[submodule "common"]
+	path = common
+	url = https://github.com/alkatrazstudio/common.git
+[submodule "pynotify2"]
+	path = pynotify2
+	url = https://github.com/alkatrazstudio/pynotify2.git
