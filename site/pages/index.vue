@@ -100,6 +100,8 @@ export default {
             const dateFmt = new Intl.DateTimeFormat(this.$i18n.locale, dateOpts)
             const dateObj = new Date(Date.UTC(RELEASE_DATE[0], RELEASE_DATE[1] - 1, RELEASE_DATE[2], 0, 0, 0))
 
+            const fileSuffix = this.$i18n.locale == 'en' ? '' : `.${this.$i18n.locale}`
+
             return [{
                 label: 'OS',
                 text: 'Linux'
@@ -119,7 +121,7 @@ export default {
             }, {
                 label: 'CHANGELOG',
                 text: this.$t('DOWNLOAD_INFO_LINK'),
-                link: 'https://github.com/alkatrazstudio/gpu-fan-meister/blob/master/CHANGELOG.rst'
+                link: `https://github.com/alkatrazstudio/gpu-fan-meister/blob/master/CHANGELOG${fileSuffix}.rst`
             }, {
                 label: 'LICENSE',
                 text: 'GPLv3',
