@@ -874,11 +874,11 @@ void GpuDevice::_updateTray(bool useInterval)
     QString tempString = QString::number(temp_);
     QString devName = name();
     QString tip =
-        QStringLiteral("<u>") % devName.replace("&", "&amp;").replace("<", "&lt;") % "</u>"
-        % "<br>" % tr("Mode", "tray") % "</b>: <b>" % modeToStringTitle(mode_) % "</b>"
-        % "<br>" % tr("Fan control", "tray") % ": <b>" % (fanManualMode_ ? tr("app", "tray") : tr("GPU", "tray")) % "</b>"
-        % "<br>" % tr("Temp", "tray") % ": <b>" % tempString % "\u00B0C</b>"
-        % "<br>" % tr("Fans", "tray") % ": <b>" % QString::number(fanSpeed_) % "%</b>";
+        devName
+        % "\n" % tr("Mode", "tray") % ": " % modeToStringTitle(mode_)
+        % "\n" % tr("Fan control", "tray") % ": " % (fanManualMode_ ? tr("app", "tray") : tr("GPU", "tray"))
+        % "\n" % tr("Temp", "tray") % ": " % tempString % "\u00B0C"
+        % "\n" % tr("Fans", "tray") % ": " % QString::number(fanSpeed_) % "%";
     if(tip != curTrayTip_)
         tray_->setToolTip(tip);
 
