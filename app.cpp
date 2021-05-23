@@ -38,7 +38,7 @@ App::App(int &argc, char **argv) :
     engine(nullptr),
     devsFound(false)
 {
-    singleInstance = false; // manually call the validation
+    singleInstance = true;
     setQuitOnLastWindowClosed(false);
     QDir::setCurrent(applicationDirPath());
 }
@@ -273,10 +273,6 @@ int App::main()
         quit();
         return 0;
     }
-
-    int exitCode;
-    if(!validateSingleInstance(&exitCode))
-        return exitCode;
 
     QStringList plugins = parser.value("plugins").split(',', QString::SkipEmptyParts);
     CHECKE(!plugins.isEmpty(), Err::noPlugins);
