@@ -108,7 +108,7 @@ static void initDevice(size_t deviceIndex)
     devs[deviceIndex].tempSlider = slider;
 
     QPoint c = QGuiApplication::primaryScreen()->geometry().center();
-    int w = slider->fontMetrics().width("x") * 10;
+    int w = slider->fontMetrics().horizontalAdvance("x") * 10;
     c.setY(c.y() + deviceIndex * 1.25 * w);
     int h = w * 2;
     slider->move(c);

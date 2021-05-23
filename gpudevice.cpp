@@ -33,7 +33,7 @@
 static constexpr int TRAY_PIXMAP_SIZE = 64;
 
 #define PLUGIN_CHECK(t, v, x)              \
-    t v;                                   \
+    t v = static_cast<t>(0);               \
     try{                                   \
         v = x;                             \
     }catch(GpuDeviceInterface::Error& e){  \
@@ -105,7 +105,7 @@ void GpuDevice::loadGeneralSettings()
     set_customName(conf.getString("customName"));
 
     QPalette p;
-    const QColor& colorNormal = p.color(QPalette::Foreground);
+    const QColor& colorNormal = p.color(QPalette::WindowText);
 
     set_colorTempNormal(conf.getColor("colorTempNormal", colorNormal));
     set_colorTempWarning(conf.getColor("colorTempWarning", colorNormal.valueF() > 0.5 ? "gold" : "saddlebrown"));
@@ -611,7 +611,7 @@ int GpuDevice::processModeCurve()
     }
 
     bool ok = false;
-    unsigned int destFanSpeed;
+    unsigned int destFanSpeed = 0;
     if(curveTempDir_ == TempDir::INC)
     {
         for(int a=curvePoints_.size()-1; a>=0; a--)
@@ -789,7 +789,7 @@ void GpuDevice::restartScript()
 
     obj.setProperty("dev", newScript->newQObject(this));
     obj.setProperty("sys", newScript->newQObject(&ScriptSys::instance()));
-    obj.setProperty("tools", newScript->newQObject(&ScriptTools::instance()));
+    obj.setProperty("tools", newScript->newQObject(new ScriptTools(newScript.get())));
 
     newScript->globalObject().setProperty("$", obj);
 
@@ -825,7 +825,7 @@ void GpuDevice::showNotification(const QString &msg, bool isCritical) const
 
 QJSValue GpuDevice::customFunction(const QJSValue &name, const QJSValue &val) const
 {
-    return iface_.customFunction(name.toString(), val, static_cast<QJSEngineEx*>(name.engine()));
+    return iface_.customFunction(name.toString(), val, script_.get());
 }
 
 int GpuDevice::processTickFunc()

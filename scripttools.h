@@ -29,7 +29,7 @@ class ScriptTools : public QObject
     Q_OBJECT
 
 public:
-    static ScriptTools &instance();
+    ScriptTools(QJSEngine* engine);
 
     Q_INVOKABLE QVariantMap fromColor(const QColor& color) const;
     Q_INVOKABLE QVariantMap fromColorF(const QColor& color) const;
@@ -37,7 +37,9 @@ public:
     Q_INVOKABLE QColor toColorF(const QVariantMap& obj) const;
     Q_INVOKABLE QJSValue clone(const QJSValue& obj, bool deep = false) const;
 
+protected:
+    QJSEngine* engine;
+
 private:
     Q_DISABLE_COPY(ScriptTools)
-    ScriptTools() : QObject(nullptr){}
 };

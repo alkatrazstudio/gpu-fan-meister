@@ -21,11 +21,10 @@
 #include <QColor>
 #include <QJSValueIterator>
 
-ScriptTools &ScriptTools::instance()
+ScriptTools::ScriptTools(QJSEngine* engine) : QObject(nullptr)
+    ,engine(engine)
 {
-    static ScriptTools inst;
-    QQmlEngine::setObjectOwnership(&inst, QQmlEngine::CppOwnership);
-    return inst;
+    QQmlEngine::setObjectOwnership(this, QQmlEngine::CppOwnership);
 }
 
 QVariantMap ScriptTools::fromColor(const QColor &color) const
@@ -73,9 +72,9 @@ QJSValue ScriptTools::clone(const QJSValue &obj, bool deep) const
 
     QJSValue newVal;
     if(obj.isArray())
-        newVal = obj.engine()->newArray();
+        newVal = engine->newArray();
     else if(obj.isObject())
-        newVal = obj.engine()->newObject();
+        newVal = engine->newObject();
     else
         return obj;
 
@@ -84,7 +83,7 @@ QJSValue ScriptTools::clone(const QJSValue &obj, bool deep) const
     {
         newVal.setProperty(
             it.name(),
-            deep ? clone(it.value()) : it.value());
+            deep ? clone(it.value(), deep) : it.value());
     }
     return newVal;
 }
