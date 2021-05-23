@@ -6,6 +6,7 @@
 !.gitignore
 !.gitmodules
 !/VERSION
+!/qml_files
 
 *.AppImage
 *.user

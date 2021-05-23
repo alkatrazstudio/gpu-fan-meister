@@ -59,7 +59,7 @@ function buildLang
     rm -rf "$DESTDIR"
     sphinx-build -b html -c . -W -q -D language="$THELANG" rst "$DESTDIR"
     find "$DESTDIR" -iname ".*" -exec rm -rf {} +
-    rsync -a static/ "$DESTDIR/_static/"
+    cp -a static/. "$DESTDIR/_static/."
 
     "./prepare_$MODE.py" "$DESTDIR"
 }

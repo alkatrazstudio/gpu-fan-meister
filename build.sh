@@ -8,7 +8,7 @@ cd "$THISDIR"
 # SETUP
 #
 
-QT_DIR="/opt/qtdev/dist"
+QT_DIR="/opt/qt/qt5"
 export PATH="$QT_DIR/bin:$PATH"
 export LD_LIBRARY_PATH="$QT_DIR/lib:$LD_LIBRARY_PATH"
 export PYTHONDONTWRITEBYTECODE=1
@@ -24,7 +24,6 @@ PLUGINS=(
     test-manual
 )
 NO_REBUILD=
-SIGN_KEY="062299952077C171"
 
 
 
@@ -128,9 +127,10 @@ EOF
 # QML FILES
 #
 
-QML_FILES="$(QML2_IMPORT_PATH="$QT_DIR/qml" strace -f "$DIST_DIR/gpu-fan-meister.py" --load-qml 2>&1 | grep -Po '(openat|access)\(.*'"$QT_DIR/qml"'/\K[^"]+(?=.*=\s[^\-])')"
-IFS=$'\n'; QML_FILES=($QML_FILES); unset IFS;
-for f in "${QML_FILES[@]}"
+# run this to update the dependencies
+#QML2_IMPORT_PATH="$QT_DIR/qml" strace -f "$DIST_DIR/gpu-fan-meister.py" --load-qml 2>&1 | grep -Po '(openat|access)\(.*'"$QT_DIR/qml"'/\K[^"]+(?=.*=\s[^\-])' > qml_files
+
+while read -r f
 do
     if [[ -f $QT_DIR/qml/$f ]]
     then
@@ -138,7 +138,7 @@ do
         mkdir -p "$DIST_DIR/qml/$DIRNAME"
         cp -a "$QT_DIR/qml/$f" "$DIST_DIR/qml/$DIRNAME"
     fi
-done
+done < qml_files
 
 
 #
@@ -158,4 +158,4 @@ ln -sf "../../../assets/net.alkatrazstudio.gpufanmeister.desktop" "$DIST_DIR/usr
 # BUILD APPIMAGE
 #
 
-appimagetool "$DIST_DIR" --sign --sign-key "$SIGN_KEY"
+appimagetool --appimage-extract-and-run "$DIST_DIR"
