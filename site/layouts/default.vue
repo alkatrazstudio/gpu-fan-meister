@@ -1,14 +1,14 @@
 <template>
-    <v-app dark>
-        <v-content>
+    <v-app>
+        <v-main>
             <v-container fluid>
                 <nuxt/>
             </v-container>
-        </v-content>
+        </v-main>
         <v-footer class="pa-4">
             <v-layout fill-height align-center justify-center>
                 <span>
-                    <span class="copyleft">&copy;</span> <a 
+                    <span class="copyleft">&copy;</span> <a
                         href="https://alkatrazstudio.net" rel="noreferrer" target="_blank">Alkatraz Studio</a>, 2019.
                 </span>
                 <span class="ml-1 mr-1">{{ $t('PAGE_LICENSE') }}</span>
@@ -22,8 +22,6 @@
 </template>
 
 <script>
-import '@mdi/font/css/materialdesignicons.css'
-
 import LangSelector from '~/components/langSelector'
 
 export default {
@@ -35,6 +33,9 @@ export default {
 
 <style lang="scss">
 #app {
+    background: #303030;
+    padding-top: 15px;
+
     a {
         color: white;
     }

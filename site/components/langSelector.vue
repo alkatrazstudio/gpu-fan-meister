@@ -1,24 +1,24 @@
 <template>
 <v-layout class="lang-selector">
     <v-menu bottom left>
-        <v-btn flat slot="activator" class="cur-lang">
-            <img-ex :src="curLang.flag" :alt="curLang.title" :height="25"/>
-        </v-btn>
+        <template v-slot:activator="{ on }">
+            <v-btn text slot="activator" class="cur-lang" v-on="on">
+                <img-ex :src="curLang.flag" :alt="curLang.title" :height="25"/>
+            </v-btn>
+        </template>
         <v-list>
-            <v-list-tile v-for="lang in langs" :key="lang.code" :href="localePath('index', lang.code)">
-                <v-list-tile-action>
+            <v-list-item v-for="lang in langs" :key="lang.code" :href="localePath('index', lang.code)">
+                <v-list-item-action class="lang-switch-btn">
                     <img-ex height="25" :src="lang.flag" class="mr-1"/>
-                </v-list-tile-action>
-                <v-list-tile-title>{{ lang.title }}</v-list-tile-title>
-            </v-list-tile>
+                </v-list-item-action>
+                <v-list-item-title class="lang-switch-title">{{ lang.title }}</v-list-item-title>
+            </v-list-item>
         </v-list>
     </v-menu>
 </v-layout>
 </template>
 
 <script>
-import '@mdi/font/css/materialdesignicons.css'
-
 import {meta as enMeta} from '~/lang/en'
 import {meta as ruMeta} from '~/lang/ru'
 
@@ -52,7 +52,20 @@ export default {
 
     .cur-lang {
         padding: 0;
-        min-width: 60px;
+        width: 80px;
+    }
+}
+</style>
+
+<style lang="scss">
+#app {
+    .lang-switch-btn {
+        margin-right: 10px;
+        min-width: 40px;
+    }
+
+    .lang-switch-title {
+        line-height: 1.5;
     }
 }
 </style>

@@ -1,6 +1,7 @@
 module.exports = {
-    mode: 'universal',
     loading: false,
+    target: 'static',
+    telemetry: false,
 
     head: {
         title: 'GPU Fan Meister'
@@ -8,9 +9,9 @@ module.exports = {
 
     modules: [
         ['@nuxtjs/vuetify', {
-            materialIcons: false,
             treeShake: true,
-            iconfont: 'mdi'
+            defaultAssets: false,
+            optionsPath: './vuetify.options.js'
         }],
 
         ['nuxt-i18n', {
@@ -24,11 +25,7 @@ module.exports = {
             vueI18n: {
                 fallbackLocale: 'en'
             }
-        }],
-
-        ['@nuxtjs/pwa', {
-            workbox: false
-        }],
+        }]
     ],
 
     build: {
@@ -46,6 +43,12 @@ module.exports = {
                 }
             }
         }
+    },
+
+    generate: {
+        exclude: [
+            /^\/(ru\/)?doc/
+        ]
     },
 
     icon: {
